@@ -1,0 +1,49 @@
+#載入Selenium模組
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import csv
+import time
+
+
+#設定 Chrome Driver 的執行檔路徑
+options = Options()
+options.chrome_executable_path = "https://www.google.com/maps/place/Plan+B+%E6%AD%90%E9%99%B8%E8%A1%97%E9%A0%AD%E5%B8%82%E9%9B%86%E5%B0%8F%E9%85%92%E9%A4%A8/@25.0423709,121.551501,17z/data=!3m1!4b1!4m6!3m5!1s0x3442abc5abc51347:0xbf75e3dffc22a271!8m2!3d25.0423709!4d121.551501!16s%2Fg%2F11dzs_k5n_?authuser=2&entry=ttu&g_ep=EgoyMDI0MTAyMS4xIKXMDSoASAFQAw%3D%3D"
+
+#建立Driver物體實件，用程式操作瀏覽器運作
+driver = webdriver.Chrome(options=options)
+
+#連線到google map
+driver.get("https://www.google.com/maps/place/Plan+B+%E6%AD%90%E9%99%B8%E8%A1%97%E9%A0%AD%E5%B8%82%E9%9B%86%E5%B0%8F%E9%85%92%E9%A4%A8/@25.0423709,121.551501,17z/data=!3m1!4b1!4m6!3m5!1s0x3442abc5abc51347:0xbf75e3dffc22a271!8m2!3d25.0423709!4d121.551501!16s%2Fg%2F11dzs_k5n_?authuser=2&entry=ttu&g_ep=EgoyMDI0MTAyMS4xIKXMDSoASAFQAw%3D%3D")
+
+#模擬USER點擊更多評論
+try:
+    reviews_button = wait.until(EC.element_to_be_clickable((By.XPATH, '//button[contains(@aria-label,"查看所有評論")]')))
+    reviews_button.click()
+except:
+    print("未找到“查看所有评论”按钮")
+
+# 滾動頁面
+time.sleep(2)
+for i in range(5):
+    driver.execute_script("window.scrollBy(0, 1000);")
+    time.sleep(2)
+
+#print(driver.page_source)
+wait = WebDriverWait(driver, 10)
+tags = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "DUwDvf.lfPIob")))
+
+# 打開一個 CSV 文件寫入數據
+wait.until(lambda driver: driver.execute_script('return document.readyState') == 'complete')
+with open('output.csv', 'w', newline='', encoding='utf-8') as file:
+    writer = csv.writer(file)
+
+    # 寫入 CSV 的標題
+    writer.writerow(['Text'])
+
+    # 寫入評論內容
+    for tag in tags:
+        writer.writerow([tag.text])
+driver.close()

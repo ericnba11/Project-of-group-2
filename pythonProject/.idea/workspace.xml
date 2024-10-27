@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="287d61d8-c7bd-4c0f-8aa9-b0f9c5f69fae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../爬蟲示範/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../爬蟲示範/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../爬蟲示範/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../爬蟲示範/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../爬蟲示範/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../爬蟲示範/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../爬蟲示範/.idea/爬蟲示範.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../爬蟲示範/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../爬蟲示範/xinyi_bars.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xinyi_bars.csv" beforeDir="false" afterPath="$PROJECT_DIR$/xinyi_bars.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

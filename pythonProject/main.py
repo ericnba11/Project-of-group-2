@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
 import time
 import pandas as pd  # 用於處理 CSV
 import random
@@ -61,7 +60,7 @@ try:
         try:
             # 使用 WebDriverWait 等待元素加載
             rating = WebDriverWait(driver, 10).until(
-                EC.visibility_of_element_located((By.XPATH, '//span[@class="MW4etd"]'))
+                EC.visibility_of_element_located((By.XPATH, '//div[@role="main"]//span[@aria-hidden="true"]'))
             ).text
 
             # 先檢查地址元素是否存在
@@ -88,14 +87,21 @@ try:
         except Exception as e:
             print("無法取得完整資料，可能是元素未找到。", e)
 
-        # 點擊評論按鍵，進入評論頁面
+        # 套用在這裡
+        # 點擊評論按鈕
         try:
-            reviews_button = WebDriverWait(driver, 10).until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, '.Gpq6kf.fontTitleSmall'))            )
-            # 點擊 "Reviews" 按鈕
+            wait = WebDriverWait(driver, 1)
+            reviews_button = wait.until(EC.element_to_be_clickable(
+                (By.XPATH, '//button[@role="tab" and (contains(@aria-label, "評論") or contains(@aria-label, "Reviews"))]')
+            ))
             reviews_button.click()
+            print("成功點擊評論按鈕")
+            time.sleep(3)  # 等待評論頁面加載
+
+            # 在這裡您可以添加抓取評論的代碼
+
         except Exception as e:
-            print(f"無法點擊評論按鍵: {e}")
+            print(f"無法點擊評論按鈕：{e}")
 
         time.sleep(random.uniform(3, 6))  # 隨機等待3到6秒
 

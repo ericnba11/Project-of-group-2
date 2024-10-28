@@ -86,7 +86,15 @@ try:
                     print("成功點擊評論按鈕")
                     time.sleep(3)  # 等待評論頁面加載
 
-                    # 開始滾動評論區，並抓取最多五則評論
+                    # 滾動評論區以加載更多評論
+                    scrollable_reviews = WebDriverWait(driver, 10).until(
+                        EC.presence_of_element_located((By.XPATH, '//div[@class="m6QErb DxyBCb kA9KIf dS8AEf"]'))
+                    )
+                    for _ in range(5):  # 控制滾動次數
+                        driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight', scrollable_reviews)
+                        time.sleep(2)  # 等待加載評論
+
+                    # 抓取前五則評論
                     reviews_data = []
                     review_elements = driver.find_elements(By.XPATH, '//div[@class="wiI7pd"]')
                     for review in review_elements[:5]:  # 抓取前五則評論

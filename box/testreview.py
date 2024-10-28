@@ -1,136 +1,94 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import time
+from bs4 import BeautifulSoup
 import pandas as pd
-import random
+import requests
+import json
+import emoji
+import re
+import time
 
-# 設置 WebDriver
+# 設定 Selenium 瀏覽器驅動
 options = webdriver.ChromeOptions()
-options.add_argument("--incognito")
-options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36")
+options.add_argument('--headless')
+options.add_argument('--no-sandbox')
+options.add_argument('--disable-dev-shm-usage')
 driver = webdriver.Chrome(options=options)
 
-# 儲存店家和評論資料
-data = []
+# 根據店家名搜尋並提取店家 ID
+def get_store_ids(search_query="信義區 酒吧", max_stores=5):
+    search_url = f"https://www.google.com/maps/search/{search_query}"
+    driver.get(search_url)
+    time.sleep(5)  # 等待頁面加載
 
-def get_store_elements():
-    """重新獲取店家元素列表"""
-    return driver.find_elements(By.XPATH, '//a[@class="hfpxzc"]')
+    # 使用 BeautifulSoup 解析 HTML
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
+    
+    # 提取符合店家格式的 ID
+    store_ids = set(re.findall(r'0x.{16}:0x.{16}', str(soup)))  # 抓取 "0x...:0x..." 格式的店家 ID
+    store_ids = list(store_ids)[:max_stores]  # 只保留指定數量的店家
 
-def scroll_and_load(results_container, scrolls=20):
-    """模擬滾動和隨機操作以載入更多內容"""
-    for _ in range(scrolls):
-        driver.execute_script("arguments[0].scrollTop += 1500;", results_container)
-        time.sleep(random.uniform(3, 6))
+    return store_ids
 
-try:
-    # 打開 Google Maps
-    driver.get("https://www.google.com/maps")
-    time.sleep(random.uniform(2, 5))
+# 使用 API 抓取評論
+def get_comment(store_id, max_comments=5):
+    store_id_list = store_id.split(':')
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36'
+    }
 
-    # 找到搜尋框並輸入「信義區 酒吧」
-    search_box = driver.find_element(By.ID, "searchboxinput")
-    search_box.send_keys("信義區 酒吧")
-    search_box.send_keys(Keys.ENTER)
-    time.sleep(random.uniform(3, 6))
+    # 設置 API URL
+    url1 = f"https://www.google.com.tw/maps/preview/review/listentitiesreviews?authuser=0&hl=zh-TW&gl=tw&authuser=0&pb=!1m2!1y{store_id_list[0]}!2y{store_id_list[1]}!2m2!1i"
+    url3 = "!2i10!3e1!4m5!3b1!4b1!5b1!6b1!7b1!5m2!1s!7e81"
 
-    # 找到左側結果列表的滾動區域
-    results_container = driver.find_element(By.XPATH, '//div[@role="feed"]')
+    作者, 評論內容, 評分 = [], [], []
 
-    # 設置目標店家數量
-    max_stores = 10
-    processed_stores = 0
+    for i in range(0, max_comments):
+        try:
+            url2 = i * 10
+            url = url1 + str(url2) + url3
+            response = requests.get(url, headers=headers)
 
-    while processed_stores < max_stores:
-        # 滾動並加載更多店家
-        scroll_and_load(results_container, scrolls=10)
-        store_elements = get_store_elements()
+            if response.status_code != 200:
+                print(f"資料獲取錯誤，狀態碼: {response.status_code}")
+                break
 
-        while processed_stores < max_stores and processed_stores < len(store_elements):
-            store = store_elements[processed_stores]
-            try:
-                store_name = store.get_attribute("aria-label")
-                store_link = store.get_attribute("href")
-                print(f"\n{processed_stores + 1}. 正在處理店家: {store_name}")
+            text = response.text.replace(')]}\'', '')
+            text = emoji.demojize(text)
+            data = json.loads(text)
 
-                # 點擊該店家的鏈接，進入詳細頁面
-                driver.execute_script("arguments[0].click();", store)
-                time.sleep(random.uniform(3, 6))
+            if isinstance(data, list) and len(data) > 2:
+                reviews = data[2]
+                for review in reviews:
+                    評論內容.append(str(review[3]).replace('\n', '') if len(review) > 3 else None)
+                    作者.append(review[0][1] if review[0] and len(review[0]) > 1 else None)
+                    評分.append(review[4] if len(review) > 4 else None)
 
-                # 抓取店家詳細資訊
-                rating = WebDriverWait(driver, 10).until(
-                    EC.visibility_of_element_located((By.XPATH, '//span[@class="MW4etd"]'))
-                ).text
+            if len(評論內容) >= max_comments:
+                break
 
-                # 先檢查地址元素是否存在
-                try:
-                    address = driver.find_element(By.XPATH, '//button[@data-item-id="address"]').text
-                except Exception:
-                    address = "地址未找到"
+        except Exception as e:
+            print(f"發生錯誤: {e}")
+            break
 
-                # 先檢查電話元素是否存在
-                try:
-                    phone = driver.find_element(By.XPATH, '//button[@data-item-id="phone"]').text
-                except Exception:
-                    phone = "電話未找到"
+    # 確保所有欄位長度相同
+    min_length = min(len(作者), len(評分), len(評論內容))
+    return pd.DataFrame({
+        "店家 ID": [store_id] * min_length,
+        "作者": 作者[:min_length],
+        "評分": 評分[:min_length],
+        "評論內容": 評論內容[:min_length]
+    })
 
-                # 點擊評論按鈕進入評論區
-                try:
-                    reviews_button = WebDriverWait(driver, 10).until(
-                        EC.element_to_be_clickable((By.XPATH, '//button[@role="tab" and contains(@aria-label, "評論")]'))
-                    )
-                    reviews_button.click()
-                    print("成功點擊評論按鈕")
-                    time.sleep(3)  # 等待評論頁面加載
+# 主程式 - 搜尋並抓取多家店的評論
+store_ids = get_store_ids()
+all_reviews = pd.DataFrame()
 
-                    # 滾動評論區以加載更多評論
-                    scrollable_reviews = WebDriverWait(driver, 10).until(
-                        EC.presence_of_element_located((By.XPATH, '//div[@class="m6QErb DxyBCb kA9KIf dS8AEf"]'))
-                    )
-                    for _ in range(5):  # 控制滾動次數
-                        driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight', scrollable_reviews)
-                        time.sleep(2)  # 等待加載評論
+for store_id in store_ids:
+    store_reviews = get_comment(store_id, max_comments=5)
+    all_reviews = pd.concat([all_reviews, store_reviews], ignore_index=True)
 
-                    # 抓取前五則評論
-                    reviews_data = []
-                    review_elements = driver.find_elements(By.XPATH, '//div[@class="wiI7pd"]')
-                    for review in review_elements[:5]:  # 抓取前五則評論
-                        reviews_data.append(review.text)
-                        print(f"評論: {review.text}")
-
-                    # 將店家及評論資料加入至 data
-                    data.append({
-                        "店名": store_name,
-                        "評分": rating,
-                        "地址": address,
-                        "電話": phone,
-                        "鏈接": store_link,
-                        "評論": reviews_data
-                    })
-
-                except Exception as e:
-                    print(f"無法點擊評論按鈕或抓取評論：{e}")
-
-            except Exception as e:
-                print("無法取得完整資料，可能是元素未找到。", e)
-
-            processed_stores += 1
-            time.sleep(random.uniform(3, 6))
-
-            # 返回上一頁
-            driver.back()
-            time.sleep(random.uniform(4, 7))
-
-            # 每次返回後重新獲取店家元素列表
-            store_elements = get_store_elements()
-
-finally:
-    driver.quit()
-    # 儲存資料至指定路徑
-    output_path = r"C:\Users\USER\Desktop\study group 2_box\box\xinyi_bars_reviews.csv"
-    df = pd.DataFrame(data)
-    df.to_csv(output_path, index=False, encoding='utf-8-sig')
-    print(f"資料已成功儲存至 {output_path}")
+# 儲存至 CSV
+output_path = 'C:/Users/USER/Desktop/study group 2_box/box/sinyi_bars_reviews.csv'
+all_reviews.to_csv(output_path, index=False, encoding='utf-8-sig')
+print("成功將評論儲存至 'sinyi_bars_reviews.csv'")
+driver.quit()

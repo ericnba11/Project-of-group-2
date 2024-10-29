@@ -76,7 +76,7 @@ def get_comment(store_id):
     grade = []  # 評論者等級
     state = []  # 評論者狀態
 
-    for i in range(0, 10000):
+    for i in range(0, 5): #改成100試試看
 
         try:
 
@@ -130,7 +130,7 @@ def get_comment(store_id):
 
         except:
             break
-        
+
     google_comment_df = pd.DataFrame({
         "評論者": author,
         "評論者id": author_id,

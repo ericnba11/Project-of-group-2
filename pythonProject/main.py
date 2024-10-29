@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import pyautogui
 import time
 import pandas as pd  # 用於處理 CSV
 import random
@@ -36,7 +37,7 @@ try:
     # 滾動左側列表區域，向下滾動多次以加載更多店家
     for _ in range(5):  # 調整滾動次數
         driver.execute_script("arguments[0].scrollTop += 1000;", results_container)
-        time.sleep(2)  # 加入延遲以確保內容載入
+        time.sleep(0.5)  # 加入延遲以確保內容載入
 
     # 抓取所有顯示的店家鏈接
     store_elements = get_store_elements()
@@ -54,7 +55,7 @@ try:
 
         # 點擊該店家的鏈接，進入詳細頁面
         driver.execute_script("arguments[0].click();", store)
-        time.sleep(3)  # 等待頁面加載
+        time.sleep(2)  # 等待頁面加載
 
         # 抓取店家詳細資訊
         try:
@@ -96,7 +97,39 @@ try:
             ))
             reviews_button.click()
             print("成功點擊評論按鈕")
-            time.sleep(3)  # 等待評論頁面加載
+            time.sleep(1)  # 等待評論頁面加載
+
+            # 點擊排序
+            try:
+                button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[.//span[text()='排序']]")))
+                button.click()
+                time.sleep(1)
+                # 等待“最相關”按鈕可被點擊
+                most_relevant_button = wait.until(EC.element_to_be_clickable( (By.XPATH, "//div[@class='fxNQSd' and @data-index='0']//div[text()='最相關']")))
+                driver.execute_script("arguments[0].click();", most_relevant_button)
+                time.sleep(1)
+
+                # 找到按鈕的坐標位置
+                location = button.location
+                size = button.size
+                x = location['x'] + size['width'] / 2
+                y = location['y'] + size['height'] / 2
+
+                # 將鼠標移動到該坐標
+                pyautogui.moveTo(x, y, duration=0.5)
+
+                # 在該位置滾動
+                for i in range(3):
+                    pyautogui.scroll(-500)  # 向下滾動
+            except NoSuchElementException:
+                print("未找到排序按钮")
+
+            # # 滾動評論頁面
+            # scrollable_div = driver.find_element(By.XPATH, 'div.e07Vkf.kA9KIf')
+            # # 滾動左側列表區域，向下滾動多次以加載更多店家
+            # for _ in range(5):  # 調整滾動次數
+            #     driver.execute_script("arguments[0].scrollTop += 1000;", scrollable_div)
+            #     time.sleep(0.5)  # 加入延遲以確保內容載入
 
             # 在這裡您可以添加抓取評論的代碼
 

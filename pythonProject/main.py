@@ -194,7 +194,7 @@ try:
                 # 確保評論和評分元素數量一致
                 if len(review_elements) != len(rating_elements):
                     print("評論數量和評分數量不一致，無法正確配對")
-                    
+
                 # 遍歷每個評論元素
                 for review_element, rating_element in zip(review_elements, rating_elements):
                     try:

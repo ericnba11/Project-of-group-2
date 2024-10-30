@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import StaleElementReferenceException, NoSuchElementException, ElementClickInterceptedException
 import pyautogui
 import time
 import pandas as pd  # 用於處理 CSV
@@ -20,6 +21,58 @@ def get_store_elements():
     """
     return driver.find_elements(By.XPATH, '//a[@class="hfpxzc"]')
 
+# 點擊評論全文按鈕的函數
+def click_expand_buttons():
+    try:
+        # 獲取所有展開全文的按鈕
+        full_text_buttons = driver.find_elements(By.XPATH, '//button[@class="w8nwRe kyuRq"]')
+
+        for index, button in enumerate(full_text_buttons, start=1):
+            try:
+                # 使用 JavaScript 點擊展開全文按鈕
+                driver.execute_script("arguments[0].click();", button)
+                time.sleep(1)  # 等待展開後的內容加載
+                print(f"已成功點擊展開全文按鈕：第 {index} 個")
+            except (ElementClickInterceptedException, StaleElementReferenceException, NoSuchElementException) as e:
+                print(f"無法點擊展開全文按鈕：{e}")
+                continue  # 若無法點擊，繼續點擊下一個按鈕
+            time.sleep(1)
+
+
+    except Exception as e:
+        print(f"展開全文按鈕點擊失敗：{e}")
+
+# def scrape_reviews_with_ratings():
+#     """抓取每則評論的文字和評分"""
+#     reviews_with_ratings = []
+#
+#     # 抓取所有評論和評分元素
+#     review_elements = driver.find_elements(By.XPATH, "//div[@class='MyEned']")
+#     rating_elements = driver.find_elements(By.XPATH, "//span[@class='kvMYJc']")
+#
+#     # 確保評論和評分元素數量一致
+#     if len(review_elements) != len(rating_elements):
+#         print("評論數量和評分數量不一致，無法正確配對")
+#         return []
+#
+#     # 遍歷每個評論元素
+#     for review_element, rating_element in zip(review_elements, rating_elements):
+#         try:
+#             # 抓取評論文字
+#             review_text = review_element.find_element(By.XPATH, ".//span[@class='wiI7pd']").text
+#
+#             # 抓取評分數字
+#             rating_text = rating_element.get_attribute("aria-label")
+#             rating = rating_text.split(" ")[0] if rating_text else "無評分"
+#
+#             # 將評論和評分組合在一起
+#             reviews_with_ratings.append({"評論": review_text, "評分": rating})
+#         except Exception as e:
+#             print(f"抓取評論或評分失敗: {e}")
+#
+#     return reviews_with_ratings
+
+
 try:
     # 打開 Google Maps
     driver.get("https://www.google.com/maps")
@@ -29,15 +82,15 @@ try:
     search_box = driver.find_element(By.ID, "searchboxinput")
     search_box.send_keys("信義區 酒吧")
     search_box.send_keys(Keys.ENTER)
-    time.sleep(3)  # 等待結果加載
+    time.sleep(1.5)  # 等待結果加載
 
     # 找到左側結果列表的滾動區域
     results_container = driver.find_element(By.XPATH, '//div[@role="feed"]')
 
     # 滾動左側列表區域，向下滾動多次以加載更多店家
-    for _ in range(5):  # 調整滾動次數
+    for _ in range(3):  # 調整滾動次數
         driver.execute_script("arguments[0].scrollTop += 1000;", results_container)
-        time.sleep(0.5)  # 加入延遲以確保內容載入
+    time.sleep(1)  # 加入延遲以確保內容載入
 
     # 抓取所有顯示的店家鏈接
     store_elements = get_store_elements()
@@ -119,19 +172,50 @@ try:
                 pyautogui.moveTo(x, y, duration=0.5)
 
                 # 在該位置滾動
-                for i in range(3):
+                for i in range(5):
                     pyautogui.scroll(-500)  # 向下滾動
+                    time.sleep(1)
             except NoSuchElementException:
                 print("未找到排序按钮")
 
-            # # 滾動評論頁面
-            # scrollable_div = driver.find_element(By.XPATH, 'div.e07Vkf.kA9KIf')
-            # # 滾動左側列表區域，向下滾動多次以加載更多店家
-            # for _ in range(5):  # 調整滾動次數
-            #     driver.execute_script("arguments[0].scrollTop += 1000;", scrollable_div)
-            #     time.sleep(0.5)  # 加入延遲以確保內容載入
+            # 套用在你的評論抓取部分
+            try:
+                # 點擊評論按鈕後，嘗試點擊展開全文的按鈕
+                click_expand_buttons()
 
-            # 在這裡您可以添加抓取評論的代碼
+                time.sleep(3)
+
+                reviews_with_ratings = []
+
+                # 抓取所有評論和評分元素
+                review_elements = driver.find_elements(By.XPATH, "//div[@class='MyEned']")
+                rating_elements = driver.find_elements(By.XPATH, "//span[@class='kvMYJc']")
+
+                # 確保評論和評分元素數量一致
+                if len(review_elements) != len(rating_elements):
+                    print("評論數量和評分數量不一致，無法正確配對")
+                    
+                # 遍歷每個評論元素
+                for review_element, rating_element in zip(review_elements, rating_elements):
+                    try:
+                        # 抓取評論文字
+                        review_text = review_element.find_element(By.XPATH, ".//span[@class='wiI7pd']").text
+
+                        # 抓取評分數字
+                        rating_text = rating_element.get_attribute("aria-label")
+                        rating = rating_text.split(" ")[0] if rating_text else "無評分"
+
+                        # 將評論和評分組合在一起
+                        reviews_with_ratings.append({"評論": review_text, "評分": rating})
+                    except Exception as e:
+                        print(f"抓取評論或評分失敗: {e}")
+
+                # 輸出評論和評分結果
+                for idx, item in enumerate(reviews_and_ratings, 1):
+                    print(f"評論 {idx}: {item['評論']} | 評分: {item['評分']}")
+
+            except Exception as e:
+                print(f"爬取評論過程中出現錯誤：{e}")
 
         except Exception as e:
             print(f"無法點擊評論按鈕：{e}")
@@ -149,9 +233,4 @@ finally:
     # 關閉瀏覽器
     driver.quit()
 
-    # 將資料轉換為 DataFrame
-    df = pd.DataFrame(data)
 
-    # 儲存為 CSV 檔案
-    df.to_csv('xinyi_bars.csv', index=False, encoding='utf-8-sig')
-    print("資料已成功儲存至 xinyi_bars.csv")

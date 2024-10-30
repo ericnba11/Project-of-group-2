@@ -42,35 +42,28 @@ def click_expand_buttons():
     except Exception as e:
         print(f"展開全文按鈕點擊失敗：{e}")
 
-# def scrape_reviews_with_ratings():
-#     """抓取每則評論的文字和評分"""
-#     reviews_with_ratings = []
-#
-#     # 抓取所有評論和評分元素
-#     review_elements = driver.find_elements(By.XPATH, "//div[@class='MyEned']")
-#     rating_elements = driver.find_elements(By.XPATH, "//span[@class='kvMYJc']")
-#
-#     # 確保評論和評分元素數量一致
-#     if len(review_elements) != len(rating_elements):
-#         print("評論數量和評分數量不一致，無法正確配對")
-#         return []
-#
-#     # 遍歷每個評論元素
-#     for review_element, rating_element in zip(review_elements, rating_elements):
-#         try:
-#             # 抓取評論文字
-#             review_text = review_element.find_element(By.XPATH, ".//span[@class='wiI7pd']").text
-#
-#             # 抓取評分數字
-#             rating_text = rating_element.get_attribute("aria-label")
-#             rating = rating_text.split(" ")[0] if rating_text else "無評分"
-#
-#             # 將評論和評分組合在一起
-#             reviews_with_ratings.append({"評論": review_text, "評分": rating})
-#         except Exception as e:
-#             print(f"抓取評論或評分失敗: {e}")
-#
-#     return reviews_with_ratings
+
+
+def scrape_reviews():
+    """抓取評論文字"""
+    reviews = []
+
+    # 等待評論加載完成
+    wait.until(EC.presence_of_all_elements_located((By.XPATH, "//div[@class='MyEned']")))
+
+    # 獲取所有評論元素
+    review_elements = driver.find_elements(By.XPATH, "//div[@class='MyEned']/span[@class='wiI7pd']")
+
+    for element in review_elements:
+        try:
+            # 抓取評論的文字內容
+            review_text = element.text
+            reviews.append(review_text)
+            time.sleep(1)
+        except Exception as e:
+            print(f"抓取評論失敗: {e}")
+
+    return reviews
 
 
 try:
@@ -178,44 +171,17 @@ try:
             except NoSuchElementException:
                 print("未找到排序按钮")
 
-            # 套用在你的評論抓取部分
-            try:
-                # 點擊評論按鈕後，嘗試點擊展開全文的按鈕
-                click_expand_buttons()
+            # 點擊評論按鈕後，嘗試點擊展開全文的按鈕
+            click_expand_buttons()
 
-                time.sleep(3)
+            time.sleep(3)
 
-                reviews_with_ratings = []
+            # 抓取評論
+            all_reviews = scrape_reviews()
 
-                # 抓取所有評論和評分元素
-                review_elements = driver.find_elements(By.XPATH, "//div[@class='MyEned']")
-                rating_elements = driver.find_elements(By.XPATH, "//span[@class='kvMYJc']")
-
-                # 確保評論和評分元素數量一致
-                if len(review_elements) != len(rating_elements):
-                    print("評論數量和評分數量不一致，無法正確配對")
-
-                # 遍歷每個評論元素
-                for review_element, rating_element in zip(review_elements, rating_elements):
-                    try:
-                        # 抓取評論文字
-                        review_text = review_element.find_element(By.XPATH, ".//span[@class='wiI7pd']").text
-
-                        # 抓取評分數字
-                        rating_text = rating_element.get_attribute("aria-label")
-                        rating = rating_text.split(" ")[0] if rating_text else "無評分"
-
-                        # 將評論和評分組合在一起
-                        reviews_with_ratings.append({"評論": review_text, "評分": rating})
-                    except Exception as e:
-                        print(f"抓取評論或評分失敗: {e}")
-
-                # 輸出評論和評分結果
-                for idx, item in enumerate(reviews_and_ratings, 1):
-                    print(f"評論 {idx}: {item['評論']} | 評分: {item['評分']}")
-
-            except Exception as e:
-                print(f"爬取評論過程中出現錯誤：{e}")
+            # 輸出評論結果
+            for idx, review in enumerate(all_reviews, 1):
+                print(f"評論 {idx}: {review}")
 
         except Exception as e:
             print(f"無法點擊評論按鈕：{e}")

@@ -11,7 +11,7 @@ import random
 from webdriver_manager.chrome import ChromeDriverManager
 
 # 設置 WebDriver，使用 webdriver-manager 自動管理 chromedriver
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome()
 
 # 儲存店家的資料
 data = []

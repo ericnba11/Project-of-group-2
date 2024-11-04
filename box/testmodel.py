@@ -8,14 +8,13 @@ import pyautogui
 import time
 import pandas as pd  # 用於處理 CSV
 import random
-from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 # 使用 webdriver-manager 自動安裝和管理 chromedriver
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
-# 儲存店家的資料
-data = []
+# 儲存所有店家的基本資訊
+all_stores = []
 # 儲存每家店的評論
 data_reviews = {}
 
@@ -93,6 +92,7 @@ def click_with_retry(element, retries=3):
             time.sleep(1)
     return False
 
+# 第一階段：抓取所有店家基本資訊
 try:
     # 打開 Google Maps
     driver.get("https://www.google.com/maps")
@@ -108,8 +108,8 @@ try:
     results_container = driver.find_element(By.XPATH, '//div[@role="feed"]')
 
     # 滾動左側列表區域，向下滾動多次以加載更多店家
-    for _ in range(100):  # 調整滾動次數
-        driver.execute_script("arguments[0].scrollTop += 500;", results_container)
+    for _ in range(10):  # 調整滾動次數
+        driver.execute_script("arguments[0].scrollTop += 2000;", results_container)
         time.sleep(3)  # 增加等待時間，確保內容完全載入
 
     # 抓取所有顯示的店家鏈接
@@ -117,74 +117,50 @@ try:
 
     # 初始化店家索引
     index = 1
-    while index <= len(store_elements):
-        store = store_elements[index - 1]  # 使用動態索引
-        time.sleep(20)  # 增加等待，避免觸發反爬機制
+    for store in store_elements:
         store_name = store.get_attribute("aria-label")  # 抓取店家名稱
         store_link = store.get_attribute("href")  # 抓取店家鏈接
         print(f"{index}. 正在處理店家: {store_name}")
 
-        # 點擊該店家的鏈接，進入詳細頁面
-        click_with_retry(store, retries=5)
+        # 將店家基本資訊儲存到清單
+        all_stores.append({
+            "店名": store_name,
+            "鏈接": store_link
+        })
+        index += 1
+
+    # 保存所有店家基本信息至 CSV
+    save_data_to_csv(all_stores, {})
+
+except Exception as e:
+    print("抓取店家基本資訊失敗:", e)
+
+finally:
+    driver.quit()
+
+# 第二階段：利用儲存的鏈接重新抓取評論
+# 重新啟動瀏覽器
+driver = webdriver.Chrome(ChromeDriverManager().install())
+
+try:
+    # 從 CSV 中讀取所有店家的基本信息
+    all_stores = pd.read_csv('all_stores.csv').to_dict('records')
+
+    # 迭代每家店的鏈接進行評論抓取
+    for index, store in enumerate(all_stores, start=1):
+        store_name = store["店名"]
+        store_link = store["鏈接"]
+        print(f"正在處理第 {index} 家店家: {store_name}")
+
+        # 使用鏈接導航到店家頁面
+        driver.get(store_link)
         time.sleep(5)  # 等待頁面加載
 
-        # 抓取店家詳細資訊
-        try:
-            # 使用 WebDriverWait 等待元素加載
-            try:
-                # 每次都重新抓取評分元素，確保獲取動態更新的評分
-                rating_element = WebDriverWait(driver, 10).until(
-                    EC.visibility_of_element_located(
-                        (By.XPATH, '//div[@role="main"]//span[contains(@aria-label, "顆星")]'))
-                )
-                rating = rating_element.get_attribute("aria-label")
-            except Exception:
-                rating = "評分未找到"
-
-            # 先檢查地址元素是否存在，使用 WebDriverWait 確保元素加載完成
-            try:
-                address = WebDriverWait(driver, 5).until(
-                    EC.visibility_of_element_located((By.XPATH, '//button[contains(@data-item-id, "address")]'))
-                ).text
-            except Exception:
-                address = "地址未找到"
-
-            # 先檢查電話元素是否存在，使用 WebDriverWait 確保元素加載完成
-            try:
-                phone = WebDriverWait(driver, 5).until(
-                    EC.visibility_of_element_located((By.XPATH, '//button[contains(@data-item-id, "phone")]'))
-                ).text
-            except Exception:
-                phone = "電話未找到"
-
-            # 將資料儲存到列表中
-            data.append({
-                "店名": store_name,
-                "評分": rating,
-                "地址": address,
-                "電話": phone,
-                "鏈接": store_link
-            })
-
-            # 打印出資料
-            print({
-                "店名": store_name,
-                "評分": rating,
-                "地址": address,
-                "電話": phone,
-                "鏈接": store_link
-            })
-
-        except Exception as e:
-            print("無法取得完整資料，可能是元素未找到。", e)
-
-        # 套用在這裡
         # 點擊評論按鈕
         try:
             wait = WebDriverWait(driver, 5)
             reviews_button = wait.until(EC.element_to_be_clickable(
-                (By.XPATH, '//button[@role="tab" and (contains(@aria-label, "評論") or contains(@aria-label, "Reviews"))]')
-            ))
+                (By.XPATH, '//button[@role="tab" and (contains(@aria-label, "評論") or contains(@aria-label, "Reviews"))]')))
             click_with_retry(reviews_button, retries=5)
             print("成功點擊評論按鈕")
             time.sleep(3)  # 等待評論頁面加載
@@ -194,7 +170,7 @@ try:
                 button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[.//span[text()='排序']]")))
                 click_with_retry(button, retries=5)
                 time.sleep(2)
-                
+
                 # 等待“最相關”按鈕可被點擊
                 most_relevant_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='fxNQSd' and @data-index='0']//div[text()='最相關']")))
                 driver.execute_script("arguments[0].click();", most_relevant_button)
@@ -213,7 +189,7 @@ try:
                 print("未找到排序按鈕")
 
             # 在該位置滾動
-            for i in range(150):
+            for i in range(20):
                 pyautogui.scroll(-3000)  # 向下滾動
                 time.sleep(3)
 
@@ -236,17 +212,13 @@ try:
 
         time.sleep(random.uniform(5, 10))  # 隨機等待5到10秒
 
-        # 返回上一頁
-        driver.back()
-        time.sleep(5)  # 等待頁面加載返回列表
+    # 保存所有店家的評論到個別 CSV 文件
+    save_data_to_csv(all_stores, data_reviews)
 
-        # 重新獲取店家元素列表以避免 StaleElementReferenceException
-        store_elements = get_store_elements()
-        index += 1
+except Exception as e:
+    print("抓取評論過程中發生錯誤：", e)
 
 finally:
     # 關閉瀏覽器
     driver.quit()
 
-    # 保存資料到 CSV
-    save_data_to_csv(data, data_reviews)

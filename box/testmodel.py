@@ -8,10 +8,11 @@ import pyautogui
 import time
 import pandas as pd  # 用於處理 CSV
 import random
+from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-# 設置 WebDriver，使用 webdriver-manager 自動管理 chromedriver
-driver = webdriver.Chrome()
+# 使用 webdriver-manager 自動安裝和管理 chromedriver
+driver = webdriver.Chrome(ChromeDriverManager().install())
 
 # 儲存店家的資料
 data = []
@@ -82,24 +83,34 @@ def save_data_to_csv(data, reviews_dict):
         reviews_df.to_csv(file_name, index=False, encoding='utf-8-sig')
         print(f"{store_name} 的評論已保存至 {file_name}")
 
+# 定義一個重試點擊的函數
+def click_with_retry(element, retries=3):
+    for _ in range(retries):
+        try:
+            element.click()
+            return True
+        except Exception:
+            time.sleep(1)
+    return False
+
 try:
     # 打開 Google Maps
     driver.get("https://www.google.com/maps")
-    time.sleep(2)  # 等待頁面加載
+    time.sleep(5)  # 等待頁面加載
 
     # 找到搜尋框並輸入「信義區 酒吧」
     search_box = driver.find_element(By.ID, "searchboxinput")
     search_box.send_keys("信義區 酒吧")
     search_box.send_keys(Keys.ENTER)
-    time.sleep(2)  # 等待結果加載
+    time.sleep(5)  # 等待結果加載
 
     # 找到左側結果列表的滾動區域
     results_container = driver.find_element(By.XPATH, '//div[@role="feed"]')
 
     # 滾動左側列表區域，向下滾動多次以加載更多店家
-    for _ in range(5):  # 調整滾動次數
+    for _ in range(100):  # 調整滾動次數
         driver.execute_script("arguments[0].scrollTop += 500;", results_container)
-    time.sleep(2)  # 加入延遲以確保內容載入
+        time.sleep(3)  # 增加等待時間，確保內容完全載入
 
     # 抓取所有顯示的店家鏈接
     store_elements = get_store_elements()
@@ -108,23 +119,25 @@ try:
     index = 1
     while index <= len(store_elements):
         store = store_elements[index - 1]  # 使用動態索引
-        time.sleep(20)
+        time.sleep(20)  # 增加等待，避免觸發反爬機制
         store_name = store.get_attribute("aria-label")  # 抓取店家名稱
         store_link = store.get_attribute("href")  # 抓取店家鏈接
         print(f"{index}. 正在處理店家: {store_name}")
 
         # 點擊該店家的鏈接，進入詳細頁面
-        driver.execute_script("arguments[0].click();", store)
-        time.sleep(2)  # 等待頁面加載
+        click_with_retry(store, retries=5)
+        time.sleep(5)  # 等待頁面加載
 
         # 抓取店家詳細資訊
         try:
             # 使用 WebDriverWait 等待元素加載
             try:
-                rating = WebDriverWait(driver, 10).until(
+                # 每次都重新抓取評分元素，確保獲取動態更新的評分
+                rating_element = WebDriverWait(driver, 10).until(
                     EC.visibility_of_element_located(
                         (By.XPATH, '//div[@role="main"]//span[contains(@aria-label, "顆星")]'))
-                ).text
+                )
+                rating = rating_element.get_attribute("aria-label")
             except Exception:
                 rating = "評分未找到"
 
@@ -168,23 +181,24 @@ try:
         # 套用在這裡
         # 點擊評論按鈕
         try:
-            wait = WebDriverWait(driver, 1)
+            wait = WebDriverWait(driver, 5)
             reviews_button = wait.until(EC.element_to_be_clickable(
                 (By.XPATH, '//button[@role="tab" and (contains(@aria-label, "評論") or contains(@aria-label, "Reviews"))]')
             ))
-            reviews_button.click()
+            click_with_retry(reviews_button, retries=5)
             print("成功點擊評論按鈕")
-            time.sleep(2)  # 等待評論頁面加載
+            time.sleep(3)  # 等待評論頁面加載
 
             # 點擊排序
             try:
                 button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[.//span[text()='排序']]")))
-                button.click()
-                time.sleep(1)
+                click_with_retry(button, retries=5)
+                time.sleep(2)
+                
                 # 等待“最相關”按鈕可被點擊
-                most_relevant_button = wait.until(EC.element_to_be_clickable( (By.XPATH, "//div[@class='fxNQSd' and @data-index='0']//div[text()='最相關']")))
+                most_relevant_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='fxNQSd' and @data-index='0']//div[text()='最相關']")))
                 driver.execute_script("arguments[0].click();", most_relevant_button)
-                time.sleep(1)
+                time.sleep(2)
 
                 # 找到按鈕的坐標位置
                 location = button.location
@@ -199,9 +213,9 @@ try:
                 print("未找到排序按鈕")
 
             # 在該位置滾動
-            for i in range(5):
-                pyautogui.scroll(-1000)  # 向下滾動
-                time.sleep(2)
+            for i in range(150):
+                pyautogui.scroll(-3000)  # 向下滾動
+                time.sleep(3)
 
             # 點擊評論按鈕後，嘗試點擊展開全文的按鈕
             click_expand_buttons()
@@ -220,7 +234,7 @@ try:
         except Exception as e:
             print(f"無法點擊評論按鈕：{e}")
 
-        time.sleep(random.uniform(3, 6))  # 隨機等待3到6秒
+        time.sleep(random.uniform(5, 10))  # 隨機等待5到10秒
 
         # 返回上一頁
         driver.back()

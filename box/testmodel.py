@@ -32,13 +32,11 @@ def click_expand_buttons():
             try:
                 # 使用 JavaScript 點擊展開全文按鈕
                 driver.execute_script("arguments[0].click();", button)
-                time.sleep(1)  # 等待展開後的內容加載
+                time.sleep(0.5)  # 減少等待時間
                 print(f"已成功點擊展開全文按鈕：第 {index} 個")
             except (ElementClickInterceptedException, StaleElementReferenceException, NoSuchElementException) as e:
                 print(f"無法點擊展開全文按鈕：{e}")
                 continue  # 若無法點擊，繼續點擊下一個按鈕
-            time.sleep(1)
-
     except Exception as e:
         print(f"展開全文按鈕點擊失敗：{e}")
 
@@ -57,7 +55,7 @@ def scrape_reviews():
             # 抓取評論的文字內容
             review_text = element.text
             reviews.append(review_text)
-            time.sleep(1)
+            time.sleep(0.5)  # 減少抓取評論時的等待時間
         except Exception as e:
             print(f"抓取評論失敗: {e}")
 
@@ -96,21 +94,21 @@ def click_with_retry(element, retries=3):
 try:
     # 打開 Google Maps
     driver.get("https://www.google.com/maps")
-    time.sleep(5)  # 等待頁面加載
+    time.sleep(3)  # 減少主頁加載的等待時間
 
     # 找到搜尋框並輸入「信義區 酒吧」
     search_box = driver.find_element(By.ID, "searchboxinput")
     search_box.send_keys("信義區 酒吧")
     search_box.send_keys(Keys.ENTER)
-    time.sleep(5)  # 等待結果加載
+    time.sleep(3)  # 減少結果加載的等待時間
 
     # 找到左側結果列表的滾動區域
     results_container = driver.find_element(By.XPATH, '//div[@role="feed"]')
 
     # 滾動左側列表區域，向下滾動多次以加載更多店家
-    for _ in range(10):  # 調整滾動次數
-        driver.execute_script("arguments[0].scrollTop += 2000;", results_container)
-        time.sleep(3)  # 增加等待時間，確保內容完全載入
+    for _ in range(50):  # 減少滾動次數
+        driver.execute_script("arguments[0].scrollTop += 3000;", results_container)
+        time.sleep(1)  # 減少滾動的等待時間
 
     # 抓取所有顯示的店家鏈接
     store_elements = get_store_elements()
@@ -154,7 +152,7 @@ try:
 
         # 使用鏈接導航到店家頁面
         driver.get(store_link)
-        time.sleep(5)  # 等待頁面加載
+        time.sleep(3)  # 減少頁面加載的等待時間
 
         # 點擊評論按鈕
         try:
@@ -163,18 +161,18 @@ try:
                 (By.XPATH, '//button[@role="tab" and (contains(@aria-label, "評論") or contains(@aria-label, "Reviews"))]')))
             click_with_retry(reviews_button, retries=5)
             print("成功點擊評論按鈕")
-            time.sleep(3)  # 等待評論頁面加載
+            time.sleep(2)  # 減少評論頁面加載的等待時間
 
             # 點擊排序
             try:
                 button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[.//span[text()='排序']]")))
                 click_with_retry(button, retries=5)
-                time.sleep(2)
+                time.sleep(1)
 
                 # 等待“最相關”按鈕可被點擊
                 most_relevant_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='fxNQSd' and @data-index='0']//div[text()='最相關']")))
                 driver.execute_script("arguments[0].click();", most_relevant_button)
-                time.sleep(2)
+                time.sleep(1)
 
                 # 找到按鈕的坐標位置
                 location = button.location
@@ -189,13 +187,12 @@ try:
                 print("未找到排序按鈕")
 
             # 在該位置滾動
-            for i in range(20):
-                pyautogui.scroll(-3000)  # 向下滾動
-                time.sleep(3)
+            for i in range(50):  # 減少滾動次數
+                pyautogui.scroll(-10000)  # 向下滾動
+                time.sleep(1.5)  # 減少滾動等待時間
 
             # 點擊評論按鈕後，嘗試點擊展開全文的按鈕
             click_expand_buttons()
-            time.sleep(5)
 
             # 抓取評論
             all_reviews = scrape_reviews()
@@ -205,12 +202,13 @@ try:
 
             # 輸出評論結果
             for idx, review in enumerate(all_reviews, 1):
-                print(f"評論 {idx}: {review}")
+                                print(f"評論 {idx}: {review}")
 
         except Exception as e:
             print(f"無法點擊評論按鈕：{e}")
 
-        time.sleep(random.uniform(5, 10))  # 隨機等待5到10秒
+        # 隨機等待，以避免被反爬蟲機制偵測
+        time.sleep(random.uniform(3, 6))  # 減少隨機等待時間
 
     # 保存所有店家的評論到個別 CSV 文件
     save_data_to_csv(all_stores, data_reviews)
@@ -221,4 +219,3 @@ except Exception as e:
 finally:
     # 關閉瀏覽器
     driver.quit()
-

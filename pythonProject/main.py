@@ -8,8 +8,9 @@ import pyautogui
 import time
 import pandas as pd  # 用於處理 CSV
 import random
+from webdriver_manager.chrome import ChromeDriverManager
 
-# 設置 WebDriver
+# 設置 WebDriver，使用 webdriver-manager 自動管理 chromedriver
 driver = webdriver.Chrome()
 
 # 儲存店家的資料
@@ -18,6 +19,7 @@ data = []
 data_reviews = {}
 
 def get_store_elements():
+    # 抓取店家列表中的店家鏈接元素
     return driver.find_elements(By.XPATH, '//a[@class="hfpxzc"]')
 
 # 點擊評論全文按鈕的函數
@@ -40,9 +42,8 @@ def click_expand_buttons():
     except Exception as e:
         print(f"展開全文按鈕點擊失敗：{e}")
 
-
+# 抓取評論文字的函數
 def scrape_reviews():
-    """抓取評論文字"""
     reviews = []
 
     # 等待評論加載完成
@@ -62,6 +63,7 @@ def scrape_reviews():
 
     return reviews
 
+# 保存資料到 CSV 文件的函數
 def save_data_to_csv(data, reviews_dict):
     """
     將店家資料和評論保存為 CSV 文件。
@@ -95,24 +97,21 @@ try:
     results_container = driver.find_element(By.XPATH, '//div[@role="feed"]')
 
     # 滾動左側列表區域，向下滾動多次以加載更多店家
-    for _ in range(10):  # 調整滾動次數
-        driver.execute_script("arguments[0].scrollTop += 1000;", results_container)
-    time.sleep(2)  # 加入延遲以確保內容載入
+    for _ in range(5):  # 調整滾動次數
+        driver.execute_script("arguments[0].scrollTop += 500;", results_container)
+        time.sleep(2)  # 加入延遲以確保內容載入
 
     # 抓取所有顯示的店家鏈接
     store_elements = get_store_elements()
 
-    for index, store in enumerate(store_elements, start=1):
-        store_name = store.get_attribute("aria-label")  # 抓取店家名稱
-        store_link = store.get_attribute("href")  # 抓取店家鏈接
-        print(f"{index}. 店名: {store_name}, 鏈接: {store_link}")
-
-    # 遍歷每個店家
-    for index, store in enumerate(store_elements, start=1):
+    # 初始化店家索引
+    index = 1
+    while index <= len(store_elements):
+        store = store_elements[index - 1]  # 使用動態索引
         time.sleep(20)
         store_name = store.get_attribute("aria-label")  # 抓取店家名稱
         store_link = store.get_attribute("href")  # 抓取店家鏈接
-        print(f"\n{index}. 正在處理店家: {store_name}")
+        print(f"{index}. 正在處理店家: {store_name}")
 
         # 點擊該店家的鏈接，進入詳細頁面
         driver.execute_script("arguments[0].click();", store)
@@ -197,16 +196,15 @@ try:
                 pyautogui.moveTo(x, y, duration=0.5)
 
             except NoSuchElementException:
-                print("未找到排序按钮")
+                print("未找到排序按鈕")
 
             # 在該位置滾動
-            for i in range(15):
-                pyautogui.scroll(-2000)  # 向下滾動
+            for i in range(5):
+                pyautogui.scroll(-1000)  # 向下滾動
                 time.sleep(2)
 
             # 點擊評論按鈕後，嘗試點擊展開全文的按鈕
             click_expand_buttons()
-
             time.sleep(5)
 
             # 抓取評論
@@ -229,7 +227,8 @@ try:
         time.sleep(5)  # 等待頁面加載返回列表
 
         # 重新獲取店家元素列表以避免 StaleElementReferenceException
-        # store_elements = get_store_elements()
+        store_elements = get_store_elements()
+        index += 1
 
 finally:
     # 關閉瀏覽器

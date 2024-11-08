@@ -99,7 +99,7 @@ try:
     # 滾動左側列表區域，向下滾動多次以加載更多店家
     for _ in range(5):  # 調整滾動次數
         driver.execute_script("arguments[0].scrollTop += 500;", results_container)
-    time.sleep(2)  # 加入延遲以確保內容載入
+        time.sleep(2)  # 加入延遲以確保內容載入
 
     # 抓取所有顯示的店家鏈接
     store_elements = get_store_elements()

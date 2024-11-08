@@ -106,8 +106,8 @@ try:
     results_container = driver.find_element(By.XPATH, '//div[@role="feed"]')
 
     # 滾動左側列表區域，向下滾動多次以加載更多店家
-    for _ in range(100):  # 減少滾動次數
-        driver.execute_script("arguments[0].scrollTop += 5000;", results_container)
+    for _ in range(50):  # 減少滾動次數
+        driver.execute_script("arguments[0].scrollTop += 3000;", results_container)
         time.sleep(1)  # 減少滾動的等待時間
 
     # 抓取所有顯示的店家鏈接

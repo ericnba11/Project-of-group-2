@@ -13,10 +13,13 @@ from webdriver_manager.chrome import ChromeDriverManager
 ################################
 #
 # 店家列表下滑次數
-scroll_times = 5
+scroll_times = 3
 #
 # 評論趨下滑次數
-scroll_times_review = 10
+scroll_times_review = 4
+#
+# 每抓 time_sleep 家店休息30秒
+time_sleep = 1
 #
 ################################
 
@@ -178,6 +181,7 @@ def extract_store_info(driver, link):
 
 def visit_links_and_extract_info(driver, links):
     data = []
+    ii = 0
     for link in links:
         try:
             driver.get(link)
@@ -207,6 +211,9 @@ def visit_links_and_extract_info(driver, links):
                         print(f"評論 {idx}: {review}")
                 except Exception as e:
                     print(f"無法抓取評論：{e}")
+                ii = ii + 1
+                if ii % time_sleep == 0:
+                    time.sleep(30)
         except Exception as e:
             print(f"訪問鏈接失敗: {link}, 原因: {e}")
             continue

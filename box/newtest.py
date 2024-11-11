@@ -16,10 +16,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 scroll_times = 35
 #
 # 評論區下滑次數
-scroll_times_review = 100
+scroll_times_review = 200
 #
 # 每抓取 time_sleep 家店後休息30秒
-time_sleep = 1
+time_sleep = 5
 #
 ################################
 

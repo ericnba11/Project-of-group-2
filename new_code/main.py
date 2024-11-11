@@ -1,4 +1,5 @@
 import pyautogui
+import re
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -13,10 +14,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 ################################
 #
 # 店家列表下滑次數
-scroll_times = 3
+scroll_times = 30
 #
 # 評論趨下滑次數
-scroll_times_review = 4
+scroll_times_review = 150
 #
 # 每抓 time_sleep 家店休息30秒
 time_sleep = 1
@@ -51,7 +52,7 @@ def scroll_reviews_section():
 
         # 在按鈕位置滾動
         for i in range(scroll_times_review):
-            pyautogui.scroll(-1000)  # 向下滾動
+            pyautogui.scroll(-3000)  # 向下滾動
             time.sleep(1)  # 等待評論載入
 
         print("完成評論區滾動")
@@ -87,15 +88,20 @@ def scrape_reviews():
             print(f"抓取評論失敗: {e}")
     return reviews
 
-# 保存資料到 CSV 文件的函數
+def sanitize_filename(filename):
+    # 使用正則表達式，移除所有不允許的字元
+    return re.sub(r'[<>:"/\\|?*]', '_', filename)
+
+# 修改保存資料到 CSV 文件的函數
 def save_data_to_csv(data, reviews_dict):
     df = pd.DataFrame(data)
     df.to_csv('all_stores.csv', index=False, encoding='utf-8-sig')
     print("店家基本信息已保存至 all_stores.csv")
 
     for store_name, reviews in reviews_dict.items():
+        sanitized_name = sanitize_filename(store_name)  # 清理店名
+        file_name = f"{sanitized_name}.csv"
         reviews_df = pd.DataFrame(reviews, columns=['評論'])
-        file_name = f"{store_name}.csv"
         reviews_df.to_csv(file_name, index=False, encoding='utf-8-sig')
         print(f"{store_name} 的評論已保存至 {file_name}")
 
@@ -105,7 +111,7 @@ time.sleep(2)
 
 # 搜索信義區的酒吧
 search_box = driver.find_element(By.ID, "searchboxinput")
-search_box.send_keys("信義區 酒吧")
+search_box.send_keys("大同區 酒吧")
 search_box.send_keys(Keys.ENTER)
 time.sleep(5)
 
@@ -115,7 +121,7 @@ results_container = wait.until(EC.presence_of_element_located((By.XPATH, '//div[
 def scrape_store_links(driver, results_container):
     links = []
     for _ in range(scroll_times):
-        driver.execute_script("arguments[0].scrollTop += 1000;", results_container)
+        driver.execute_script("arguments[0].scrollTop += 3000;", results_container)
         time.sleep(2)
 
     store_elements = driver.find_elements(By.XPATH, '//a[@class="hfpxzc"]')

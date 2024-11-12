@@ -19,7 +19,7 @@ scroll_times = 35
 scroll_times_review = 200
 #
 # 每抓取 time_sleep 家店後休息30秒
-time_sleep = 5
+time_sleep = 10
 #
 ################################
 
@@ -109,7 +109,7 @@ time.sleep(2)
 
 # 搜索______區的酒吧(可自行修改)
 search_box = driver.find_element(By.ID, "searchboxinput")
-search_box.send_keys("中正區 酒吧")
+search_box.send_keys("內湖區 酒吧")
 search_box.send_keys(Keys.ENTER)
 time.sleep(5)
 

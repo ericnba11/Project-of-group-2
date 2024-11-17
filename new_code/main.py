@@ -13,8 +13,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 ################################
 #
+# 設定搜索區域
+district = "板橋區 酒吧"
+#
 # 店家列表下滑次數
 scroll_times = 30
+
 #
 # 評論趨下滑次數
 scroll_times_review = 150
@@ -52,7 +56,7 @@ def scroll_reviews_section():
 
         # 在按鈕位置滾動
         for i in range(scroll_times_review):
-            pyautogui.scroll(-3000)  # 向下滾動
+            pyautogui.scroll(-5000)  # 向下滾動
             time.sleep(1)  # 等待評論載入
 
         print("完成評論區滾動")
@@ -111,7 +115,7 @@ time.sleep(2)
 
 # 搜索信義區的酒吧
 search_box = driver.find_element(By.ID, "searchboxinput")
-search_box.send_keys("大同區 酒吧")
+search_box.send_keys(district)
 search_box.send_keys(Keys.ENTER)
 time.sleep(5)
 
@@ -122,7 +126,7 @@ def scrape_store_links(driver, results_container):
     links = []
     for _ in range(scroll_times):
         driver.execute_script("arguments[0].scrollTop += 3000;", results_container)
-        time.sleep(2)
+        time.sleep(1.5)
 
     store_elements = driver.find_elements(By.XPATH, '//a[@class="hfpxzc"]')
     for store in store_elements:

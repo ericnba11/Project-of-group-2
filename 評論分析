@@ -47,3 +47,26 @@ df['Neutral'] = df['EN'].apply(lambda x: analyzer.polarity_scores(str(x))['neu']
 df['Compound'] = df['EN'].apply(lambda x: analyzer.polarity_scores(str(x))['compound'])
 # 将结果保存到新 CSV 文件
 df.to_csv('情绪分析结果.csv', index=False)
+
+
+###製作文字雲
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# 示例文本
+df = pd.read_csv("/content/Draft Land XinYi.csv")
+texts = df["評論"]
+# 合併評論
+all_comments = " ".join(df['評論'].astype(str))
+# 製作文字雲
+wordcloud = WordCloud(width=800, height=400, background_color='white',
+                      font_path='/content/SourceHanSansTC-ExtraLight.otf',  # 字體路徑
+                      max_words=100,
+                      contour_color='steelblue').generate(all_comments)
+
+# 顯示
+plt.figure(figsize=(10, 5))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis('off')
+plt.show()

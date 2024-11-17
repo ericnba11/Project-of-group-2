@@ -1,0 +1,49 @@
+###匯入檔案
+from google.colab import files
+uploaded = files.upload()  # 运行后会弹出选择文件的界面
+
+###翻譯評論
+!pip install googletrans==4.0.0-rc1
+
+import pandas as pd
+from googletrans import Translator
+
+translator = Translator()
+
+# 自动判断输入文件名
+input_file = "/content/Draft Land XinYi.csv"  
+output_file = os.path.splitext(input_file)[0] + "_translated.csv"  
+
+# 读取 CSV 文件
+df = pd.read_csv(input_file)
+
+texts = df["評論"]
+translations = []
+for text in texts:
+  translation = translator.translate(text, dest = 'en')
+  translations.append(translation.text)
+translation_df = pd.DataFrame(translations,columns=['EN'])
+translation_df.to_csv(output_file, index=False)
+
+df_new = pd.read_csv(output_file)
+display(df_new)
+
+#####VADER#####
+pip install vaderSentiment
+
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
+# 初始化 VADER 分析器
+analyzer = SentimentIntensityAnalyzer()
+
+# 读取 CSV 文件
+df = df_new
+
+# 假设评论在 '评论' 列中
+# 对每条评论计算情绪分数
+df['Positive'] = df['EN'].apply(lambda x: analyzer.polarity_scores(str(x))['pos'])
+df['Negative'] = df['EN'].apply(lambda x: analyzer.polarity_scores(str(x))['neg'])
+df['Neutral'] = df['EN'].apply(lambda x: analyzer.polarity_scores(str(x))['neu'])
+df['Compound'] = df['EN'].apply(lambda x: analyzer.polarity_scores(str(x))['compound'])
+# 将结果保存到新 CSV 文件
+df.to_csv('情绪分析结果.csv', index=False)

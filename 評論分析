@@ -1,12 +1,17 @@
 import pandas as pd
 from googletrans import Translator
 import os
+i = 0
 
 # 初始化翻译器
 translator = Translator()
 
 # 指定目标文件夹路径
-folder_path = "/content/drive/MyDrive/YUE lab data/信義區"
+folder_path = "/content/drive/MyDrive/YUE lab data/金山區 酒吧"
+output_folder_path = "/content/drive/MyDrive/YUE lab data/金山區 酒吧_translated"
+
+if not os.path.exists(output_folder_path):
+    os.makedirs(output_folder_path)
 
 # 遍历文件夹中的 CSV 文件
 for file_name in os.listdir(folder_path):
@@ -42,6 +47,8 @@ for file_name in os.listdir(folder_path):
         
         # 保存翻译结果为新文件
         output_file_name = os.path.splitext(file_name)[0] + "_translated.csv"
-        output_file_path = os.path.join(folder_path, output_file_name)
+        output_file_path = os.path.join(new_folder_path, output_file_name)
         new_df.to_csv(output_file_path, index=False)
         print(f"已保存翻译文件：{output_file_path}")
+        print("-"*10 + "已處理第" + str(i) + "間酒吧" + "-"*10)
+        i+1

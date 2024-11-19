@@ -10,8 +10,8 @@ t = 0  # 成功翻譯的評論數量
 translator = Translator()
 
 # 指定目标文件夹路径
-folder_path = "/Users/xieyuying/Downloads/金山區 酒吧"  # 修改為你的本地資料夾路徑
-output_folder_path = "/Users/xieyuying/Downloads/金山區 酒吧_translated"  # 輸出翻譯後文件的資料夾
+folder_path = r"C:\Users\USER\Desktop\study group 2_box\台北市\文山區 酒吧"  # 修改為你的本地資料夾路徑
+output_folder_path = r"C:\Users\USER\Desktop\study group 2_box\台北市\文山區 酒吧_translated"  # 輸出翻譯後文件的資料夾
 
 if not os.path.exists(output_folder_path):
     os.makedirs(output_folder_path)

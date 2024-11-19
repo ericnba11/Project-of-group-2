@@ -5,9 +5,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import StaleElementReferenceException, NoSuchElementException, ElementClickInterceptedException
+from selenium.webdriver.chrome.service import Service  # 新增：用於服務管理
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import pandas as pd
-from webdriver_manager.chrome import ChromeDriverManager
 
 
 ################################
@@ -24,9 +25,10 @@ time_sleep = 10
 ################################
 
 
-# 設置 WebDriver
-driver = webdriver.Chrome(ChromeDriverManager().install())
-wait = WebDriverWait(driver, 10)
+# 設置 WebDriver（使用新版 Selenium 初始化方式）
+service = Service(ChromeDriverManager().install())  # 自動下載並設置 ChromeDriver
+driver = webdriver.Chrome(service=service)  # 初始化 WebDriver
+wait = WebDriverWait(driver, 10)  # 設置顯式等待時間
 
 # 儲存店家基本資訊和評論
 data = []

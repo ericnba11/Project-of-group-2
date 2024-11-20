@@ -1,61 +1,98 @@
 import pandas as pd
 from googletrans import Translator
 import os
+import time
+import random
+import logging
+from requests.exceptions import RequestException
 
-i = 0  # 成功翻譯的文件數量
-f = 0  # 失敗的翻譯數量
-t = 0  # 成功翻譯的評論數量
+# 配置日誌記錄
+logging.basicConfig(
+    filename="translation.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    filemode="w"
+)
 
-# 初始化翻译器
+# 初始化翻譯器
 translator = Translator()
 
-# 指定目标文件夹路径
-folder_path = r"C:\Users\USER\Desktop\study group 2_box\台北市\文山區 酒吧"  # 修改為你的本地資料夾路徑
-output_folder_path = r"C:\Users\USER\Desktop\study group 2_box\台北市\文山區 酒吧_translated"  # 輸出翻譯後文件的資料夾
+# 指定目標文件夾路徑
+folder_path = r"C:/Users/USER/Desktop/study group 2_box/新北市/金山區 酒吧"
+output_folder_path = r"C:/Users/USER/Desktop/study group 2_box/新北市/金山區 酒吧_translated"
 
 if not os.path.exists(output_folder_path):
     os.makedirs(output_folder_path)
 
-# 遍历文件夹中的 CSV 文件
+# 翻譯函數：單條翻譯，包含檢查與重試機制
+def translate_comment(text):
+    """翻譯單條評論，包含重試機制和檢查"""
+    text = str(text) if text else ""
+    if text.strip():  # 保證非空評論被翻譯
+        attempts = 3  # 最多重試次數
+        for attempt in range(attempts):
+            try:
+                time.sleep(random.uniform(0.2, 0.5))  # 隨機延遲
+                translation = translator.translate(text, dest="en")
+                if translation.text.strip() == text.strip() and attempt < attempts - 1:
+                    # 如果翻譯結果與原文相同，嘗試重試
+                    continue
+                logging.info(f"翻譯成功：{text} -> {translation.text}")
+                return translation.text, False  # 翻譯成功，標記為不需要審核
+            except Exception as e:
+                logging.error(f"翻譯失敗（第 {attempt + 1} 次）：{text}，錯誤信息：{e}")
+                if attempt == attempts - 1:
+                    return text, True  # 最後一次嘗試失敗，保留原文並標記為需要審核
+    else:
+        logging.info(f"保留純空白評論：{text}")
+        return text, False  # 對於空白評論，不需要審核
+
+# 遍歷文件夾中的 CSV 文件
+i = 0  # 成功翻譯的文件數量
+f = 0  # 失敗的翻譯數量
+t = 0  # 成功翻譯的評論數量
+
 for file_name in os.listdir(folder_path):
-    if file_name.endswith(".csv"):  # 检查是否是 CSV 文件
-        file_path = os.path.join(folder_path, file_name)  # 获取完整路径
-        print(f"正在处理文件：{file_name}")
+    if file_name.endswith(".csv"):  # 檢查是否是 CSV 文件
+        file_path = os.path.join(folder_path, file_name)
+        print(f"正在處理文件：{file_name}")
 
-        # 读取 CSV 文件
-        df = pd.read_csv(file_path)
+        # 讀取 CSV 文件
+        df = pd.read_csv(file_path, encoding='utf-8')  # 確保編碼正確
 
-        # 检查是否存在 "評論" 列
+        # 檢查是否存在 "評論" 列
         if "評論" not in df.columns:
-            print(f"文件 {file_name} 中没有 '評論' 列，跳过。")
+            print(f"文件 {file_name} 中沒有 '評論' 列，跳過。")
+            logging.warning(f"文件 {file_name} 中沒有 '評論' 列，已跳過。")
             continue
 
-        # 翻译每条评论
+        # 翻譯每條評論
         translations = []
+        needs_review = []  # 標記是否需要審核
         for text in df["評論"]:
-            try:
-                # 翻译评论
-                translation = translator.translate(str(text), dest="en")
-                translations.append(translation.text)
-                t += 1
-            except Exception as e:
-                # 翻译失败，保留原文本
-                print(f"翻译失败：{text}，错误信息：{e}")
-                translations.append(text)
-                f += 1
+            translated_text, review_flag = translate_comment(text)
+            translations.append(translated_text)
+            needs_review.append(review_flag)
+            if not review_flag:
+                t += 1  # 成功翻譯的條數
+            else:
+                f += 1  # 需要審核的條數
 
-        # 创建新的 DataFrame
+        # 創建新的 DataFrame，添加 "Needs Review" 標記
         new_df = pd.DataFrame({
             "Original": df["評論"],
-            "EN": translations
+            "EN": translations,
+            "Needs Review": needs_review
         })
 
-        # 保存翻译结果为新文件
+        # 保存翻譯結果為新文件
         output_file_name = os.path.splitext(file_name)[0] + "_translated.csv"
         output_file_path = os.path.join(output_folder_path, output_file_name)
-        new_df.to_csv(output_file_path, index=False)
-        print(f"已保存翻译文件：{output_file_path}")
+        new_df.to_csv(output_file_path, index=False, encoding='utf-8-sig')  # 確保中文和英文正常保存
+        print(f"已保存翻譯文件：{output_file_path}")
+        logging.info(f"已保存翻譯文件：{output_file_path}")
 
         i += 1
-        print("-" * 10 + "已處理第" + str(i) + "間酒吧" + "-" * 10)
-        print("此間酒吧翻譯成功比率：" + str(t / (t + f) * 100) + "%")  # 修正了此處的計算
+        print("-" * 10 + f"已處理第 {i} 間酒吧" + "-" * 10)
+        print(f"此間酒吧翻譯成功比率：{t / (t + f) * 100:.2f}%")
+        logging.info(f"此間酒吧翻譯成功比率：{t / (t + f) * 100:.2f}%")

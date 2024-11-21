@@ -18,8 +18,8 @@ logging.basicConfig(
 translator = Translator()
 
 # 指定目標文件夾路徑
-folder_path = r"C:/Users/USER/Desktop/study group 2_box/新北市/金山區 酒吧"
-output_folder_path = r"C:/Users/USER/Desktop/study group 2_box/新北市/金山區 酒吧_translated"
+folder_path = r"C:/Users/USER/Desktop/study group 2_box/台北市/信義區 酒吧"
+output_folder_path = r"C:/Users/USER/Desktop/study group 2_box/台北市/信義區 酒吧_translated"
 
 if not os.path.exists(output_folder_path):
     os.makedirs(output_folder_path)
@@ -55,6 +55,16 @@ t = 0  # 成功翻譯的評論數量
 for file_name in os.listdir(folder_path):
     if file_name.endswith(".csv"):  # 檢查是否是 CSV 文件
         file_path = os.path.join(folder_path, file_name)
+
+        # 檢查是否已經存在翻譯後的文件
+        output_file_name = os.path.splitext(file_name)[0] + "_translated.csv"
+        output_file_path = os.path.join(output_folder_path, output_file_name)
+
+        if os.path.exists(output_file_path):
+            print(f"檔案 {output_file_name} 已存在，跳過處理。")
+            logging.info(f"檔案 {output_file_name} 已存在，跳過處理。")
+            continue  # 跳過該檔案
+
         print(f"正在處理文件：{file_name}")
 
         # 讀取 CSV 文件
@@ -86,8 +96,6 @@ for file_name in os.listdir(folder_path):
         })
 
         # 保存翻譯結果為新文件
-        output_file_name = os.path.splitext(file_name)[0] + "_translated.csv"
-        output_file_path = os.path.join(output_folder_path, output_file_name)
         new_df.to_csv(output_file_path, index=False, encoding='utf-8-sig')  # 確保中文和英文正常保存
         print(f"已保存翻譯文件：{output_file_path}")
         logging.info(f"已保存翻譯文件：{output_file_path}")

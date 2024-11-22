@@ -14,7 +14,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 ################################
 #
 # 設定搜索區域
-district = "板橋區 酒吧"
+district = "三峽區 酒吧"
 #
 # 店家列表下滑次數
 scroll_times = 30
@@ -231,6 +231,7 @@ def visit_links_and_extract_info(driver, links):
 
 # 抓取所有店家連結
 store_links = scrape_store_links(driver, results_container)
+
 
 # 訪問每個連結並抓取基本資訊及評論
 store_data = visit_links_and_extract_info(driver, store_links)

@@ -4,6 +4,7 @@ import os
 import time
 import random
 import logging
+import chardet
 from requests.exceptions import RequestException
 
 # 配置日誌記錄
@@ -18,17 +19,24 @@ logging.basicConfig(
 translator = Translator()
 
 # 指定目標文件夾路徑
-folder_path = r"C:/Users/USER/Desktop/study group 2_box/台北市/大同區 酒吧"
-output_folder_path = r"C:/Users/USER/Desktop/study group 2_box/台北市/大同區 酒吧_translated"
+folder_path = r"C:/Users/USER/Desktop/study group 2_box/台北市/文山區 酒吧"
+output_folder_path = r"C:/Users/USER/Desktop/study group 2_box/台北市/文山區 酒吧_translated"
 
 if not os.path.exists(output_folder_path):
     os.makedirs(output_folder_path)
 
-# 翻譯函數：單條翻譯，包含檢查與重試機制
+# 自動檢測文件編碼
+def detect_encoding(file_path):
+    """檢測文件編碼"""
+    with open(file_path, 'rb') as f:
+        result = chardet.detect(f.read())
+        return result['encoding']
+
+# 翻譯函數
 def translate_comment(text):
     """翻譯單條評論，包含重試機制和檢查"""
     text = str(text) if text else ""
-    if text.strip():  # 保證非空評論被翻譯
+    if text.strip():
         attempts = 3  # 最多重試次數
         for attempt in range(attempts):
             try:
@@ -67,8 +75,15 @@ for file_name in os.listdir(folder_path):
 
         print(f"正在處理文件：{file_name}")
 
-        # 讀取 CSV 文件
-        df = pd.read_csv(file_path, encoding='utf-8')  # 確保編碼正確
+        # 檢測文件編碼
+        try:
+            encoding = detect_encoding(file_path)
+            print(f"檔案 {file_name} 使用編碼：{encoding}")
+            df = pd.read_csv(file_path, encoding=encoding)
+        except Exception as e:
+            print(f"無法讀取文件 {file_name}，錯誤信息：{e}")
+            logging.error(f"無法讀取文件 {file_name}，錯誤信息：{e}")
+            continue
 
         # 檢查是否存在 "評論" 列
         if "評論" not in df.columns:
@@ -76,27 +91,26 @@ for file_name in os.listdir(folder_path):
             logging.warning(f"文件 {file_name} 中沒有 '評論' 列，已跳過。")
             continue
 
-        # 翻譯每條評論
+        # 翻譯評論
         translations = []
-        needs_review = []  # 標記是否需要審核
+        needs_review = []
         for text in df["評論"]:
             translated_text, review_flag = translate_comment(text)
             translations.append(translated_text)
             needs_review.append(review_flag)
             if not review_flag:
-                t += 1  # 成功翻譯的條數
+                t += 1
             else:
-                f += 1  # 需要審核的條數
+                f += 1
 
-        # 創建新的 DataFrame，添加 "Needs Review" 標記
+        # 保存翻譯結果
         new_df = pd.DataFrame({
             "Original": df["評論"],
             "EN": translations,
             "Needs Review": needs_review
         })
 
-        # 保存翻譯結果為新文件
-        new_df.to_csv(output_file_path, index=False, encoding='utf-8-sig')  # 確保中文和英文正常保存
+        new_df.to_csv(output_file_path, index=False, encoding='utf-8-sig')
         print(f"已保存翻譯文件：{output_file_path}")
         logging.info(f"已保存翻譯文件：{output_file_path}")
 

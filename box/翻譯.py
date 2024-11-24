@@ -19,8 +19,8 @@ logging.basicConfig(
 translator = Translator()
 
 # 指定目標文件夾路徑
-folder_path = r"C:/Users/USER/Desktop/study group 2_box/台北市/士林區 酒吧"
-output_folder_path = r"C:/Users/USER/Desktop/study group 2_box/台北市/士林區 酒吧_translated"
+folder_path = r"C:/Users/USER/Desktop/study group 2_box/台北市/大安區 酒吧"
+output_folder_path = r"C:/Users/USER/Desktop/study group 2_box/台北市/大安區 酒吧_translated"
 
 if not os.path.exists(output_folder_path):
     os.makedirs(output_folder_path)

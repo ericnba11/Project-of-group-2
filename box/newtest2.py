@@ -111,7 +111,7 @@ time.sleep(2)
 
 # 搜索______區的酒吧(可自行修改)
 search_box = driver.find_element(By.ID, "searchboxinput")
-search_box.send_keys("石碇區 酒吧")
+search_box.send_keys("樹林區 酒吧")
 search_box.send_keys(Keys.ENTER)
 time.sleep(5)
 

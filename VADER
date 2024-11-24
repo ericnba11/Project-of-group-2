@@ -1,0 +1,38 @@
+pip install vaderSentiment
+import os
+import pandas as pd
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
+# 初始化 VADER 分析器
+analyzer = SentimentIntensityAnalyzer()
+
+# 文件夹路径 - 请将其替换为你要处理的文件夹路径
+folder_path = '/content/drive/MyDrive/YUE lab data/new data/北投區 酒吧_translated'
+final_folder_path = "/content/drive/MyDrive/YUE lab data/new data/北投區 酒吧_final"  # 輸出翻譯後文件的資料夾
+
+if not os.path.exists(final_folder_path):
+    os.makedirs(final_folder_path)
+
+
+# 遍历文件夹中的所有 CSV 文件
+for filename in os.listdir(folder_path):
+    if filename.endswith('_translated.csv'):
+        file_path = os.path.join(folder_path, filename)
+        
+        # 读取 CSV 文件
+        df = pd.read_csv(file_path)
+
+        # 假设评论在 'EN' 列中，计算情绪分数
+        df['Positive'] = df['EN'].apply(lambda x: analyzer.polarity_scores(str(x))['pos'])
+        df['Negative'] = df['EN'].apply(lambda x: analyzer.polarity_scores(str(x))['neg'])
+        df['Neutral'] = df['EN'].apply(lambda x: analyzer.polarity_scores(str(x))['neu'])
+        df['Compound'] = df['EN'].apply(lambda x: analyzer.polarity_scores(str(x))['compound'])
+
+        # 保存结果到新 CSV 文件，替换文件名中的 'translated' 为 'final'
+        new_filename = filename.replace('translated', 'final')
+        new_file_path = os.path.join(final_folder_path, new_filename)
+        df.to_csv(new_file_path, index=False)
+
+        print(f"已处理文件：{filename} 并保存到：{new_filename}")
+
+print("所有文件已处理完毕！")

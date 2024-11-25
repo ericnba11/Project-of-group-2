@@ -1,77 +1,1372 @@
-2024-11-25 09:21:40,545 - INFO - 檔案 2020 cocktail&drinks_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,546 - INFO - 檔案 89 Loop Sports Bar_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,546 - INFO - 檔案 AL CICCHETTO HUASHAN BISTRO義麵坊華山小酒吧(餐酒館｜義大利麵｜調酒｜生啤酒｜葡萄酒)_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,567 - WARNING - 文件 all_stores.csv 中沒有 '評論' 列，已跳過。
-2024-11-25 09:21:40,567 - INFO - 檔案 Another Brick_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,567 - INFO - 檔案 ASA_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,568 - INFO - 檔案 Azeroth Bar_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,568 - INFO - 檔案 B Line by A Train_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,568 - INFO - 檔案 BAR FEST_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,568 - INFO - 檔案 Bar M_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,568 - INFO - 檔案 Bar THY 桃花源_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,569 - INFO - 檔案 Bertha Irish Bar _ 公館酒吧 愛爾蘭 BAR 啤酒 調酒推薦 人氣酒吧推薦_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,569 - INFO - 檔案 Bouti Bar Taipei - 璞邸旅店1F _北車精釀_瓶裝啤酒_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,569 - INFO - 檔案 BUDA 好運豬酒吧Taproom & Wine_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,569 - INFO - 檔案 Buono 享味生活 (台電大樓 師大 葡萄酒 精釀啤酒 自然葡萄酒 )_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,569 - INFO - 檔案 Hello Taipei Sport Space_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,569 - INFO - 檔案 HI NE NI_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,569 - INFO - 檔案 HIPP 喜寶棧 - 咖啡酒館 & 貓旅館 每天營業 月底店休11月25_26日 CAFE BAR & CAT HOTEL_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,570 - INFO - 檔案 Incoming bar_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,570 - INFO - 檔案 Jolly 手工釀啤 酒泰食餐廳-衡陽店_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,570 - INFO - 檔案 JupJup 精釀生啤餐酒館_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,570 - INFO - 檔案 Learn Bar 學吧精釀_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,570 - INFO - 檔案 LOCA Coffee&Wine_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,570 - INFO - 檔案 Miss Strega Cafe & Bar 義大利女巫咖啡酒吧_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,570 - INFO - 檔案 Mixtio 秘地｜咖啡.排餐.啤酒.餐酒館.商務.辦公｜不限時插座.包廂.76人場地租借.中正區美食_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,571 - INFO - 檔案 NAKA Taipei_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,571 - INFO - 檔案 No.82 Drawing room(82號客廳）_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,571 - INFO - 檔案 Power Beef 日式烤牛肉飯小酒館_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,571 - INFO - 檔案 Prozac Balcony 百憂解陽台_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,571 - INFO - 檔案 R8 Metro Bar - R8捷運輕食吧_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,571 - INFO - 檔案 RainbowGym 彩虹健身房 公館健身房 健身酒吧_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,572 - INFO - 檔案 Revolver_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,572 - INFO - 檔案 SipSip Bar & Restaurant_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,572 - INFO - 檔案 Staff Only Club_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,572 - INFO - 檔案 SUNMAI BAR 中正 R8_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,572 - INFO - 檔案 Taipei Alcohol Exchange Kaffe 台北酒精交易所_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,573 - INFO - 檔案 The Misanthrope Society 厭世會社｜Cafe Bistro Bookstore_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,573 - INFO - 檔案 The Primrose(Bar春花)_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,573 - INFO - 檔案 The Shrine_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,573 - INFO - 檔案 Whisky Salon (台灣第一家Japanese Whisky Bar)_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,573 - INFO - 檔案 WHOOSAH._translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,573 - INFO - 檔案 Wink1號店_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,573 - INFO - 檔案 メロメロ MeloMelo Cafe&bar_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,574 - INFO - 檔案 三重奏比特司 Trio bitters_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,574 - INFO - 檔案 二丁目 - Taipei_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,574 - INFO - 檔案 作 SAKU by necoichi_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,574 - INFO - 檔案 公館45 Old Bar Coffee_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,574 - INFO - 檔案 劑院 Dose cuisine & malt_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,574 - INFO - 檔案 北風北_古亭酒吧_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,574 - INFO - 檔案 台北喜來登大飯店 - 大廳酒吧 The Lounge_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,575 - INFO - 檔案 喜咧_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,575 - INFO - 檔案 土貓商號 Turkish Kedi_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,575 - INFO - 檔案 小公館咖啡 精釀啤酒_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,575 - INFO - 檔案 小地方seams_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,575 - INFO - 檔案 小屋shisha_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,576 - INFO - 檔案 怪咖屋THE WACKO HOUSE Brunch & Bar_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,576 - INFO - 檔案 拉圖爾精釀柴燒餐廳 La Tour Craft Beer & Wood Grill_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,576 - INFO - 檔案 渣男Taiwan Bistro古亭四渣_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,576 - INFO - 檔案 澗面小酒館 Bar & Bistro_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,576 - INFO - 檔案 無意義_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,576 - INFO - 檔案 燕子愛紅酒Yan's Wine_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,577 - INFO - 檔案 窖父 Hide Out_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,577 - INFO - 檔案 純愛小吃部_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,577 - INFO - 檔案 維都餐酒館｜啤酒｜調酒｜生啤塔（公館店）_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,577 - INFO - 檔案 老同安小酒館_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,577 - INFO - 檔案 老屁股_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,577 - INFO - 檔案 艾萃咖啡 VR BAR_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,577 - INFO - 檔案 草頭西_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,578 - INFO - 檔案 華山町餐酒館_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,578 - INFO - 檔案 西門暖閣餐酒館／waroom Restaurant Bar_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,578 - INFO - 檔案 言文字 Emoji Cafe & Bar｜數位工作者聚落 The Digital Tribe_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,578 - INFO - 檔案 酒販角落_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,578 - INFO - 檔案 金色三麥_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,578 - INFO - 檔案 錢記披薩 cash's bar & pizza_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,578 - INFO - 檔案 防空洞 bomb shelter 華山店_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,579 - INFO - 檔案 離騷 Bar & Bistro_translated.csv 已存在，跳過處理。
-2024-11-25 09:21:40,579 - INFO - 檔案 黑帽爵士咖啡酒吧 BlackHatJazz cafe & Bar 西區推薦｜西區餐酒｜西區酒吧｜西區餐廳｜約會｜聚餐｜包場_translated.csv 已存在，跳過處理。
+2024-11-25 09:23:38,496 - INFO - 翻譯成功：偶然發現的花博園區酒吧，原本是要去另一間Triangle，但踏入之後發現這邊別有洞天，一群酒吧餐酒館，室內戶外都有，各異其趣。
+
+外籍人士超多，各色人種，白人黑人南亞人穆斯林，應有盡有。
+
+我們去的是 23 Music Room , 這邊很文青 , so hippie or hipster \U0001f335\U0001f44d\U0001f335\U0001f44d
+現場有DJ放歌，客人都很愉快，跳舞聽歌或聊天。
+
+三個年輕店員：Caleb 美國德州小帥哥、Winnie 外文系學生、小雲美人兒，超客氣超友善。自製精釀生啤酒也超新鮮。大家好愉快。這邊實在是好地方，好chill, 好有出國的感覺\U0001f335\U0001f335
+
+我大推呀！\u263a\ufe0f\u263a\ufe0f\U0001f308\U0001f308
+
+#twentythreemusicroom #花博園區 #中山足球場 #23musicroom #craftbeer #rainbow #lgbt #lgbtfriendly #hipster #文青 #letsmakeanighttoremember -> The bars of the Huabo Park that were discovered by accident were originally going to another Triangle, but after entering, I found that there are other caves, a group of bar restaurants, and outdoor outdoor in the room.
+
+There are many foreigners, all kinds of people, white and black South Asian Muslims, everything is available.
+
+We are going to 23 Music Room, here are very young, so hippie or hipster \U0001f335\U0001f44d\U0001f335\U0001f44d
+There were DJs on the scene, and the guests were very happy, dancing and listening to songs or chatting.
+
+Three young clerks: Caleb, Texas, a handsome guy in Texas, Winnie Foreign Language Students, Xiaoyun Beauty, super friendly and friendly.Homemade crafts raw beer is also super fresh.Hello everyone.This is really a good place, good chill, so I feel like going abroad
+
+I push it!\u263a\ufe0f\U0001f308\U0001f308\ufe0f\u263a
+
+#Twentythreemusicroom # # #23musicroom #Craftbeer #rainbow #LGBT #LGBTFRIENDL #HIPSTER #LETSMAKEANIGHTTOREMEMBER
+2024-11-25 09:23:39,247 - INFO - 翻譯成功：外國旅客非常多，氣氛熱鬧，喜歡精釀啤酒可以去！ -> There are a lot of foreign travelers, and the atmosphere is lively. You can go!
+2024-11-25 09:23:40,678 - INFO - 翻譯成功：週年派對時去跳舞掉了一顆戒指，留了電話給仙女店員，結果真的找回來了\U0001f97a難以答謝這件最讚的店，我愛你們！ -> During the anniversary party, I danced a ring and left a phone call to the fairy clerk. As a result, I really found it. It is difficult to thank this most well -known shop. I love you!
+2024-11-25 09:23:42,233 - INFO - 翻譯成功：Debby很親切
+整個店的氛圍感超舒適
+當天居然還有動漫音樂趴！
+下次一定會再來~ -> Debby is very kind
+The atmosphere of the entire store is super comfortable
+There was an anime music party that day!
+I will come again next time ~
+2024-11-25 09:23:43,665 - INFO - 翻譯成功：店員十分健談，感覺得出來對於台灣精釀啤酒文化十分有想法的一間店，酒類口味很多，也不吝嗇讓人試喝看看，最後再選擇自己喜歡的味道，音樂風格也很不錯。 -> The clerk is very talkative and feels that it is a shop that is very thoughtful for Taiwan's craft beer culture. There are many wine tastes, and you do n’t hesitate to try to drink. Finally, you choose your favorite taste. The music style is also very good.
+2024-11-25 09:23:45,444 - INFO - 翻譯成功：店里感覺很輕鬆，店經理很活躍，讓人感覺很舒適，不會有很商業的酒吧感覺，像是在走朋友的店一樣，跟每個客人都能輕鬆舒適的聊天。
+店里都是他們自家酒廠的精釀，口味上很平易近人。
+也有提供調酒跟紅白酒，開放空間很大，是值得放入口袋名單的一間。 -> The store feels very easy. The store manager is very active and makes people feel very comfortable. There will not be a very commercial bar feeling. Like a friend's shop, you can chat easily and comfortably with every guest.
+The shops are all of their own wineries, and their tastes are very approachable.
+There are also bartending and red and white wine. There is a lot of open space, which is worth putting on the pocket list.
+2024-11-25 09:23:46,465 - INFO - 翻譯成功：半開放的空間很加分，這間店不會有密閉空間的不適感。音樂聲音大小剛好，不會讓人耳朵不舒服。人開始多後店員會主動調低冷氣，整體環境維持得相當不錯\U0001f44d … -> The semi -open space is very bonus, and this store will not have a sense of discomfort.The sound of the music sound is just right, and it will not make people feel uncomfortable.After more people start, the shop staff will take the initiative to lower the air -conditioning, and the overall environment is maintained very well ...
+2024-11-25 09:23:47,319 - INFO - 翻譯成功：氣氛很棒 音樂好聽
+Happy hours啤酒特價真的很划算
+在點酒之前 店員姊姊很親切地讓我們試喝 挑選順口的精釀啤酒
+還會再來\U0001f49b … -> The atmosphere is great music nice
+Happy Hours Beer Specials is really cost -effective
+Before ordering wine, the clerk and sister asked us to try to choose a smooth craft beer
+Will come again ...
+2024-11-25 09:23:48,322 - INFO - 翻譯成功：很推薦在這裡和朋友喝酒暢談哦！
+Happy hour時段的酒價格也很超值～
+服務人員也超Nice\U0001f60a\U0001f60a
+整個氣氛輕鬆歡樂，很推薦～ … -> I am very recommended to talk to friends here!
+The price of wine in Happy Hour is also very good ~
+The service staff is also super nice 超
+The whole atmosphere is relaxed and happy, very recommended ~ ...
+2024-11-25 09:23:49,311 - INFO - 翻譯成功：二訪，喜歡音樂，酒種滿多，空間舒適，HappyHour滿超值，Pizza尚可。 -> Second visit, like music, full of wine, comfortable space, happyhour full value, Pizza is still acceptable.
+2024-11-25 09:23:50,843 - INFO - 翻譯成功：Happy Hour 啤酒只要150
+店內音樂也很讚，店長人很好聊～ -> Happy Hour Beer only costs 150
+The music in the store is also very good, the store manager is very good to talk ~
+2024-11-25 09:23:51,562 - INFO - 翻譯成功：每週都會換啤酒 店員很親切 有時候會有表演 座位區偏少 外面有吸煙區 花博裡外也都有廁所 很方便 -> The beer shop staff is very kind every week. Sometimes, there are fewer performance seats. There are toilets and toilets.
+2024-11-25 09:23:52,558 - INFO - 翻譯成功：每個月 第一個禮拜天 下午3點到6點 有阿根廷探戈舞會 -> On the first week of every month, there will be Argentina Tango Dance Club from 3 pm to 6 pm
+2024-11-25 09:23:53,610 - INFO - 翻譯成功：3/23
+致：11:00-12:00的DJ，希望可以放鐵 -> 3/23
+To: 11: 00-12: 00 DJ, I hope to put iron
+2024-11-25 09:23:54,982 - INFO - 翻譯成功：2020新年快樂！今天1/1有營業喔~讚 -> Happy New Year 2020!There is business today 1/1 ~ Like
+2024-11-25 09:23:56,008 - INFO - 翻譯成功：原來花博晚上有這麼一個Bar
+有音樂有跳舞有點High
+蠻多外國人的
+啤酒.調酒種類都蠻多的 -> It turns out that Huabo has such a bar at night
+There are music and dancing, a bit high
+There are many foreigners
+Beer. There are quite a lot of bartending types
+2024-11-25 09:23:57,446 - INFO - 翻譯成功：每週更換的特色啤酒\U0001f37bFunny , 現場音樂太小 聲，冷氣不夠強 -> The special beer \U0001f37bfunny is replaced every week, the live music is too low, and the air -conditioning is not strong enough
+2024-11-25 09:23:58,958 - INFO - 翻譯成功：音樂越來越大聲 直接把客人清場 寫了music結果搞得比夜店還大聲 喝酒會喝到頭在痛 -> The music became more and more loud and directly wrote the results of the guest clearance. The result of Music was more painful than drinking loudly than the nightclub.
+2024-11-25 09:24:00,710 - INFO - 翻譯成功：美女調酒師～可愛又好聊天 -> Beauty bartender ~ cute and good chat
+2024-11-25 09:24:03,107 - INFO - 翻譯成功：愛店之一。
+最實在真誠的小酒吧。
+物美價廉，氣氛音樂店員都超讚。 -> One of the love shops.
+The most sincere bar.
+Masterpieces are cheap, and the atmosphere music clerk is superb.
+2024-11-25 09:24:04,265 - INFO - 翻譯成功：酒類很多種 -> There are many kinds of wine
+2024-11-25 09:24:05,735 - INFO - 翻譯成功：老闆人很好~~很推的酒吧 而且happy hour很多酒類只要100 -> The boss is very good ~~ The bar that is very pushed and the HAPPY HOUR many wines only need 100 alcoholics
+2024-11-25 09:24:07,145 - INFO - 翻譯成功：喜歡店內輕鬆的感覺 -> Like the relaxed feeling in the store
+2024-11-25 09:24:08,569 - INFO - 翻譯成功：啤酒不錯，音樂跟氣氛也很好 -> Beer is good, music and atmosphere are also very good
+2024-11-25 09:24:09,420 - INFO - 翻譯成功：態度差 酒難喝 對表演者不尊重 -> Poor attitude is hard to drink, not respect for performers
+2024-11-25 09:24:10,568 - INFO - 翻譯成功：音樂很棒，但不適合聊天 -> The music is great, but it is not suitable for chat
+2024-11-25 09:24:11,715 - INFO - 翻譯成功：覺得是基本酒款 酒保很正 -> I think the basic wine is very positive
+2024-11-25 09:24:12,760 - INFO - 翻譯成功：愛這個地方、愛techno
+愛這邊的bartender、愛這邊的pizza -> Love this place, love Techno
+Love here, Bartender, Pizza on Love here
+2024-11-25 09:24:14,373 - INFO - 翻譯成功：\U0001f62d\U0001f44d最愛ㄉ地方、、、 … -> 、 Favorite ㄉ ㄉ ㄉ ㄉ ㄉ ...
+2024-11-25 09:24:16,223 - INFO - 翻譯成功：23精釀啤酒\U0001f4af+經理特調\U0001f4af+經理本人\U0001f4af … -> 23 Cast beer \u7ecf+manager special \U0001f4af+manager himself \U0001f4af ...
+2024-11-25 09:24:17,405 - INFO - 翻譯成功：一直來一直爽 -> I've been here
+2024-11-25 09:24:18,422 - INFO - 翻譯成功：酸啤超讚 -> Beer
+2024-11-25 09:24:19,469 - INFO - 翻譯成功：蠻放鬆的一家店 -> A shop that is quite relaxed
+2024-11-25 09:24:20,569 - INFO - 翻譯成功：精釀啤酒好喝！ -> Cast beer is delicious!
+2024-11-25 09:24:21,140 - INFO - 翻譯成功：喝精釀的好地方 -> Good place to drink craftsmanship
+2024-11-25 09:24:22,486 - INFO - 翻譯成功：他們自己釀啤酒！讓我告訴你，淡色艾爾啤酒非常棒！
+
+我問調酒師「有台灣當地的精釀啤酒嗎」。她說「是的，我們的啤酒」。我說「哪個啤酒廠」？她說“我們的啤酒廠，我們自己釀造啤酒，今年是我們成立10週年”
+
+友善熱情的調酒師，營造出輕鬆的搖滾氛圍。我感覺就像在家一樣。我喜歡這個地方！ ！ （不要讓我的塑膠杯阻止你，我要了一個塑膠杯，因為我想把最後一杯啤酒帶走 - 是的，他們讓你這樣做） -> They brew beer by themselves!Let me tell you, light -colored El Beer is great!
+
+I asked the winemaker, "Is there a local craft beer in Taiwan?"She said, "Yes, our beer."I say "Which beer"?She said, "Our beer plant, we brew beer by ourselves, this year is the 10th anniversary of our establishment"
+
+The friendly and enthusiastic bartender creates a relaxed rock atmosphere.I feel like at home.I like this place!Intersection(Don't let my plastic cup stop you, I want a plastic cup, because I want to take the last cup of beer away -yes, they let you do this)
+2024-11-25 09:24:23,600 - INFO - 翻譯成功：我在馬吉廣場時最常去的地方是 23。
+
+台北有兩家分店，一間在圓山，另一間在科技大廈附近。這兩個地方都提供高品質的台灣精釀啤酒。
+
+不過，圓山的23音樂室對我來說更有趣，因為他們經常有DJ，根據夜晚和活動播放不同類型的音樂。因此，如果您想享受樂趣或隨著音樂移動身體。就是這個地方！
+
+那裡的工作人員也很友好，英語說得很好，可以推薦各種啤酒。
+
+他們沒有太多食物，只有披薩和薯條。所以，如果你餓了，最好先去外面吃，但他們的披薩很便宜而且還不錯。
+
+我喜歡這個地方！ \U0001f37b -> The most common place I went to Maggie Square was 23.
+
+There are two branches in Taipei, one is in Yuanshan and the other is near the Science and Technology Building.Both places provide high -quality Taiwanese craft beer.
+
+However, the 23 -music room of Yuanshan is more interesting to me because they often have DJs and play different types of music according to nights and activities.So if you want to enjoy fun or move your body with the music.This is the place!
+
+The staff there are also very friendly, English is very good, and you can recommend all kinds of beer.
+
+They don't have much food, only pizza and fries.So, if you are hungry, it is best to go outside first, but their pizza is cheap and pretty good.
+
+I like this place!Bleak
+2024-11-25 09:24:25,216 - INFO - 翻譯成功：很棒的聚會酒吧\U0001f973\U0001f973\U0001f973
+
+如果想隨意聊天，周圍有有趣的人，氣氛舒適。啤酒的選擇相當不錯，從異國情調的 IPA 到適合啤酒愛好者的奶油黑啤酒。那裡的音樂值得期待，所以不要錯過台北美藝術館附近的這個地方。 … -> Great party bar
+
+If you want to chat at will, there are interesting people around, and the atmosphere is comfortable.The choice of beer is pretty good, from the exotic IPA to the cream black beer suitable for beer enthusiasts.The music there is worth looking forward to, so don't miss the place near the Taipei American Art Museum.Mowing
+2024-11-25 09:24:26,588 - INFO - 翻譯成功：很酷的酒吧，有好東西和好音樂。在某些週末晚上，他們會演奏電子音樂！驚人的！當地的精釀啤酒是一大優勢！瑟爾瑟爾腸！ -> Cool bar, good things and good music.On some weekend and evening, they will perform electronic music!Amazing!Local craft beer is a major advantage!Surr's intestine!
+2024-11-25 09:24:28,210 - INFO - 翻譯成功：我去過那裡好幾次了，時好時壞，有時氣氛很好，有時可能會因為糟糕的音樂而受到質疑。
+那個地方可能會出人意料地空蕩蕩，出乎你的意料。
+
+沒關係，您只需親自查看該地點並決定是否要在此處過夜即可。 -> I have been there several times there, it is good and bad, sometimes the atmosphere is good, and sometimes it may be questioned because of bad music.
+That place may be unexpectedly empty and unexpected.
+
+It doesn't matter, you just need to check the location and decide whether to spend the night here.
+2024-11-25 09:24:29,115 - INFO - 翻譯成功：音樂室 23 很有氛圍。啤酒很好。裝飾是隨興的、簡約的、地下的，但不知何故感覺不錯。音樂主要是電子音樂，而且總是有一些不錯的現場 DJ 表演。有些夜晚，根據主題的不同，確實是史詩般的。也期待一些更安靜的夜晚。 -> The music room 23 is very atmospheric.Beer is very good.The decoration is easy -going, simple, and underground, but somehow feels good.The music is mainly electronic music, and there are always some good live DJ performances.Some nights are indeed epic depending on the theme.I also look forward to some quieter nights.
+2024-11-25 09:24:30,551 - INFO - 翻譯成功：所以，你可能對手工酒吧沒有什麼期望，但他們使用的披薩非常棒。雙份ipa也很好吃。調酒師很努力。 -> Therefore, you may not have much expectations for the handmade bar, but the pizza they use is great.Double IPA is also delicious.The bartender worked very hard.
+2024-11-25 09:24:31,562 - INFO - 翻譯成功：我喜歡週日下午和女朋友在這裡騎自行車，享受音樂和 IPA。很棒的啤酒和與朋友一起參觀的好地方。週日不太忙，這使得它非常適合品嚐一些最喜歡的食物以及美食廣場的小吃或晚餐或裡面提供的任何東西，第一個和第三個週日會有一位出色的 DJ Andrew 在這裡。 -> I like to ride a bicycle here with my girlfriend on Sunday afternoon and enjoy music and IPA.A great place for beer to visit with friends.Sunday is not too busy, which makes it very suitable for taste some favorite foods and snacks or dinner or anything provided in food squares. The first and third Sunday will have an excellent DJ Andrew here.
+2024-11-25 09:24:33,032 - INFO - 翻譯成功：好地方，有美味的啤酒和音樂！ -> Good place, delicious beer and music!
+2024-11-25 09:24:33,518 - INFO - 翻譯成功：好啤酒和好DJ。 -> Good beer and good DJ.
+2024-11-25 09:24:34,795 - INFO - 翻譯成功：美好的地方！台北最好的啤酒和DJ音樂！ -> Beautiful place!The best beer and DJ music in Taipei!
+2024-11-25 09:24:36,448 - INFO - 翻譯成功：不尊重任何表演者，老闆也沒有接受過語言方面的教育，因此他對使用歧視性詞語沒有任何感覺，例如日語中的“JAP”。
+如果你是黑膠唱片 DJ，你必須小心他的報價，尤其是如果你來自海外。首先，這裡的轉盤完全不行，這裡的工作人員對音響也不懂，但是他們包括業主都認為還可以。在打 DJ 之前，我試圖確保他們的音頻一切正常，但我發現地線壞了，我問工作人員這些轉盤是怎麼回事，但他只回答我「我不知道」。我也問過店主，他只說不會有音頻。就這樣。不過這對我來說是非常難以置信的，他認為在這麼糟糕的條件下請黑膠唱片 DJ 在那裡演奏也沒什麼問題。正如我所猜測的，由於接地線破損，打 DJ 時一直有很多噪音。另外，他們所有的 DJ 設備都沾滿了灰塵，所以無論您是黑膠唱片 DJ 還是 CDJ，都很難指望這裡有好的聲音。
+更重要的是，如果你不是那麼有名的 DJ，也不太謙虛地要求付款，那麼店主就會認為他不需要為你付錢。他仍然只是說我收到他的報價時沒有問他付款，他認為這個邏輯很好，如果表演者在演出前沒有問他，那麼商店也不需要付款。我們從來沒有談論過報酬，當然他也從來沒有和他談論過這個問題，儘管我仍然認為他們需要為所有表演者支付一些費用，除非表演者說不付款也可以（好吧，我確信我已經這次從來沒有這麼說過）。即使是小額的付款也沒關係，因為這表明了他們對演出的感受，而且我不會為此向他們索取非常昂貴的價格。我知道我不是世界上著名的 DJ，所以我知道我該如何表現。所以我不能接受的是他的行為和想法對所有藝術家的不尊重，這只會讓我非常失望。最後，他仍然說他不明白自己的問題是什麼。至少，你得醒來看看你在你的FB上叫我為「JAP」做廣告。希望他能努力學習更多，即使只是關於語言。
+這裡根本不推薦未來所有的表演者。如果你認為他們給了你經驗，那完全是謊言。他們只利用你。他們給你作為成長中的職業 DJ 的經驗，所以他們需要給你報酬，即使是很少的，因為你獲得了作為「專業表演者」的經驗。
+感謝您閱讀冗長無聊的評論，希望這對您有所幫助並保護 DJ 的驕傲。 -> Without respect for any performers, the boss has not received language education, so he has no feeling for using discriminatory words, such as "JAP" in Japanese.
+If you are a vinyl record DJ, you must be careful of his offer, especially if you are from overseas.First of all, the turntable here is completely unsuccessful, and the staff here do not understand the sound, but they believe that the owners think it is OK.Before playing DJ, I tried to ensure that everything was normal for their audio, but I found that the ground line was broken. I asked the staff what was going on, but he only answered me "I don't know."I also asked the owner, he only said that there would be no audio.that's all.However, this is very incredible for me. He believes that it is no problem to ask the vinyl record DJ to play there under such bad conditions.As I guess, due to the damage to the ground wire, there have been many noise when playing DJ.In addition, all their DJ devices are covered with dust, so whether you are vinyl record DJ or CDJ, it is difficult to expect a good voice here.
+More importantly, if you are not so famous DJs and do not ask for payment modestly, then the owner will think he does not need to pay for you.He still just said that when I received his quotation, he didn't ask him to pay. He thought that the logic was very good. If the performer did not ask him before the performance, the store did not need to pay.We have never talked about compensation, and of course he has never talked about this problem with him, although I still think that they need to pay some performers, unless the performer says that it is not paid (well, I am sure I am already here I have never said that).Even small payments are okay, because it shows their feelings about the performance, and I will not ask them for a very expensive price for this.I know I am not the famous DJ in the world, so I know how I should perform.So what I can't accept is that his behavior and ideas are disrespectful to all artists, which will only disappoint me.In the end, he still said he didn't understand what his problem was.At least, you have to wake up and take a look at you call me "JAP" on your FB.I hope he can work hard to learn more, even if it is only about language.
+It is not recommended here all the performers in the future.If you think they have given you experience, it is a lie.They only use you.They give you the experience of DJs in growth, so they need to pay you, even if they are very small, because you have gained an experience as a "professional performer".
+Thank you for reading a long and boring comment. I hope this will help you and protect DJ.
+2024-11-25 09:24:37,969 - INFO - 翻譯成功：他們店裡的轉盤壞了。而這家音樂酒吧的工作人員甚至沒有任何音響系統知識。否則，如果你不要求，DJ 就不會付錢，他們認為這種態度沒有問題。此外，他們在 Facebook 廣告上稱日本人為“Jap”，這對一個國家來說是非常粗魯的行為。 -> The turntable in their shop was broken.The staff of this music bar does not even have any audio system knowledge.Otherwise, if you do not ask, DJ will not pay, and they think that this attitude is no problem.In addition, they call the Japanese "JAP" in Facebook ads, which is very rude for a country.
+2024-11-25 09:24:39,310 - INFO - 翻譯成功：你知道…完美的定義經常提到這個夢幻般的酒店的大多數評論者。酒精？查看。各種音樂？無盡的。我在這裡結識了一些終生的朋友。如何？你應該親自去了解一下。 -> You know ... Perfect definition often refers to most commentators in this dreamy hotel.Alcohol?Check.Various music?Endless.I met some lifelong friends here.how?You should learn it yourself.
+2024-11-25 09:24:39,959 - INFO - 翻譯成功：在這裡跳舞喝酒度過了一個美好的夜晚。  DJ 每晚都會更換，但每次我去的時候我都喜歡音樂。  調酒師也超酷。 -> Here dancing and drinking a beautiful night.DJ will change every night, but every time I go, I like music.The bartender is also super cool.
+2024-11-25 09:24:41,406 - INFO - 翻譯成功：各種各樣的飲料和音樂，披薩也很棒！這裡的氛圍是俱樂部和酒吧的混合體，如果您想度過一個低調的夜晚，這裡是很棒的選擇 -> All kinds of beverages and music, pizza is also great!The atmosphere here is the mixture of the club and the bar. If you want to spend a low -key night, this is a great choice
+2024-11-25 09:24:43,063 - INFO - 翻譯成功：超級有趣，但有點小。調酒師非常好，人群總是友好而熱情。 -> Super fun, but a little small.The bartender is very good, and the crowd is always friendly and enthusiastic.
+2024-11-25 09:24:44,391 - INFO - 翻譯成功：很棒的氛圍和音樂，酒吧的管理人員很可愛。絕對推薦度過一個愉快的夜晚 -> A great atmosphere and music, the management of the bar is very cute.Absolutely recommended to have a pleasant night
+2024-11-25 09:24:44,987 - INFO - 翻譯成功：良好的氛圍，美味的披薩，美味的啤酒。如果你不知道要去哪裡，這是一個放鬆的好地方！ -> Good atmosphere, delicious pizza, delicious beer.If you don't know where to go, this is a good place to relax!
+2024-11-25 09:24:46,256 - INFO - 翻譯成功：很棒的酒吧！ DJ 非常棒，氣氛就像客廳派對一樣。 -> A great bar!DJ is great, and the atmosphere is like the living room party.
+2024-11-25 09:24:47,455 - INFO - 翻譯成功：這裡的 DJ 重點是 trance、techno 等帶有狂歡聲音的音樂。 -> The DJs here focus on music with carnival, techno, etc. here.
+2024-11-25 09:24:48,057 - INFO - 翻譯成功：很棒的氛圍，美味的啤酒和酷炫的音樂。如果您在該地區（即使您不在），請去看看！ -> A great atmosphere, delicious beer and cool music.If you are in the area (even if you are not), please go and see!
+2024-11-25 09:24:49,566 - INFO - 翻譯成功：推薦他們的歡樂時光20:00-22:00
+
+其他 DJ 派對持續至凌晨 3:00 -> Recommend their joy time 20: 00-22: 00
+
+Other DJ parties lasted until 3:00 in the morning
+2024-11-25 09:24:50,674 - INFO - 翻譯成功：好啤酒！寒冷的氛圍 -> Good beer!Cold atmosphere
+2024-11-25 09:24:52,010 - INFO - 翻譯成功：喜歡這個地方，經常有很棒的 DJ 和音樂。工作人員很棒，馬吉廣場整體來說很棒！ -> Like this place, there are often great DJs and music.The staff is great, and the Macji Square is great as a whole!
+2024-11-25 09:24:53,293 - INFO - 翻譯成功：很棒的服務。確實是不錯的啤酒選擇。很棒的音樂。 -> Great service.It is really a good beer choice.Great music.
+2024-11-25 09:24:54,498 - INFO - 翻譯成功：文青不要喝 -> Wenqing don't drink
+2024-11-25 09:24:55,404 - INFO - 翻譯成功：買一品脫昂貴啤酒的好地方！ -> Buy a good place for expensive beer!
+2024-11-25 09:24:55,973 - INFO - 翻譯成功：好喝又好玩 -> It's delicious and fun
+2024-11-25 09:24:57,524 - INFO - 翻譯成功：優質啤酒。有趣的音樂。靠近一個不錯的俱樂部和一個不錯的酒吧。 -> High -quality beer.Interesting music.Close to a good club and a good bar.
+2024-11-25 09:24:58,448 - INFO - 翻譯成功：小心並注意你喝了多少。他們向你收取的費用比你訂購的還多。 -> Be careful and pay attention to how much you drink.They charge you more than you order.
+2024-11-25 09:24:59,769 - INFO - 翻譯成功：很棒的聚會場地 -> Great party venue
+2024-11-25 09:25:00,869 - INFO - 翻譯成功：台灣精釀啤酒與時髦音樂的邂逅。真是一段有趣的時光。 -> Taiwan craft beer and fashionable music.It's a fun time.
+2024-11-25 09:25:02,257 - INFO - 翻譯成功：晚上我可以聽音樂！很棒的電子舞曲！ -> I can listen to music at night!Great electronic dance music!
+2024-11-25 09:25:03,752 - INFO - 翻譯成功：美妙的音樂、美味的啤酒、美妙的氛圍 -> Wonderful music, delicious beer, wonderful atmosphere
+2024-11-25 09:25:04,262 - INFO - 翻譯成功：喝啤酒、聽音樂的好地方。 -> Drink beer and listen to music.
+2024-11-25 09:25:05,321 - INFO - 翻譯成功：總是很有趣，還有很棒的飲料。 \U0001f346\U0001f4a6 … -> Always very interesting, there are great drinks.\U0001f346\U0001f4a6 \U0001f346\U0001f4a6 ...
+2024-11-25 09:25:05,656 - INFO - 翻譯成功：可愛的地方 -> Cute place
+2024-11-25 09:25:06,128 - INFO - 翻譯成功：很棒的啤酒！ -> Great beer!
+2024-11-25 09:25:07,334 - INFO - 翻譯成功：很ㄊㄣˋ -> Very embarrassing
+2024-11-25 09:25:07,976 - INFO - 翻譯成功：很棒的音樂，聚會的好地方 -> Great music, a good place to party
+2024-11-25 09:25:08,861 - INFO - 翻譯成功：很棒的聲音，很酷的房間和 DJ。 -> A great sound, cool room and DJ.
+2024-11-25 09:25:10,211 - INFO - 翻譯成功：謝謝薰薰 -> Thank you Xunxun
+2024-11-25 09:25:10,655 - INFO - 翻譯成功：這是內部事務，一點也不好玩。 -> This is internal affairs, which is not fun at all.
+2024-11-25 09:25:11,356 - INFO - 翻譯成功：吉7米 -> Ji 7 meters
+2024-11-25 09:25:12,490 - INFO - 翻譯成功：台北的啤酒很棒！ -> Taipei beer is great!
+2024-11-25 09:25:13,715 - INFO - 翻譯成功：很棒的地方很棒的服務 -> A great place and a great service
+2024-11-25 09:25:14,162 - INFO - 翻譯成功：寒冷的氛圍 -> Cold atmosphere
+2024-11-25 09:25:14,619 - INFO - 翻譯成功：體面的 -> Decent
+2024-11-25 09:25:14,904 - INFO - 翻譯成功：啤酒好喝 -> Beer is delicious
+2024-11-25 09:25:15,370 - INFO - 翻譯成功：好好玩 -> So fun
+2024-11-25 09:25:15,390 - INFO - 已保存翻譯文件：C:/Users/USER/Desktop/study group 2_box/台北市/中山區 酒吧_translated\23 Music Room_translated.csv
+2024-11-25 09:25:15,391 - INFO - 此間酒吧翻譯成功比率：100.00%
+2024-11-25 09:25:16,925 - INFO - 翻譯成功：美好愉快的晚餐，感謝有高橋主廚的熱情專業，和50/45 Winehaus 伴瓶酒葡萄酒吧的完美酒單
+能一邊小酌一邊跟老朋友聊天，簡直不能更美好
+//大直私廚之夜 Lobster\U0001f99eChampagne\U0001f37e\ufe0f
+50年老滕香檳
+魚子醬 法式炒蛋
+活龍蝦生切
+龍蝦沙拉 波士頓生菜
+白灼龍蝦 蛤蜊 玉米 煙燻香腸
+濃香南瓜醬汁燴龍蝦 自製麵包
+龍蝦麻婆豆腐
+龍蝦海鮮冬蔭功米粉 -> Beautiful and happy dinner, thank you for the enthusiastic major of Chef Takahashi, and 50/45 Winehaus with the perfect wine list with bottle wine bar
+I can chat with my old friends while drinking, it is impossible to be better
+// Lobster\U0001f99echampagne\U0001f37e\ufe0f
+50 years old Teng Champagne
+Caviar French eggs
+Live lobster raw cut
+Lobster salad Boston lettuce
+White burning lobster clams smoked sausage
+Strong incense pumpkin sauce stew lobster homemade bread
+Lobster Mapo Tofu
+Lobster Seafood Winter Yin Gong rice noodles
+2024-11-25 09:25:18,084 - INFO - 翻譯成功：很可愛的小店，就在大直河濱公園附近，店裡外都佈置的很溫馨很舒適，就像在朋友家喝酒一樣輕鬆。
+小食有親手包的水餃，酒單雖選項不多，但每一瓶的介紹都很詳細很清楚，如數家珍。
+很推薦三五好友聚會慢慢聊天喝酒，是可以細細品的地方\u2764\ufe0f -> The very cute shop is near the Dazhi Riverside Park. The shop is very warm and comfortable, just like drinking at a friend's house.
+There are dumplings that are wrapped in snacks. Although there are not many options for wine lists, the introduction of each bottle is very detailed and clear, such as several treasures.
+It is recommended to chat and drink slowly for three or five friends.
+2024-11-25 09:25:19,258 - INFO - 翻譯成功：這裡很可以啊。不管你是一個人，兩個人很多人都非常適合這，燈光美氣氛佳，酒的種類多到你無法想像，老闆親切也很會介紹，你還不快起身來這放鬆品酒一下。 -> This is very good.No matter you are alone, many of them are very suitable for this. The lights are beautiful. There are so many types of wine. You can't imagine it. The boss will also introduce it well. You don't get up here to relax.
+2024-11-25 09:25:21,044 - INFO - 翻譯成功：今天去參加一個有趣的葡萄酒分享會，以往所知道的是會分析酒種、酒莊、產地、口感...等等，而這次分享會光是名稱就很不一樣：輕鬆品酒會之選瓶酒好過年。光想到就覺得有趣，一般大家葡萄酒配的都是起司跟沙拉米等等之類的，但居然有人要來介紹台式年菜的配酒哲學，兩紅兩白一人$450，何樂而不為。
+一開始先分析了年菜的口味：鹹、酸、甜、苦、辣，再剖析葡萄酒的口感：澀、苦、酸、甜、鹹，什麼樣的酒可以加強什麼樣的口味，什麼樣的酒又可以弱化什麼樣的感官，相當有趣。
+更特別的是直接端出來滿滿一盤的黑白切甚至是熱騰騰的紅豆餅，讓我們直接比較看看同一種口味搭配四種不同的酒的感受，比起文言文來說，很直觀的就可以分辨喜歡什麼不喜歡什麼，甚至，從來沒想過原來豆乾沾辣椒配甜白酒這麼的對味啊啊啊啊\U0001f923 -> Today I will participate in an interesting wine sharing meeting. What I know in the past is to analyze wine, winery, origin, taste ... and so on. Bottle wine is better for the New Year.I think it ’s fun to think of it. Generally, everyone is equipped with cheese, salad, and so on. However, some people actually want to introduce the philosophy of wine with Taiwanese New Year's dishes.
+At the beginning, the taste of New Year's cuisine was analyzed: salty, sour, sweet, bitter, and spicy, and then analyzed the taste of wine: astringent, bitter, sour, sweet, salty, what kind of wine can be enhanced, what kind of taste, what kind of wine, what kind of wine What kind of sensory can be weakened, it is quite interesting.
+What's more special is that the black and white cut or even hot red bean cakes are directly ended up. Let us directly compare the feelings of the same taste and four different wines. Compared with the classical Chinese, it is very intuitive. You can distinguish what you like or not, and even, never thought that the dried beans and peppers with sweet white wine are so right ah ah ah
+2024-11-25 09:25:23,087 - INFO - 翻譯成功：餐酒館非常棒，氣氛極佳，老闆也非常熱情，配上好品質的葡萄酒，非常適合下班小酌，門口有共享雨傘非常方便！ -> The restaurant is very good, the atmosphere is excellent, and the boss is also very enthusiastic. With good quality wine, it is very suitable for get off work. It is very convenient to share umbrellas at the door!
+2024-11-25 09:25:24,364 - INFO - 翻譯成功：酒好喝，老闆友善，
+環境舒適溫馨！
+還得到老闆煮的冬至湯圓，
+太療癒了！ -> The wine is delicious, the boss is friendly,
+The environment is comfortable and warm!
+Also get the winter solstice dumplings cooked by the boss,
+Too healing!
+2024-11-25 09:25:25,653 - INFO - 翻譯成功：輕工業裝潢風格，老闆對酒講究，同事的Farewell party 舉辦場所，才有機會發現這間優質的店。大推！ -> Light industry decoration style, the boss pays attention to wine, the place where colleagues Farewell Party hosted a place to find this high -quality store.Push!
+2024-11-25 09:25:26,365 - INFO - 翻譯成功：輕鬆，舒服的喝酒好環境
+老闆選的酒都好喝，完全不雷喔！
+Chill~ -> Easy, comfortable to drink a good environment
+The wine chosen by the boss is delicious, and it is completely unsightly!
+Chill ~
+2024-11-25 09:25:27,096 - INFO - 翻譯成功：貼心又溫馨，可以自己帶外食。概念有創意，可以喝半瓶，也可以share別人的半瓶！很喜歡！ -> I can bring food by myself.The concept is creative, you can drink half a bottle, or you can share half a bottle of others!I like it very much!
+2024-11-25 09:25:27,590 - INFO - 翻譯成功：很棒的空間，適合與朋友在夜晚來此小酌。也很喜歡用折扣的價格喝半瓶酒的概念。 -> A great space, suitable for friends with friends at night.I also like to drink half a bottle of wine at a discount.
+2024-11-25 09:25:29,652 - INFO - 翻譯成功：喜歡素人推薦
+最真實跟我們一樣
+
+#超級概念店 #一人一半感情不會散
+#品味人生 #有專業呵護 #不怕喝到瞎貨
+#一分錢一分貨 #大直好地方 -> I like amateur recommendation
+The most real is the same as us
+
+#Super Concept Store #One person half of the relationship will not be scattered
+# #Have professional care #Are you afraid to drink blind goods
+# #一 #直 直
+2024-11-25 09:25:30,707 - INFO - 翻譯成功：酒單很帥，介紹得很用心，一定會再來～ -> The wine list is very handsome, I am very careful, I will definitely come again ~
+2024-11-25 09:25:31,640 - INFO - 翻譯成功：每回來這裡總是充滿驚喜，店主Alex挑選的酒款都十分有趣，可以嘗試到許多不常見的酒款，累積更多經驗值。
+
+更多時候是為了喝杯酒放鬆來到這裡，自己一個人在家開瓶喝不完很吃力，來50/45可以點半瓶酒喝，沒有壓力，非常貼心的半瓶酒服務，推薦大家來這裡找尋有意思的葡萄酒，可以跟店主聊聊關於每款酒背後的故事，真的很有趣。 -> Every time I come back, it is always full of surprises. The wine selected by the owner Alex is very interesting. You can try many uncommon wines and accumulate more experience.
+
+More often, to relax here for drinking a glass of wine, I can't drink it alone at home alone. If you come to 50/45, you can order half a bottle of wine to drink. There is no pressure. It is very intimate half a bottle of wine. It is recommended that everyone come. Finding interesting wines here, you can talk to the owner about the story behind each wine, which is really interesting.
+2024-11-25 09:25:32,795 - INFO - 翻譯成功：氣氛好，老闆熱愛紅白酒好專業，還可帶外食，下次還會來 -> The atmosphere is good.
+2024-11-25 09:25:34,180 - INFO - 翻譯成功：可以只開半瓶酒又可以帶外食的店，老闆對紅酒的專業知識也很不錯，不懂都可以問他\U0001f44d，環境舒適，沒壓力。 … -> You can only open half a bottle of wine and can bring food. The boss's professional knowledge about red wine is also very good. If you do n’t know, you can ask him. The environment is comfortable and there is no pressure.Mowing
+2024-11-25 09:25:36,666 - INFO - 翻譯成功：晚上獨自一人享用美酒、環境舒適的好地方，老闆會依照客人今天想喝的口味推薦酒單，每次都能喝到很對味的酒~ -> In a good place where wine and environment are comfortable alone at night, the boss will recommend the wine list according to the taste that the guests want to drink today.
+2024-11-25 09:25:38,174 - INFO - 翻譯成功：可以點到很特別的紅酒，法國的產區，老闆會詳細介紹，滷味跟水餃都好吃，很能放鬆聊天的店 -> You can order very special red wine. French production areas. The boss will introduce it in detail. Lochi and dumplings are delicious, and they can relax the chat shop.
+2024-11-25 09:25:38,890 - INFO - 翻譯成功：老闆作法很有創意，人也很親切。可以用親民價格喝到好喝的紅酒。 -> The boss's practice is very creative and people are very kind.You can drink delicious red wine at a close price.
+2024-11-25 09:25:40,024 - INFO - 翻譯成功：老闆人很好，我這種品酒菜雞來店，完全不會感受到壓力，老闆很有耐心一一介紹，推薦的酒都頂呱呱。
+
+室外坐燈光美氣氛佳，而且座位的setup很有趣，推。
+
+FYI,運氣好還會有免費餅乾零食。 -> The boss is very good. I will not feel the pressure at all. The boss is very patient.
+
+The outdoor lighting is beautiful, and the setup of the seat is interesting and pushed.
+
+FYI, good luck and free biscuits snacks.
+2024-11-25 09:25:41,519 - INFO - 翻譯成功：跟朋友聚會輕鬆自在的地方
+老闆很親切 -> Where to meet with friends relaxed and comfortable
+The boss is very kind
+2024-11-25 09:25:42,040 - INFO - 翻譯成功：老闆很有人情味，店裡面可以攜帶外食，歡迎喜歡葡萄酒的人，自己帶食物或是Uber eats去搭配不同酒款！葡萄酒價格實在，店裡空間舒適！ -> The boss is very humane. You can carry out food in the store. Welcome to people who like wine. Take food or Uber Eats to match different wines!The price of wine is real, and the space in the store is comfortable!
+2024-11-25 09:25:43,005 - INFO - 翻譯成功：品飲葡萄酒最重要的不只是對的人、對的氣氛，還要有對的酒，本來不是特別愛喝葡萄酒，也不是很懂喝，因為朋友介紹才來的，後來就變成習慣性一想放鬆，就會來這裡小酌一杯，聽聽葡萄酒的故事，和好友聚會，真的是一個很適合讓酒精作祟的空間呢！ -> The most important thing for drinking wine is not only the right person, the right atmosphere, but also the right wine. I did not particularly love to drink wine, nor did I know how to drink, because the friend introduced it, and later it became a habitual one. If you want to relax, you will come here to have a drink. Listening to the story of wine and gathering with friends is really a space that is very suitable for alcohol!
+2024-11-25 09:25:43,976 - INFO - 翻譯成功：老闆非常和善！
+臨時決定幫朋友慶生，老闆用心變出蠟燭，還招待壽星生日酒～
+
+桌數不多，佈置很溫馨
+大推\U0001f44d -> The boss is very kind!
+Temporarily decided to help friends celebrate his birthday.
+
+There are not many tables, and the layout is very warm
+Big Push
+2024-11-25 09:25:45,116 - INFO - 翻譯成功：很不錯的喝酒的地方，有氣氛 -> Very good place to drink, there is an atmosphere
+2024-11-25 09:25:46,024 - INFO - 翻譯成功：嗜酒人的好去處，可以體驗到別人喝過的酒也可以自己點。重點是還可以點自己喜歡吃的東西來。很棒。已訪多次。 -> For the good places of alcoholic people, you can experience the wine that others have drank.The point is that you can also order what you like to eat.great.Has been visited many times.
+2024-11-25 09:25:47,099 - INFO - 翻譯成功：晚上會有一個住對面豪宅的神秘客座高橋大廚與他的水某下樓做下酒小點。以完全不按牌理出牌的方式融合台日歐的美食元素，讓你的味蕾整晚驚喜連連。而且高橋大廚是純粹做興趣的，性價比無敵高，使該店為大直必訪之處。 -> In the evening, there will be a mysterious guest of the opposite mansion Takahashi, and his water will go downstairs to make a small wine.Incorporate the food elements of Taiwan and Europe in a way that do not follow the cards at all, make your taste buds surprise all night.In addition, Chef Takahashi is purely interested, and the cost -effective is invincible, making the store a must -visit.
+2024-11-25 09:25:48,823 - INFO - 翻譯成功：This is my ideal wine house. Friendly people, affordable wine and Taiwanese foods. It's really a good idea that you can take your dinner here on Wednesday to find some wine which goes well with your own food!
+這是我理想中的紅酒館。許多入門價位的好酒款、還可以在周三晚上帶自己的晚餐來搭酒！ -> This is my identity friend. Friendly People, AFFORDABLE WINE and TAIWANESE FOODS. It's Really A Good Idea that you can take you SOME WINE Which Goes Well with Your Own Food!
+This is my ideal red tavern.Many entry -level good wines, can also bring their own dinner on Wednesday night to set up wine!
+2024-11-25 09:25:50,243 - INFO - 翻譯成功：環境很舒服，整體的氣氛很chill，店內推薦的酒很專業也很好喝，體驗下來的感覺很好，是會再訪的好店家，是個可以放鬆週末的好所在。 -> The environment is very comfortable, the overall atmosphere is very Chill, the wine recommended in the store is very professional and delicious, and it feels good to experience it. It is a good shop that can be visited. It is a good place to relax the weekend.
+2024-11-25 09:25:51,344 - INFO - 翻譯成功：老闆非常親切、氣氛非常輕鬆、價格又非常合理的歐式小酒館，餐飲不多但可點外送，老闆的水餃跟火腿起士盤跟酒很搭。 -> The boss is very kind, the atmosphere is very relaxed, and the price is very reasonable. There are not many catering but can be delivered. The boss's dumplings are very good with the ham cheese plate.
+2024-11-25 09:25:53,281 - INFO - 翻譯成功：在住宅區開酒吧開到深夜，擾亂鄰居安寧，製造髒亂跟噪音，常常有警察來關心，這樣的地方請開業者自制，不然訴諸公權力! -> Open the bar in the residential area until late at night, disrupt the neighbor's peace, and create dirty chaos and noise. There are often police officers to care about it.
+2024-11-25 09:25:53,848 - INFO - 翻譯成功：舒服，專業的一家店，絕對適合小酌，和老闆聊葡萄酒會有一想不到的收穫，夏天一定要來吃葡萄酒冰棒，顛覆你的想像！ -> A comfortable, professional shop, absolutely suitable for drinking, talk to the boss about wine, there will be an unexpected gain. You must come to eat wine popsicles in summer to subvert your imagination!
+2024-11-25 09:25:55,080 - INFO - 翻譯成功：氛圍很棒 老闆也很專業 -> The atmosphere is great and the boss is very professional
+2024-11-25 09:25:56,052 - INFO - 翻譯成功：每次不知道要點什麼酒，只需要跟老闆說想喝甜的? 還是果香的? 他都能給出合適的建議，好厲害! -> Every time I do n’t know what to order, I just need to tell the boss to drink sweet? Or is it fruity? He can give appropriate suggestions, so good!
+2024-11-25 09:25:57,243 - INFO - 翻譯成功：點了好吃的滷味，是老闆用心採買的，連辣椒都好吃。老闆人很好，地方很乾淨舒服。價格很合理。 -> I ordered the delicious lofli, which was bought by the boss with the heart, and even the pepper was delicious.The boss is very good, the place is very clean and comfortable.The price is reasonable.
+2024-11-25 09:25:57,778 - INFO - 翻譯成功：點了一瓶很棒的Napa 紅酒，環境還可以，店長很細心的說明各種酒，只有白葡萄酒/紅葡萄酒/氣泡酒。 -> I ordered a bottle of NAPA red wine. The environment is okay. The manager carefully explained various wines, only white wine/red wine/bubble wine.
+2024-11-25 09:25:58,923 - INFO - 翻譯成功：跟朋友一起就是贊 -> Praise with friends
+2024-11-25 09:25:59,792 - INFO - 翻譯成功：很棒的場地 老闆人也很好！！ -> The boss of the venue is also very good!Intersection
+2024-11-25 09:26:00,647 - INFO - 翻譯成功：店面佈置的很溫馨，酒有點小貴但老闆有認真介紹\U0001f604 … -> The store is very warm, the wine is a bit expensive, but the boss has a serious introduction \U0001f604 ...
+2024-11-25 09:26:02,186 - INFO - 翻譯成功：夜晚住家附近小酌ㄧ杯紅酒不錯的選擇
+消費不貴，氣氛相當不錯
+帶本書來這邊靜靜閱讀 -> Drink near home at night to eat a glass of red wine good choices
+The consumption is not expensive, and the atmosphere is pretty good
+Read here quietly with this book here
+2024-11-25 09:26:02,536 - INFO - 翻譯成功：好喜歡這樣的理念，就一起分享吧！
+悠閒午後時光，來點葡萄酒\U0001f377\U0001f377\U0001f377 … -> I really like this concept, share it together!
+After a leisurely afternoon, come to some wine \U0001f377\U0001f377\U0001f377 ...
+2024-11-25 09:26:03,182 - INFO - 翻譯成功：老闆專業
+環境良好舒適有品味
+是一個坐下來慢慢喝葡萄酒的地方 -> Boss professionalism
+Good environment, comfortable, tasteful
+It's a place to sit down and drink wine slowly
+2024-11-25 09:26:04,510 - INFO - 翻譯成功：參加了老闆的紅酒課程，老闆是個很有自己理念和酒類知識豐富的人！！ -> After participating in the boss's red wine course, the boss is a person with his own concepts and wine knowledge!Intersection
+2024-11-25 09:26:05,628 - INFO - 翻譯成功：專業選酒，親切的服務
+是個朋友聚餐喝酒的好地方 -> Professional wine selection, kind service
+It's a good place for a friend to dinner and drink
+2024-11-25 09:26:07,051 - INFO - 翻譯成功：店主專業、親切、場地感覺讓人很放鬆，挑酒挑的很棒。 -> The owner is professional, kind, and venue feels very relaxed, and he is very good.
+2024-11-25 09:26:08,346 - INFO - 翻譯成功：老闆很會選酒，可以跟三五好友輕鬆自在的喝酒聊天！ -> The boss can choose wine very much, and you can drink and chat easily with three or five friends!
+2024-11-25 09:26:09,492 - INFO - 翻譯成功：溫馨又舒適的地方\U0001f60c
+謝謝親切老闆招待的紅豆餅\U0001f64c\U0001f3fb … -> A warm and comfortable place 舒
+Thank you for the red bean cake that the kind boss entertains ...
+2024-11-25 09:26:10,876 - INFO - 翻譯成功：敲棒讓WFH的偶們
+可以以工作之名行飲酒之實
+不是很好嗎\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f -> Tap the pommers to let WFH puppets
+You can drink in the name of work
+Isn't it good \u2764\ufe0f\u2764\ufe0f\u2764\ufe0f
+2024-11-25 09:26:12,679 - INFO - 翻譯成功：老闆非常專業，推薦喜歡葡萄酒的同好來這裡交流~ -> The boss is very professional. I recommend coming here to communicate here ~
+2024-11-25 09:26:13,696 - INFO - 翻譯成功：老闆很專業，也會分享自己的心得給客人參考 -> The boss is very professional, and he will also share your own experience for the guest reference
+2024-11-25 09:26:15,266 - INFO - 翻譯成功：大直地區可以享受紅白酒的好店 -> You can enjoy a good shop for red and white wine in the Dazhi area
+2024-11-25 09:26:16,490 - INFO - 翻譯成功：\U0001f44d … -> \U0001f44d …
+2024-11-25 09:26:16,950 - INFO - 翻譯成功：超適合朋友去品酒放鬆的！ -> Super suitable for friends to taste alcohol and relax!
+2024-11-25 09:26:18,518 - INFO - 翻譯成功：老闆專業也親切，舒適的環境。 -> The boss is also a kind and comfortable environment.
+2024-11-25 09:26:19,486 - INFO - 翻譯成功：可以喝杯小酒，放鬆身心的好地方 -> You can drink a glass of wine and relax your body and mind
+2024-11-25 09:26:20,575 - INFO - 翻譯成功：老闆很棒，地方很溫馨 -> The boss is great, the place is very warm
+2024-11-25 09:26:21,286 - INFO - 翻譯成功：氣氛悠閒，老闆親切。 -> The atmosphere is leisurely and the boss is kind.
+2024-11-25 09:26:21,802 - INFO - 翻譯成功：很放鬆～ -> Very relaxed ~
+2024-11-25 09:26:22,217 - INFO - 翻譯成功：還不錯 -> not bad
+2024-11-25 09:26:23,411 - INFO - 翻譯成功：滿分 -> Full score
+2024-11-25 09:26:24,224 - INFO - 翻譯成功：老闆超專業又細心 -> The boss is super professional and careful
+2024-11-25 09:26:24,983 - INFO - 翻譯成功：酒好 老闆專業 -> Good wine boss professionalism
+2024-11-25 09:26:26,670 - INFO - 翻譯成功：令人放鬆的好去處！ -> Relaxed place!
+2024-11-25 09:26:27,212 - INFO - 翻譯成功：喜歡紅酒的人別錯過 -> People who like red wine don't miss it
+2024-11-25 09:26:27,597 - INFO - 翻譯成功：輕鬆溫馨小酒館 -> Easy and warm tavern
+2024-11-25 09:26:28,784 - INFO - 翻譯成功：不錯的品酒聊天地方 -> Good wine tasting place
+2024-11-25 09:26:29,808 - INFO - 翻譯成功：老闆用心經營! -> The boss operates with heart!
+2024-11-25 09:26:30,860 - INFO - 翻譯成功：一般，大聚會 -> General, big party
+2024-11-25 09:26:32,353 - INFO - 翻譯成功：非常實惠！ -> Very affordable!
+2024-11-25 09:26:33,019 - INFO - 翻譯成功：超棒的體驗！ -> A great experience!
+2024-11-25 09:26:33,959 - INFO - 翻譯成功：有許多的選擇 -> There are many options
+2024-11-25 09:26:35,097 - INFO - 翻譯成功：紅酒教學好 -> Good wine teaching
+2024-11-25 09:26:35,945 - INFO - 翻譯成功：老闆帥氣 -> Boss handsome
+2024-11-25 09:26:37,451 - INFO - 翻譯成功：舒適，放鬆 -> Comfortable, relaxed
+2024-11-25 09:26:37,838 - INFO - 翻譯成功：讚 -> praise
+2024-11-25 09:26:38,198 - INFO - 翻譯成功：讚讚讚 -> Praise
+2024-11-25 09:26:39,541 - INFO - 翻譯成功：我真的很喜歡這個地方。一個我喜歡用葡萄酒放鬆身心的地方，這裡有一個舒適的氛圍，那裡有知識淵博的葡萄酒工作人員，作為一個酒鬼，你真的沒有什麼可以要求的了。那裡的葡萄酒選擇也很有趣，而且不是一些標準的釀酒葡萄，所以去那裡學習新東西總是很有趣。現在是生活的常客了！
+
+強烈推薦！ ！ -> I really like this place.I like to relax my body and mind with wine. There is a comfortable atmosphere here. There is a knowledgeable wine staff member. As a wine ghost, you really have nothing to ask.The choice of wine there is also very interesting, and it is not some standard wine grapes, so it is always interesting to go there to learn new things.Now is a frequent guest of life!
+
+Recommended strongly!Intersection
+2024-11-25 09:26:40,738 - INFO - 翻譯成功：50/45是一個有趣的品酒場所。這不是 BYOD，而是 BYOD，自備食物！您可以選擇喝一整瓶或只喝一半，即 50/45。這個地方非常隱密而且非常舒適。店主很友好，當然也了解他的葡萄酒。有一位神秘廚師在附近徘徊。當你有機會時，一定要抓住他的食物。 -> 50/45 is an interesting wine tasting place.This is not Byod, but byod, self -provided food!You can choose to drink a whole bottle or only half, that is, 50/45.This place is very secretive and very comfortable.The owner is very friendly, and of course he also knows his wine.One mysterious chef wandered nearby.When you have a chance, you must catch his food.
+2024-11-25 09:26:42,205 - INFO - 翻譯成功：某天下午想找個地方坐坐，找到這家外觀看似文青咖啡廳，但原來是專賣紅白酒的50/45winehaus ，這裡特別的是實施共享經濟模式，可以用50%的價錢購買喜歡的半瓶酒，剩下半瓶酒則以45%價錢出售，那天在這喝了一下午的咖啡後很喜歡這裡的氣氛，後來也來參與了品酒會
+店內的櫃檯是小小吧台，簡單的四個位子，比起我印像中比較難以親近的酒類專賣店，更像是溫馨的咖啡廳，記得第一次走進時沒有任何的壓力，店內的裝潢也非常舒服、平易近人，整體呈現暖色調，除了吧台的位子外也有幾桌沙發座椅，很適合三五好友一起來放鬆、喝杯紅白酒，不過店內位子不算多，建議大家提早打電話確認位子哦
+-
+品酒會體驗
+https://57lin.com/5045winehaus/ -> One afternoon, I wanted to find a place to sit in the afternoon and find this appearance that looks like Wenqing coffee shop, but it turned out to be 50/45winehaus specializing in red and white wine. This is especially the implementation of the sharing economy model. Half a bottle of wine, the remaining half bottles of wine were sold at 45%. After drinking the coffee here that day, I liked the atmosphere here. Later, I also participated in the wine tasting meeting.
+The counter in the store is a small bar, four simple seats, more likely a warm coffee shop than the more difficult to get closer in my impression. Remember that there is no pressure when I first enter. The interior decoration is also very comfortable and approachable. The overall is warm. In addition to the seat of the bar, there are also a few tables of sofa seats. It is very suitable for three or five friends to relax and drink a glass of red and white wine. Call to confirm the seat
+-
+Wine Experience Experience
+https://57lin.com/5045winehaus/
+2024-11-25 09:26:43,147 - INFO - 翻譯成功：很棒的地方值得參觀！在這裡你可以感受到溫暖，那些精選的酒也非常美味！肯定會再回來喝更多飲料，強烈推薦！值得一試！ -> Very great place worth visiting!Here you can feel warmth, and those selected wines are also very delicious!I will definitely come back to drink more drinks, highly recommended!It's worth trying!
+2024-11-25 09:26:45,070 - INFO - 翻譯成功：很棒的氛圍。很棒的葡萄酒和員工。樓主真的很了解他的東西。葡萄酒愛好者來台北必去的地方。我玩得很開心！ \U0001f377\u2764\ufe0f\U0001f970 … -> A great atmosphere.Great wine and employees.The original poster really knows his things.Wine enthusiasts must go to Taipei.I have fun!\U0001f377\u2764\ufe0f\U0001f970 ...
+2024-11-25 09:26:46,530 - INFO - 翻譯成功：很不錯，可以放輕鬆聊聊喝紅酒的地方
+老闆很年輕，自創半瓶酒分享模式；
+開車去的人，還可安排安全代駕，合理收費。
+不想喝酒，還有茶或咖啡 -> Very good, you can relax and talk about drinking red wine
+The boss is very young, creating half a bottle of wine sharing mode;
+Those who drive can also arrange safely on behalf of driving and charge reasonably.
+Don't want to drink, as well as tea or coffee
+2024-11-25 09:26:47,134 - INFO - 翻譯成功：推薦的酒味道不錯，氣氛也很溫馨。 -> The recommended wine tastes good and the atmosphere is very warm.
+2024-11-25 09:26:49,096 - INFO - 翻譯成功：適合小團體朋友聚會的寒冷而安靜的地方。很多很棒的葡萄酒可供選擇，可以點一半。
+歡迎外帶食物。 -> Suitable for the cold and quiet place for small group friends.Many great wines are available, and you can order half.
+Welcome to food.
+2024-11-25 09:26:50,563 - INFO - 翻譯成功：在這裡與非常好的主人一起快樂聚會\u263a\ufe0f一定會再來的！ -> Here, happy party with very good owners \u263a\ufe0f will come again!
+2024-11-25 09:26:52,092 - INFO - 翻譯成功：專業的酒吧，擁有知識淵博的老闆，可以根據您的要求推薦準確的葡萄酒。氛圍舒適，藏品豐富，是台北最好的地方之一。強烈推薦給所有人並像我們一樣享受。乾杯 -> Professional bars, bosses with knowledge, can recommend accurate wines according to your requirements.The atmosphere is comfortable and rich in collections. It is one of the best places in Taipei.Strongly recommend it to everyone and enjoy it like us.cheers
+2024-11-25 09:26:54,122 - INFO - 翻譯成功：涼爽的地方，美味的葡萄酒和公平的價格。與熱情的主人一起舒適。 -> A cool place, delicious wine and fair price.Comfortable with the enthusiastic owner.
+2024-11-25 09:26:55,492 - INFO - 翻譯成功：酒很好，服務也很出色，因為業主本人已經在高端酒店行業工作了幾十年。非常放鬆的地方，位於住宅區，非常好。 -> The wine is very good and the service is excellent, because the owner himself has worked in the high -end hotel industry for decades.A very relaxed place is located in the residential area and is very good.
+2024-11-25 09:26:56,899 - INFO - 翻譯成功：知識淵博且友善的員工，精選的葡萄酒，良好的氛圍和合理的價格。還會再來的！ -> Knowledge and friendly employees, selected wines, good atmosphere and reasonable price.Will come again!
+2024-11-25 09:26:57,607 - INFO - 翻譯成功：好地方有好酒 -> Good place with good wine
+2024-11-25 09:26:58,776 - INFO - 翻譯成功：店內的酒好喝價格也實惠，裝潢溫馨雅緻 -> The wine in the store is good and the price is affordable, and the decoration is warm and elegant
+2024-11-25 09:27:00,023 - INFO - 翻譯成功：舒適且周到的服務 -> Comfortable and thoughtful service
+2024-11-25 09:27:01,300 - INFO - 翻譯成功：如果你想喝葡萄酒的話，這個地方很漂亮（我建議意大利葡萄酒）.... -> If you want to drink wine, this place is very beautiful (I suggest Italian wine) ...
+2024-11-25 09:27:02,078 - INFO - 翻譯成功：喝杯酒的好去處。輕鬆前往萬豪酒店和地鐵站。 -> Drink a glass of wine.Light to Marriott Hotel and Metro Station.
+2024-11-25 09:27:03,642 - INFO - 翻譯成功：很棒的酒單和出色的員工。精心挑選天然葡萄酒。 -> Great wine list and excellent employee.Carefully choose natural wine.
+2024-11-25 09:27:04,816 - INFO - 翻譯成功：很棒的地方，有很棒的葡萄酒選擇和知識淵博的經理。 -> A great place, with great wine choices and knowledgeable managers.
+2024-11-25 09:27:06,273 - INFO - 翻譯成功：葡萄酒愛好者的天堂！ -> Wine lover's paradise!
+2024-11-25 09:27:07,173 - INFO - 翻譯成功：我在台北的新去處。讓我有賓至如歸的感覺 -> I am a new place in Taipei.Make me feel at home
+2024-11-25 09:27:08,202 - INFO - 翻譯成功：精選的葡萄酒和友好的員工 -> Selected wine and friendly employees
+2024-11-25 09:27:10,914 - INFO - 翻譯成功：非常好的地方，熱情和好酒！ -> Very good place, enthusiasm and good wine!
+2024-11-25 09:27:11,458 - INFO - 翻譯成功：友善、周到的服務和一些戶外座位。 -> Friendly, thoughtful service and some outdoor seats.
+2024-11-25 09:27:12,994 - INFO - 翻譯成功：好地方......好酒......還有什麼？ -> Good place ... good wine ... what else?
+2024-11-25 09:27:14,718 - INFO - 翻譯成功：好酒好地方！ -> Good wine and good place!
+2024-11-25 09:27:15,181 - INFO - 翻譯成功：台北最好的酒吧 -> The best bar in Taipei
+2024-11-25 09:27:16,799 - INFO - 翻譯成功：很棒的葡萄酒和很棒的員工 -> Great wine and great employee
+2024-11-25 09:27:17,125 - INFO - 翻譯成功：好喝又好玩 -> It's delicious and fun
+2024-11-25 09:27:18,033 - INFO - 翻譯成功：我喜歡起司拼盤 -> I like cheese platter
+2024-11-25 09:27:18,638 - INFO - 翻譯成功：放鬆的好地方。 -> Relaxed place.
+2024-11-25 09:27:19,437 - INFO - 翻譯成功：很棒舒適的地方 -> Great and comfortable place
+2024-11-25 09:27:21,859 - INFO - 翻譯成功：最好來！ -> It's best to come!
+2024-11-25 09:27:23,098 - INFO - 翻譯成功：好酒喝不完！ -> Good wine can't finish drinking!
+2024-11-25 09:27:23,898 - INFO - 翻譯成功：酒好喝 -> Wine
+2024-11-25 09:27:23,905 - INFO - 已保存翻譯文件：C:/Users/USER/Desktop/study group 2_box/台北市/中山區 酒吧_translated\50_45 WINEHAUS 伴瓶酒葡萄酒吧_translated.csv
+2024-11-25 09:27:23,905 - INFO - 此間酒吧翻譯成功比率：100.00%
+2024-11-25 09:27:25,550 - INFO - 翻譯成功：10訪以上台北最愛酒吧，沒有之一。
+在條通佇立10年以上的神店，推薦各酒友、甚至不常喝酒的朋友去也都獲得一致好評！！
+
+各種水果調酒（榴槤、蘋果、香蕉、橘子、柿子...等，隨季節更換）非常厲害，新穎的風味，平衡的酒感，同水果也可以選擇不同的基酒與風味，懂酒與不懂酒的人都可以喝得很開心。
+
+經典調酒的平衡感也是抓得穩穩的，絕不踩雷！！新上線的茶酒單點了三杯，品質一樣優秀，並且有全新的味覺感受，令人佩服!
+
+BTW，7th的餐點也是一絕，雖然上菜極慢，但味道是一流的。是台北少數酒、食俱佳的酒吧！（推薦真的很慢的慢慢等章魚燒）
+
+不像大部份的日式調酒吧，規矩一堆，也不用人擠人一直排隊，就是愜意的氛圍，適合與朋友小酌、一人下班後單獨放鬆的好地方。 -> 10 Visit the most favorite bar in Taipei, none of them.
+In the magic shop that has been standing for more than 10 years, it is recommended that all wine friends and even friends who do not even drink often get unanimous praise!Intersection
+
+Various fruits (durian, apple, banana, oranges, persimmons, etc., change with the season) are very powerful, novel flavor, balanced wine, can also choose different base wines and flavors with fruits, understand Alcohol and people who don't understand wine can drink very well.
+
+The sense of balance of classic bartending is also stable, never step on the thunder!IntersectionThe newly launched tea wine was ordered for three cups. The quality is as good as the quality, and has a new sense of taste, which is admirable!
+
+BTW, 7th's meal is also a must. Although it is very slow, the taste is first -class.It is a few bars with good wine and food in Taipei!(Recommended really slowly, wait for octopus burning)
+
+Unlike most Japanese -style bartenders, there are a lot of rules, and no one is squeezed by people. It is a pleasant atmosphere. It is suitable for a good place for drinking with friends and relaxing alone after get off work.
+2024-11-25 09:27:27,060 - INFO - 翻譯成功：星期五意外發現的好店
+低消500元
+第一次來保守先點了店家的招牌
+之後再來試試看不一樣的
+選了奈良，
+基底是威士忌喝起來順還有加蜂蜜
+酒感恰到好處
+（個人不喜歡沒有酒味的）
+
+很喜歡店內的氣氛
+有別於其他酒吧的喧囂
+令人放鬆
+一個人來喝也沒問題的酒吧
+還有一隻可愛的貓咪
+整體服務很好
+
+Ps.店員超棒 -> Good shops discovered unexpectedly on Friday
+Low 500 yuan
+The first time I came to conservatively ordered the store's signature
+After that, try to see different things
+I chose Nara,
+The base is whiskey to drink smoothly and add honey
+The wine feels just right
+(Personally don't like the taste without wine)
+
+I like the atmosphere in the store very much
+Different from the bustle of other bars
+Relax
+There is no problem with a person to drink alone
+There is also a cute cat
+The overall service is very good
+
+Ps. The clerk is superb
+2024-11-25 09:27:28,545 - INFO - 翻譯成功：調酒很細緻，風味層次表現優秀，餐點美味，服務貼心有溫度，吧台專業，店內還有貓貓當酒伴~
+很靜謐的環境，很放鬆的氛圍，很有質調的調酒，一切都很好。 -> The bartender is very detailed, the flavor is excellent, the meal is delicious, the service is intimate and temperature, the bar is professional, there is a cat in the store as a wine companion ~
+A very quiet environment, a very relaxed atmosphere, a very collapsed bartending, everything is good.
+2024-11-25 09:27:29,951 - INFO - 翻譯成功：1. Bartender 整體感、手法水準高
+2. 店內較安靜 服務人員也都非常輕聲
+3. 適合情侶談心 朋友聊天會有點壓力
+4. 點了骰子牛非常美味 -> 1. Bartender's overall sense and high level of method
+2. The quieter service staff in the store is also very soft
+3. Suitable for couples to talk about friends to chat with a little pressure
+4. Once the dice beef is very delicious
+2024-11-25 09:27:31,623 - INFO - 翻譯成功：太晚來了沒遇到店貓，但點了貓飯，非常香、超好吃。一入座的冰水與OSHIMORI很親切，走一個昏暗日式情調滿浪漫的，調酒好喝，廁所乾淨整潔。Bartender建議一開店來比較有機會遇到貓貓坐檯。 -> When I came too late, I didn't meet the shop cat, but I ordered the cat rice, which was very fragrant and delicious.The ice water is very kind to Oshimori. It is romantic to walk a dark sun, and the toilet is clean and tidy.Bartender recommends that there is a chance to meet a cat to sit on the table.
+2024-11-25 09:27:33,126 - INFO - 翻譯成功：超讚
+店內氣氛舒服
+Bartender 很會聊天
+羊排巨美味
+一定要點玉子燒 不會後悔
+
+店貓聲音很奶我真的融化\U0001f90d -> Pretty
+The atmosphere in the store is comfortable
+Bartender can chat very well
+Lamb chops are delicious
+Be sure to order Yuzi burned, you will not regret it
+
+The sound of the shop cat is very milk, I really melt
+2024-11-25 09:27:34,128 - INFO - 翻譯成功：餐點調酒都無懈可擊～都沒有雷！店貓很可愛\U0001f970 -> I am impeccable for meals ~ none of them!The shop cat is very cute 很
+2024-11-25 09:27:35,087 - INFO - 翻譯成功：有貓就給讚\U0001f44d\U0001f3fb
+音樂很嗨（有點吵的意思）、一上來有種貓砂臭味的感覺
+但有貓就給讚 -> If you have a cat, please like it
+The music is very hilarious (a bit noisy), I feel like a cat litter smell when I come up
+But a cat is like
+2024-11-25 09:27:37,139 - INFO - 翻譯成功：店裡服務還不錯，水杯永遠都盛滿的！ 時刻關注客人動向\U0001f44d 餐點酒品都還不錯 下班小聚的好地方～ -> The service in the store is not bad, the water cup is always full!Follow the guests at all times, the wine is not bad, the wine is not bad.
+2024-11-25 09:27:37,938 - INFO - 翻譯成功：調酒很好喝\U0001f60d回訪多次，調酒師們很親切，口味都可以調整，可以喝到最適合自己的酒\U0001f378\U0001f9e1 -> The bartending is delicious. The bartender is very kind, the taste can be adjusted, and you can drink the wine that suits you best.
+2024-11-25 09:27:38,631 - INFO - 翻譯成功：老闆娘熱情親切，服務非常周到，調酒名副其實的精緻。貓超可愛。 -> The boss is enthusiastic and kind, the service is very thoughtful.Cat is super cute.
+2024-11-25 09:27:39,973 - INFO - 翻譯成功：#七條通酒吧
+#台日共同經營
+#冰花煎餃 -> #
+#
+#Fried dumplings
+2024-11-25 09:27:41,455 - INFO - 翻譯成功：令人感到放鬆的環境覺得很安心
+章魚燒跟明太子玉子燒必點
+酒很棒 沖繩的煙燻調和的剛好很喜歡 -> A relaxed environment feels very secure
+Octopus burning and Prince Ming Yizi Yaki must order
+The wine is great in Okinawa's smoke and reconcile. I just like it very much
+2024-11-25 09:27:42,186 - INFO - 翻譯成功：很愛章魚燒跟水果系列的調酒！貓貓也很可愛\U0001f970 -> I love the bartending of octopus and fruit series!Cat is also very cute 也
+2024-11-25 09:27:43,523 - INFO - 翻譯成功：氣氛很舒服，再加上可以客製化的調酒（新鮮水果搭配上喜歡的基底酒），就變成好喝的調酒啦\U0001f44d -> The atmosphere is very comfortable, coupled with the customized bartending (fresh fruit with the favorite base wine), it becomes a delicious bartender.
+2024-11-25 09:27:44,742 - INFO - 翻譯成功：章魚燒好好吃，酒也很好喝，老闆會好好介紹，貓很可愛 -> The octopus is delicious and the wine is delicious. The boss will introduce it well. The cat is very cute
+2024-11-25 09:27:46,784 - INFO - 翻譯成功：氛圍特別的酒吧，還有可愛貓貓\U0001fa77
+超推tomato水果特調\U0001f345 -> Bar with a special atmosphere, and cute cats \U0001fa77
+Super push Tomato fruit special 超
+2024-11-25 09:27:48,753 - INFO - 翻譯成功：因應萬聖節\U0001f383
+老闆娘還有員工們精心打扮 印象非常深刻\U0001f923
+大家都很親切 店內氣氛也很棒
+很適合三五好友聚會聊天
+日式酒吧是我的初體驗
+酒類都很好喝\U0001f60b沒有在雷的！
+店貓是小黑\u2661(我自己取的)
+還有一隻小花\U0001f408
+很害羞可是不會咬人\u263a\ufe0f超可愛！
+廁所很乾淨舒適 還有附衛生用品超貼心\u2764\ufe0f
+非常溫馨舒適的空間～ -> In response to Halloween \u8282
+The boss and the employees are well -dressed up and impressed.
+Everyone is very kind and the atmosphere in the store is also great
+Very suitable for three or five friends to chat
+Japanese bar is my first experience
+The wine is very delicious. It is not in thunder!
+The shop cat is Xiao Hei (I took it by myself)
+There is also a little flower 只 只 只 只
+It's shy, but you can't bite people \u263a\ufe0f Super cute!
+The toilet is very clean and comfortable, and there are hygienic supplies superculture \u2764\ufe0f
+Very warm and comfortable space ~
+2024-11-25 09:27:50,317 - INFO - 翻譯成功：這邊氣氛很好！調酒也好喝，叫了一杯Omakase!很特別！ -> The atmosphere here is very good!The bartending is also delicious, called a cup of omakase! Very special!
+2024-11-25 09:27:51,796 - INFO - 翻譯成功：很舒服的日式酒吧！Bar tender很帥，老闆很親切，酒很好喝，樣式很多。 -> Very comfortable Japanese bar!Bar Tender is handsome, the boss is very kind, the wine is delicious, and there are many styles.
+2024-11-25 09:27:53,148 - INFO - 翻譯成功：有水煙口味任君挑選！
+調酒客製化非常棒讚\U0001f44d\U0001f44d\U0001f44c\U0001f308\U0001f308\u2764\ufe0f\U0001f618\U0001f618\U0001f970
+食物好吃\U0001f60b新鮮裝潢很厲害\U0001f44d
+看得出老闆很用心在經營！
+消費中等剛剛好！
+不過真的很推薦大家\U0001f44d\U0001f44c\U0001f308\U0001f308\u2764\ufe0f\U0001f618\U0001f618
+值得一去的酒吧！
+中山區的酒吧真的充滿人情味和熱誠！
+又很多厲害的調酒師！英文日文都很厲害\U0001f44d\U0001f44d\U0001f44c\U0001f308\U0001f308\u2764\ufe0f\U0001f618
+不少外國客人日本人到來！
+常常去好好喝好好吃\U0001f60b好好放鬆享受一天下來的疲倦與壓力\U0001f31f\U0001f44f\U0001f44f\U0001f44f\U0001f44f\U0001f31f -> There are water tobacco flavors of Ren Jun selected!
+Blooming customer is very great 化 \u2764\ufe0f \u8c03
+The food is delicious \U0001f60b Fresh decoration is very powerful \U0001f44d
+It can be seen that the boss is operating with heart!
+The medium consumption is just right!
+But I really recommend everyone \U0001f618\U0001f618\u2764\ufe0f 推荐
+It is worth a bar!
+The bar in Zhongshan District is really full of humanity and enthusiasm!
+There are many powerful bartender!English and Japanese are very powerful 都\u2764\ufe0f 英
+Many foreign guests Japanese come!
+I often go well and eat well.
+2024-11-25 09:27:54,373 - INFO - 翻譯成功：真的好喝，口感細膩，酒吧內氣氛安靜舒適 -> It's really delicious, the taste is delicate, the atmosphere in the bar is quiet and comfortable
+2024-11-25 09:27:55,295 - INFO - 翻譯成功：氣氛很棒 兩人來喝酒可以舒服的聊天
+調酒師也很認真確認酒是否合胃口 -> The atmosphere is great to chat and chat comfortably
+The bartender also carefully confirmed whether the wine was in line with appetite
+2024-11-25 09:27:56,708 - INFO - 翻譯成功：酒類很有特色又好喝，東西也好好吃！燈光美氣氛佳～ -> The alcohol is very special, delicious, and the things are delicious!The lights of the lights are good ~
+2024-11-25 09:27:57,465 - INFO - 翻譯成功：目錄上的特色調酒味道令人驚艷，服務態度優良。餐點部分…可能我們去那天剛好那個內場不會煮菜吧，
+冰花煎餃過焦，重上一份過生且粉水過多無紋路。 -> The specialty bartending taste on the directory is amazing and the service attitude is excellent.The meal part ... Maybe we just happen to be cooked that day, right?
+Binghua fried dumplings are too burnt, and have a long -lasting water and excessive pink water.
+2024-11-25 09:27:58,995 - INFO - 翻譯成功：台北不錯的酒吧，偏安靜，氣氛可以。
+週末小忙，想點功夫酒的話，建議平日來。水果調酒好喝！ -> The good bar in Taipei is quiet and the atmosphere is okay.
+Small busy weekend, if you want to make some kung fu wines, it is recommended to come on weekdays.Fruit alcohol is delicious!
+2024-11-25 09:27:59,509 - INFO - 翻譯成功：調酒好喝，日本地圖很有創意，唯一支持青森（連喝三杯） -> The bartender is delicious, the map of Japan is very creative, the only supports Aomori (even drink three cups)
+2024-11-25 09:28:01,021 - INFO - 翻譯成功：貓貓和老闆都和可愛友好 酒也都很香很好喝 -> Cats and bosses are also very fragrant and delicious
+2024-11-25 09:28:01,837 - INFO - 翻譯成功：林森北路商圈為數不多的純喝酒酒吧，而且竟然有貓貓，超開心超驚喜(/ω＼)
+
+一進門要先去洗手，坐定之後會給毛巾擦手，很日式的服務
+男店員很親切，還跟我們說要怎麼分辨這一帶的酒吧，來喝酒還可以學習日文，是不是很棒（笑）
+
+店內空間不大，一個吧台以及三桌沙發位，都蠻好坐的～其中一半是吸菸區，有用空氣清淨機區隔開來。
+剛好那天的客人不多，待在這裡我覺得很放鬆耶～感覺約朋友或獨自一人都很可以
+
+今天點的兩杯都是以威士忌為基底的調酒，old fashioned 和penicillin ，各是$450元
+店員邊調酒邊仔細的介紹，Old fashioned 用的是來自美國的波本威士忌，原料、味道和香氣都和平常喝到的蘇格蘭威士忌不一樣，順順的好喝
+第二杯點了熟悉的penicillin ，可這杯我之前喝到的太好喝了，相較之下就覺得普通
+
+低消500，可刷卡但就要加一成，所以記得多領點現金來(/ω＼) -> There are few pure drink bars on the business district of Linsen North Road, and there are cats.
+
+When you enter the door, go to wash your hands first. After sitting, you will wipe your hands on the towel.
+The male clerk is very kind, and told us how to distinguish the bar in this area. You can learn Japanese when you drink and drink.
+
+The space in the store is not large. One bar and three tables of sofa are quite easy to sit ~ Half of which is the smoking area, and the use of air purifiers is separated.
+There are not many guests that day, I feel very relaxed here ~ I feel that I can ask friends or alone.
+
+The two cups of today are bartender based on whiskey, Old Fashioned and Penicillin, each of which is $ 450 yuan
+The clerk carefully introduced while adjusting the wine, Old Fashioned used Buben whiskey from the United States. The raw materials, taste and aroma are different from the Scottish whiskey that you often drink.
+The second cup ordered the familiar Penicillin, but the cup I drank too much before, and I felt ordinary in comparison.
+
+Low low 500, you can swipe the card, but you need to add one to one percent, so remember
+2024-11-25 09:28:03,565 - INFO - 翻譯成功：調酒種類很多，喜歡經典的酒客一定能找到自己喜歡的口味。走進看似不起眼容易忽略的一樓門口，到了二樓迎接你的是放鬆幽靜的空間，裝潢就算再經過50年也非常復古且時髦。那天喝了Gin Tonic、Sidecar和Martini，都非常有水準，是一間內外兼具的好酒吧。 -> There are many types of bartending, and classic alcoholics can definitely find their favorite taste.Entering the door of the seemingly inconspicuous and easy to ignore. On the second floor, you are greeted by a relaxed space. The decoration is very retro and fashionable even after 50 years.I drank Gin Tonic, Sidecar, and Martini that day, all of which were very standard. They were good bars inside and outside.
+2024-11-25 09:28:04,212 - INFO - 翻譯成功：和風鰹魚Martini風味獨特有趣，Sazerackhouse的冰杯概念感性，Bloody Mary感覺清爽，加上店內氣氛舒服良好，調酒師又貼心，愉快的一個晚上。 -> He Windya Martini has a unique and interesting flavor. Sazrackhouse's ice cup concept is emotional. Bloody Mary feels refreshing. In addition, the atmosphere in the store is comfortable, the bartender is intimate, and a pleasant night.
+2024-11-25 09:28:05,422 - INFO - 翻譯成功：大熱天進來給你冰毛巾，舒服 (\xb4▽\uff40)；
+章魚燒很好吃，傳統的日式章魚燒，酒很棒！！各有特色，值得推薦的地方 ( ,‧\u1d17‧,)\u2665 -> Come in for you in a hot day and give you ice towels, comfortable (\xb4 ▽ \uff40);
+The octopus is delicious.IntersectionEach has its own characteristics, and it is worth recommending (, ‧ \u1d17 ‧,) \u2665
+2024-11-25 09:28:06,421 - INFO - 翻譯成功：店內氣氛舒適服務親切
+介紹得很仔細
+還有可愛的貓貓呦
+喵喵叫 -> The atmosphere in the store is comfortable service
+Introduce very carefully
+And cute cats
+Meow
+2024-11-25 09:28:07,474 - INFO - 翻譯成功：很喜歡「香料」調酒，不會有胡椒味，口味獨特，濃度適中！氛圍適合靜態式的小聚，另外驚喜章魚燒很好吃，值得再訪！ -> I really like "spices" bartender. There will be no pepper flavor. The taste is unique and moderate!The atmosphere is suitable for static small gatherings. In addition, the surprise octopus is delicious, and it is worth visiting!
+2024-11-25 09:28:08,989 - INFO - 翻譯成功：店內氣氛輕鬆 酒偏貴但不錯喝 有一隻黑貓。菜單內容較少但可和他說你想喝的酒 你都能調。店內服務人員親切 有低消一人500 -> The atmosphere in the store is easy to wine but it is good to drink a black cat.The menu content is small, but you can adjust the wine you want to drink.The service staff in the store is affectionate and low, one person 500
+2024-11-25 09:28:10,020 - INFO - 翻譯成功：服務態度超棒很喜歡這！平日悠閒享受的夜晚。最佳首選 -> The service attitude is great and I like this!Nights that enjoy leisurely on weekdays.Best choice
+2024-11-25 09:28:11,524 - INFO - 翻譯成功：飲料好喝先不提
+服務令人暖心
+我雨傘被別的客人拿走還給我一把愛心傘真的讓我很感動
+餐飲也沒話講
+對我而言是一家可以安心推朋友來的店 -> Don't mention the drink for drinking
+The service is warm
+My umbrella was taken away by other guests and gave me a caring umbrella. I really moved me.
+There is nothing to say about catering
+For me, it is a shop that can push friends with peace of mind
+2024-11-25 09:28:13,859 - INFO - 翻譯成功：義大利麵很好吃的酒吧、還有手工焦糖乳酪蛋糕超美味！可是蛋糕要兩天前預訂～～～ -> The delicious bar of Itali noodles, as well as handmade caramel cheese cakes are super delicious!But the cake was booked two days ago ~~~
+2024-11-25 09:28:15,437 - INFO - 翻譯成功：1/18來訪。環境寧靜完美，服務好的很好，一般的一般。調酒用的基酒有點便宜，以這檔次的價位感覺不佳。兩個人點第二輪等了將近半個小時，這一點十分不滿。 -> Visit 1/18.The environment is quiet and perfect, the service is very good, and generally.The base wine for bartender is a bit cheap, and it feels poor at this level.The two people waited for nearly half an hour in the second round, which was very dissatisfied.
+2024-11-25 09:28:16,911 - INFO - 翻譯成功：酒好喝 氣氛佳 -> The wine is good and the atmosphere is good
+2024-11-25 09:28:18,177 - INFO - 翻譯成功：來了很多次，很喜歡章魚燒跟生火腿炒飯，今天店了新鮮李子cocktail，ramos gin fizz跟durian cocktail也很不錯 -> I have been here many times, I like octopus roasted and raw ham fried rice. Today, I have a fresh plum Cocktail, Ramos Gin Fizz and Durian Cocktail
+2024-11-25 09:28:18,737 - INFO - 翻譯成功：店內服務生態度親切
+有很多學生、留學生
+還有店貓很可愛 會自己賺罐罐
+
+酒味也還不錯
+價錢偏高
+適合朋友聊天小酌一番的好地方 -> In -store service ethical attitude is cordial
+There are many students and international students
+And the shop cat is very cute and can jar by yourself
+
+The wine taste is also good
+High price
+Suitable for friends to chat and drink a good place
+2024-11-25 09:28:19,622 - INFO - 翻譯成功：氣氛佳，沙發很舒服，和妹子談心的好所在，酒還是依舊好喝。 -> The atmosphere is good, the sofa is very comfortable, and the good thing to talk to the girl is still delicious.
+2024-11-25 09:28:20,991 - INFO - 翻譯成功：喝了當季的葡萄調酒
+超推薦
+戰斧豬很好吃
+調酒師都很健談(\uff61\uff65ω\uff65\uff61)\uff89
+以後還會再來！！ -> Drinking the grapes of the season
+Super recommended
+Tomahawk is delicious
+The bartender is very talkative (ω ω \uff65\uff61) \uff89
+Will come again in the future!Intersection
+2024-11-25 09:28:22,414 - INFO - 翻譯成功：非常chill, 老闆娘人很客氣，餐點調酒都在水準之上。 -> Very chill, the boss is very polite, and the meals are all above the standard.
+2024-11-25 09:28:23,394 - INFO - 翻譯成功：可以在這裡很放鬆，享受季節性很特別的調酒，偶爾可以和店貓同座，超療癒。 -> You can relax here and enjoy the seasonal bartending. Occasionally, you can sit with the store cats and heal.
+2024-11-25 09:28:24,506 - INFO - 翻譯成功：酒非常好喝，調酒師十分用心的為客人找想！ -> The wine is very delicious, and the bartender is very careful to find a thought for the guests!
+2024-11-25 09:28:26,066 - INFO - 翻譯成功：氣氛不錯的日式調酒吧 -> Japanese -style bartender bar with good atmosphere
+2024-11-25 09:28:27,197 - INFO - 翻譯成功：比較日式風格的酒吧
+價位也不貴
+食物蠻好吃的
+調酒選擇很多 -> A Japanese -style bar
+The price is not expensive
+Food is pretty delicious
+There are a lot of bartending choices
+2024-11-25 09:28:28,505 - INFO - 翻譯成功：酒很用心調 闆娘也會細心介紹酒給客人認識 -> The wine is very heart -to -heart, and the panel mother will also carefully introduce the wine to the guests to know
+2024-11-25 09:28:29,407 - INFO - 翻譯成功：優點是店家開門頗早，但剛好遇到冷氣故障 -> The advantage is that the store opened the door early, but it happened to encounter air -conditioning failure
+2024-11-25 09:28:30,649 - INFO - 翻譯成功：菊花茶 好喝！
+敢吃榴蓮的 點榴蓮口味 \U0001f924 -> Chrysanthemum tea is delicious!
+Dare to eat durian's durian flavor \U0001f924
+2024-11-25 09:28:31,110 - INFO - 翻譯成功：很舒服的酒吧～重點是還有可愛三花貓 -> Very comfortable bar ~ The point is that there are also cute Sanhua cats
+2024-11-25 09:28:32,444 - INFO - 翻譯成功：在UBER EAT叫的餐點
+連兩天吃很奢侈的宵夜\U0001f923
+因為他們家牛排既使外送也好吃\U0001f60d
+謝謝店家送的甜點\u2764\ufe0f
+也超好吃 -> Meal called at Uber Eat
+Eat a very luxurious supper for two days \U0001f923
+Because their steaks make the delivery of the delivery so delicious
+Thank you desserts for the store \u2764\ufe0f
+It's so delicious
+2024-11-25 09:28:33,564 - INFO - 翻譯成功：很棒的聚會場所，調酒師專業友善\U0001f60a … -> Great party, professional and friendly bartender ...
+2024-11-25 09:28:34,541 - INFO - 翻譯成功：可以安靜舒服喝酒、抽水煙放鬆的地方，調酒品質很好，裝飾有美感 -> You can drink quietly and comfortably, and relax the smoke. The quality of the bartender is very good, and the decoration is beautiful.
+2024-11-25 09:28:35,853 - INFO - 翻譯成功：老闆仔細介紹餐點與調酒，店內舒適、氣氛佳，新鮮水果製成的調酒，女孩們不可錯過！ -> The boss carefully introduces meals and sober. The store is comfortable and atmosphere. The bartending made of fresh fruits must not be missed!
+2024-11-25 09:28:37,801 - INFO - 翻譯成功：店員人非常好
+店內氣氛也很舒服
+有線香味道很放鬆
+還有可愛的貓
+酒品介紹很詳細
+喝起來也如介紹的一樣
+不小心打破了一個杯子沒算我們錢
+真的很不好意思
+下次一定要再光顧 -> The clerk is very good
+The atmosphere in the store is also very comfortable
+Cable fragrance is very relaxed
+And cute cat
+The introduction of wine is very detailed
+Drink as introduced
+I accidentally broke a cup and did not count our money
+Really embarrassed
+Be sure to visit again next time
+2024-11-25 09:28:38,214 - INFO - 翻譯成功：北海道奶味酒good，貓咪可愛，氛圍很好，bartender和善 -> Hokkaido milk -flavored wine good, cat is cute, the atmosphere is good, Bartender is kind
+2024-11-25 09:28:38,958 - INFO - 翻譯成功：環境舒服，老闆和調酒師很細心 -> The environment is comfortable, the boss and the bartender are very careful
+2024-11-25 09:28:40,439 - INFO - 翻譯成功：第一次的日式酒吧就給這家了
+店長兼bartender 很棒！人也很nice
+這邊有水煙，多人以上點大壺會很值得
+最重要的是，酒好喝！ -> The first Japanese -style bar is given to this house
+The manager and Bartender are great!People are also nice
+There are water smoke here, and more people above a large pot will be worth it
+The most important thing is that the wine is delicious!
+2024-11-25 09:28:42,772 - INFO - 翻譯成功：體驗了很特別的經驗
+第一次喝到煙燻味的調酒
+
+意外的順口
+
+調酒師也非常的好聊
+
+期待下次再訪\U0001f60e -> I have experienced very special experience
+The first time I drank the smoky flavor bartender
+
+Unexpectedly
+
+The bartender is also very good to chat
+
+Looking forward to visiting again next time
+2024-11-25 09:28:44,286 - INFO - 翻譯成功：五星評價送貓貓豆乾 -> Five -star evaluation to send cats dry
+2024-11-25 09:28:45,040 - INFO - 翻譯成功：服務態度良好
+重點店員都好帥 -> Good service attitude
+The key clerks are so handsome
+2024-11-25 09:28:45,900 - INFO - 翻譯成功：店裡氣氛不錯，有貓、酒好喝無雷\U0001f44d推 … -> The atmosphere in the store is good, there are cats and wines that have a good taste of mines ...
+2024-11-25 09:28:47,117 - INFO - 翻譯成功：食物好吃但真的等待滿久的，調酒也都不錯\U0001f44d … -> The food is delicious but really waits for a long time, and the bartending is also good ...
+2024-11-25 09:28:47,545 - INFO - 翻譯成功：貓咪很乖很可愛 -> Cats are very good and cute
+2024-11-25 09:28:49,117 - INFO - 翻譯成功：限定水果酒 葡萄調酒、楊桃調酒製作時間長 呈上時一看就看的出店家的用心 -> Limited fruit wine, grapes, alcohol, caramel bartender to make a long time to see the intention of the store at a glance
+2024-11-25 09:28:49,768 - INFO - 翻譯成功：氣氛非常優雅，擦手巾充滿檜木香氣。
+推薦起司盤，布里起司有自己做煙燻，味道很特別，軟嫩又香。馬斯卡崩做的起司蛋糕，在退冰前吃有冰淇淋口感。
+酒品類更是相當滿意。 -> The atmosphere is very elegant.
+Recommend cheese, Burry cheese has its own smoke, the taste is very special, soft and fragrant.The cheese cake made by Maska was eaten with ice cream taste before retreat.
+The wine category is quite satisfied.
+2024-11-25 09:28:50,708 - INFO - 翻譯成功：很特別的酒
+酒感偏輕
+適合小酌單純聊天來的地方 -> Very special wine
+Light wine
+Suitable for a drink where you can simply chat
+2024-11-25 09:28:51,706 - INFO - 翻譯成功：Owen調的酒就是讚 真的很喜歡這間店的氛圍 -> The wine tuned by Owen is like to like the atmosphere of this shop very much
+2024-11-25 09:28:53,041 - INFO - 翻譯成功：氣氛和酒都讚讚～\U0001f496\U0001f496 … -> The atmosphere and wine are praised ~ 都 ...
+2024-11-25 09:28:54,497 - INFO - 翻譯成功：調酒好喝！東西好吃！ -> Blooming is delicious!Things are delicious!
+2024-11-25 09:28:55,748 - INFO - 翻譯成功：安安靜靜的 闆娘超nice 環境超讚！！ -> The quiet Ban Niang super nice environment is superb!Intersection
+2024-11-25 09:28:56,536 - INFO - 翻譯成功：店內氣氛令人放鬆，調酒品項介紹的很仔細，有熱毛巾很加分。
+特調水果酒很好入口，無法接受酒精太濃烈可以事先告知做調整，還有店貓不定時出沒。
+值得推薦的一間好店。 -> The atmosphere in the store is relaxed. The bartending items are introduced very carefully.
+The special fruit wine is very good. If you ca n’t accept the alcohol too strong, you can inform the adjustment in advance.
+A good shop worth recommending.
+2024-11-25 09:28:57,639 - INFO - 翻譯成功：店貓可愛 飲料好喝~ -> The cute drink of the store is delicious ~
+2024-11-25 09:28:58,996 - INFO - 翻譯成功：不管吃的還是調酒都相當不錯的好地方，安靜悠閒，非常適合一人小酌或是跟朋友用餐閒聊，偶而還能被店貓寵幸~~~大推章魚燒，雖然會需要稍等一段時間，但管管手工美味值得等待\u2764\ufe0f -> Whether you eat or bartender, you are quite good, quiet and leisurely, very suitable for a drink or meal chatting with friends, and occasionally you can be spoiled by shop cats ~~~ big push octopus burn, although it will take a while for a while for a while , But the pipe is handmade delicious and worth waiting for \u2764\ufe0f
+2024-11-25 09:29:00,432 - INFO - 翻譯成功：貓咪很可愛 酒很棒 -> The cat is very cute
+2024-11-25 09:29:01,418 - INFO - 翻譯成功：氣氛舒服 環境安靜 可以和調酒師說自己喜歡的調酒類型
+每杯水準都很高 值得推薦：") -> The atmosphere is comfortable and the environment is quiet.
+Each cup level is very high and it is recommended: ")
+2024-11-25 09:29:02,202 - INFO - 翻譯成功：調酒厲害，貓咪可愛 -> The bartender is great, the cat is cute
+2024-11-25 09:29:02,750 - INFO - 翻譯成功：餐酒都很讚！！ -> The meal wine is great!Intersection
+2024-11-25 09:29:03,212 - INFO - 翻譯成功：氣氛很好 -> The atmosphere is very good
+2024-11-25 09:29:05,240 - INFO - 翻譯成功：生意挺不錯的
+一開始等的有點久
+對抽菸的人來說是好地方
+對不抽菸的客人會有點不舒服
+東西等的有點久
+調酒也等的有點久
+但是調酒師都非常的客氣
+價格也不算貴
+章魚燒或許我吃不慣
+覺得~!@#$%^ -> The business is pretty good
+I have waited a long time at the beginning
+It is a good place for smokers
+It will be a bit uncomfortable for customers who don't smoke
+Things have been waiting for a long time
+I have waited for a long time for bartending
+But the bartender is very polite
+The price is not expensive
+Octopus burning may I not get used to it
+I think ~!@#$%^
+2024-11-25 09:29:06,251 - INFO - 翻譯成功：調酒很有想法，名字取得也好！是個聊天分享的適宜埸所 -> Into the bartending is very thoughtful, and the name is obtained!It is a suitable for chat and sharing
+2024-11-25 09:29:07,443 - INFO - 翻譯成功：價位稍貴 但是酒有水準
+非常適合放空喝一兩杯 -> The price is slightly more expensive, but the wine is level
+Very suitable for letting go and drink for one or two cups
+2024-11-25 09:29:08,941 - INFO - 翻譯成功：專業的調酒師，可以說出想要的香氣，再調製令人滿意的調酒，有時會選一種基酒給調酒師調，很自由的喝酒，調酒價格約300-500左右，店內座位有限，且工作人員不多，一份美食、美酒都是可以等待的。 -> Professional bartenders can say the aroma they want, and then prepare satisfactory bartending. Sometimes they choose a wine bartender to drink, very free to drink, about 300-500, about 300-500, There are limited seats in the store, and there are not many staff. A food and wine are available.
+2024-11-25 09:29:10,555 - INFO - 翻譯成功：有氣氛的一間店 -> A shop with an atmosphere
+2024-11-25 09:29:11,700 - INFO - 翻譯成功：氣氛輕鬆 酒好喝！有可遇不可求的可愛貓咪～ -> The atmosphere is easy to drink!There are cute cats that can be encountered ~
+2024-11-25 09:29:12,671 - INFO - 翻譯成功：服務態度很棒氣氛很好來很多次了會繼續帶朋友來的 -> The service attitude is great, the atmosphere is very good, many times, I will continue to bring friends
+2024-11-25 09:29:14,076 - INFO - 翻譯成功：店內氣氛營造得很放鬆，而且調酒師的技術也沒話說的好，作品都好讚 -> The atmosphere in the store is very relaxed, and the technology of the bartender is nothing to say.
+2024-11-25 09:29:15,523 - INFO - 翻譯成功：位置舒適，酒好喝食物好吃 -> Comfortable location, delicious food for wine
+2024-11-25 09:29:16,386 - INFO - 翻譯成功：優雅品味有深度的品酒放鬆好地方，適合懂酒的人跟bartender好好聊酒小酌，渡過一個愉快的夜晚 -> The elegant taste has deep wine tasting and relaxing the place. The person who knows the wine is suitable for the wine to talk to Bartender.
+2024-11-25 09:29:17,673 - INFO - 翻譯成功：推薦榴槤特調 -> Recommended durian special
+2024-11-25 09:29:20,006 - INFO - 翻譯成功：店家和客人的相處互動十分自在，是一間可以放鬆小酌的舒適酒吧。 -> The interaction between the store and the guests is very comfortable. It is a comfortable bar that can relax and drink.
+2024-11-25 09:29:21,408 - INFO - 翻譯成功：Really Comfort Place for a old-school bar lover like me
+hey, but the service is really good, Anna will customized some creative flavor for customer's preference,quite good for people that is not familiar with cocktails, also have good selection of whisky and wines. I would it's a hidden gem in Linsen N. Rd
+owners and staffs speak English and Japanese
+對於日式酒吧愛好者來說是很舒適的環境
+服務的水準是很不錯的，店長安娜客製化的調酒口味
+對於不熟悉調酒或是不擅於喝酒的人說是很友善的
+店內的精選的威士忌和紅白酒也是頗有水準的
+是一家隱密又低調的好店啊 ! 值得造訪! -> Really Comfort Place for a Old-SCHool Bar Lover Like Me
+Hey, but the service is really good, Anna Will Customize Some Creative Flavor for Customer's Preference, Quite good for people that is not fabith, so have good selection of whisky and wines.
+owners and Staffs Speak English and Japanese
+It is a very comfortable environment for Japanese bar enthusiasts
+The level of service is very good.
+It is very friendly to those who are not familiar with bartender or are not good at drinking
+The selected whiskey and red and white wine in the store are also quite standard.
+It is a good and low -key shop! It is worth visiting!
+2024-11-25 09:29:22,129 - INFO - 翻譯成功：老闆娘很會推薦酒，同樣一款酒喝起來的感受就是不同，長知識了！ -> The boss will recommend wine very much. The same wine feels different, long knowledge!
+2024-11-25 09:29:23,105 - INFO - 翻譯成功：氣氛很棒，適合下班喝一杯。 -> The atmosphere is great, suitable for drinking a drink from get off work.
+2024-11-25 09:29:23,785 - INFO - 翻譯成功：老闆娘很有趣 服務超級好 酒也非常好喝 一定會多去 -> The boss is very interesting service, the service is super good and the wine will be very delicious, it will go more, you will go more
+2024-11-25 09:29:25,084 - INFO - 翻譯成功：酒很好喝！
+老闆人很讚\U0001f602 -> The wine is delicious!
+The boss is very good
+2024-11-25 09:29:25,764 - INFO - 翻譯成功：餐點好吃，酒也好喝 ，氣氛很輕鬆，有貓100分~ -> The meal is delicious, the wine is delicious, the atmosphere is easy, there are 100 points for cat ~
+2024-11-25 09:29:26,700 - INFO - 翻譯成功：貓貓好可愛！！ -> Cats are so cute!Intersection
+2024-11-25 09:29:27,598 - INFO - 翻譯成功：摸摸是我遇過最欠咖的餐飲同仁了
+什麼都會真的很棒\U0001f4aa … -> Touching is the most owed catering colleagues I have ever encountered coffee
+Everything will be really great ...
+2024-11-25 09:29:28,131 - INFO - 翻譯成功：可愛的貓貓 -> Cute cat
+2024-11-25 09:29:29,486 - INFO - 翻譯成功：最喜歡的bar之一 -> One of the favorite BAR
+2024-11-25 09:29:30,746 - INFO - 翻譯成功：專業酒吧，老闆娘還會幫客人介紹雪茄和烘烤 -> Professional bar, the boss will also help guests introduce cigars and baking
+2024-11-25 09:29:32,296 - INFO - 翻譯成功：PRO級的調酒及晚餐 圓供親切服務態度很好 會再拜訪! -> PRO -level bartending and dinner circle for cordial service attitude is good to visit again!
+2024-11-25 09:29:33,097 - INFO - 翻譯成功：價格偏高，但是氛圍 跟調酒很不錯 -> The price is high, but the atmosphere is very good
+2024-11-25 09:29:33,933 - INFO - 翻譯成功：做為我在中山的酒吧地標，這裡是我喝酒唯一推薦 -> As my landmark in Zhongshan, this is the only recommendation for my drinking
+2024-11-25 09:29:34,521 - INFO - 翻譯成功：調酒好喝 食物好吃
+還可以室內抽煙 -> Blooming delicious food delicious food
+You can also smoke indoors
+2024-11-25 09:29:35,620 - INFO - 翻譯成功：調酒專業 食物好喝
+可以喝到比較少見的酒款 -> Squanking specialty food is delicious
+You can drink a relatively rare wine
+2024-11-25 09:29:36,773 - INFO - 翻譯成功：調酒好喝、威士忌品項可以來挖挖寶。 -> Blooming is delicious, whiskey items can be digging treasures.
+2024-11-25 09:29:37,889 - INFO - 翻譯成功：非常舒服的氛圍
+調酒不錯 -> Very comfortable atmosphere
+Blooming is good
+2024-11-25 09:29:38,477 - INFO - 翻譯成功：如果你是喜歡安靜 暗暗的地方
+這邊很適合你\U0001f90d … -> If you like to be quiet and dark
+This is very suitable for you ...
+2024-11-25 09:29:39,618 - INFO - 翻譯成功：調酒的味道不錯，環境安靜舒適 -> The taste of bartender is good, the environment is quiet and comfortable
+2024-11-25 09:29:40,891 - INFO - 翻譯成功：聊天好去處 -> Chat the place
+2024-11-25 09:29:41,589 - INFO - 翻譯成功：很厲害的調酒 -> Very powerful bartending
+2024-11-25 09:29:42,696 - INFO - 翻譯成功：經典調酒厲害! -> Classic bartending!
+2024-11-25 09:29:43,945 - INFO - 翻譯成功：氣氛不錯，調酒還ok -> The atmosphere is good, the bartender is ok
+2024-11-25 09:29:45,000 - INFO - 翻譯成功：調酒跟食物都超厲害的 -> Blooming and food are super powerful
+2024-11-25 09:29:45,839 - INFO - 翻譯成功：好喝好吃可惜等待時間太久啦！ -> It's so delicious, but the wait time is too long!
+2024-11-25 09:29:46,480 - INFO - 翻譯成功：無法言喻，來了就知道 -> Can't speak, you know when you come
+2024-11-25 09:29:48,288 - INFO - 翻譯成功：調酒很棒，餐點不錯 -> The bartender is great, the meal is good
+2024-11-25 09:29:49,126 - INFO - 翻譯成功：很有質感 東西非常好吃 -> Very textured and very delicious
+2024-11-25 09:29:49,554 - INFO - 翻譯成功：調酒好喝 氣氛佳 -> The atmosphere of bartender is good
+2024-11-25 09:29:50,705 - INFO - 翻譯成功：輕鬆消費有人情味的酒吧 -> Easily consumption of human emotional bar
+2024-11-25 09:29:51,867 - INFO - 翻譯成功：很棒的調酒 -> Great bartending
+2024-11-25 09:29:53,044 - INFO - 翻譯成功：服務 & 餐點不錯 -> Service & meals are good
+2024-11-25 09:29:53,871 - INFO - 翻譯成功：調酒很有水平 -> Blooming is very horizontal
+2024-11-25 09:29:54,810 - INFO - 翻譯成功：喜歡水果酒 -> Like fruit wine
+2024-11-25 09:29:56,270 - INFO - 翻譯成功：好鄰居 -> Good neighbor
+2024-11-25 09:29:57,150 - INFO - 翻譯成功：很棒的小雞尾酒吧。有點黑暗和低調。所以不要指望高檔的雞尾酒吧。我們當晚的調酒師 Hisa 提供了很多信息，並根據我們的口味調整了我們的飲料。幸運的話，您可能會遇到當地酒吧貓的拜訪 \U0001f63a -> A great cocktail bar.A little dark and low -key.So don't expect high -end cocktail bars.Our bartender Hisa provided a lot of information that night and adjusted our drink based on our taste.If you are lucky, you may encounter the visit of the local bar cat \U0001f63a
+2024-11-25 09:29:58,284 - INFO - 翻譯成功：可以喝到用茶調製的稍微不尋常的雞尾酒的酒吧。許多雞尾酒都以日本的地方命名，例如“沖繩”。這是一家不錯的酒吧，氣氛很好，提供易於飲用的雞尾酒。我進店的時候有一隻貓，但當我到座位上時，它卻不見了。 -> You can drink a slightly unusual cocktail bar that uses tea.Many cocktails are named after Japan, such as "Okinawa".This is a good bar, with a good atmosphere and providing cocktails that are easy to drink.When I entered the shop, there was a cat, but when I arrived in the seat, it disappeared.
+2024-11-25 09:29:59,827 - INFO - 翻譯成功：我無法用言語來形容這個地方有多好。這是我喝過的最好的髒馬提尼，這說明了很多。阿爾卑斯山的工作人員非常友好，氣氛就像在家裡一樣。 -> I can't use words to describe how good this place is.This is the best dirty Martini I have ever drank, which shows a lot.The staff of the Alps is very friendly, and the atmosphere is like at home.
+2024-11-25 09:30:01,225 - INFO - 翻譯成功：酒吧氣氛溫馨，調酒師英語說得很好，並提供了很好的建議。唯一的缺點就是價格！太貴了。不知道在哪個星球，一杯威士忌加茶要1100台幣... -> The atmosphere of the bar is warm, the bartender English speaks very well, and it provides good suggestions.The only disadvantage is the price!It's too expensive.I do n’t know which planet, a cup of whiskey and tea cost 1100 Taiwan dollars ...
+2024-11-25 09:30:02,107 - INFO - 翻譯成功：我想知道我在說什麼...
+感謝非常友善的調酒師，這很有趣！非常感謝！貓貓也很可愛\u2764\ufe0f -> I want to know what I'm talking about ...
+Thank you very friendly bartender, which is very interesting!Thank you so much!Cat is also very cute \u2764\ufe0f
+2024-11-25 09:30:03,562 - INFO - 翻譯成功：台灣最好的雞尾酒！一定要嚐嚐他們的榴蓮雞尾酒\U0001f970 -> The best cocktail in Taiwan!Be sure to taste their durian cocktails \U0001f970
+2024-11-25 09:30:05,125 - INFO - 翻譯成功：很好，很冷，很舒服，但我覺得最低消費有點廢話，因為大多數飲料在 400-450 左右，但最低是每人 500，所以你最終要為飲料支付高達 900 的費用。飲料本身很好，而且做得很好，如果它是名副其實的話，那麼這些飲料有很好的日本味道 -> Very good, cold, very comfortable, but I think the minimum consumption is a bit nonsense, because most drinks are about 400-450, but the minimum is 500 per person, so you eventually pay for the drink of up to 900.The drink itself is very good and do well. If it is a veritable, then these drinks have a good Japanese taste
+2024-11-25 09:30:06,627 - INFO - 翻譯成功：這是一個聊天的好酒吧。音樂低沉，燈光昏暗，飲料平衡。
+我非常喜歡這個酒吧，所以我回來了兩次。 -> This is a good bar chat.The music is low, the light is dim, and the drink balances.
+I like this bar very much, so I came back twice.
+2024-11-25 09:30:07,842 - INFO - 翻譯成功：和我的家人在這裡度過了一段美好的時光。聊天很愉快，馬拉雞尾酒也很美味。 -> I have a good time with my family here.The chat is very happy, and the Malaci cocktail is also delicious.
+2024-11-25 09:30:08,852 - INFO - 翻譯成功：在這個地區很難找到一個擁有優雅輕鬆氛圍的好地方。 茨城是我最喜歡的雞尾酒，看起來工序很複雜，配料也很多。工作人員非常專業、細心。 -> It is difficult to find a good place with an elegant and relaxed atmosphere in this area.Ibaraki is my favorite cocktail. It looks very complicated and has a lot of ingredients.The staff is very professional and careful.
+2024-11-25 09:30:10,389 - INFO - 翻譯成功：擁有健康日本傳統的美妙酒吧。食物都是新鮮烹製的，飲料很棒，還有爵士背景音樂。作為一個陌生人進入並且只會說英語，結識了很多新朋友。似乎是真正善良的人去的地方。謝謝安娜和哈利。 -> Has a wonderful bars with healthy Japanese.The food is freshly cooked, the drink is great, and there are jazz background music.As a stranger, he enters and only speaks English, and has met many new friends.It seems to be a real and kind person.Thank you Anna and Harry.
+2024-11-25 09:30:10,889 - INFO - 翻譯成功：我的朋友格雷戈里愛上了這個地方。飲料的選擇很好，而且氣氛非常安靜。 -> My friend fell in love with this place.The choice of drinks is very good, and the atmosphere is very quiet.
+2024-11-25 09:30:12,541 - INFO - 翻譯成功：工作人員非常熱情和友好。他們會根據你的喜好幫你選擇飲料，無論是果味的、甜的、辣椒的、酸的等等……我給了它4 顆星，因為我覺得飲料的價格有點高，你可能要等上15 分鐘每次拿到它們之前都需要更長的時間。 -> The staff is very enthusiastic and friendly.They will help you choose drinks according to your preference, whether it is fruit, sweet, peppers, sour, etc. I give it 4 stars, because I think the price of the drink is a bit high, you may have to wait It takes a longer time before getting them in 15 minutes.
+2024-11-25 09:30:13,883 - INFO - 翻譯成功：雞尾酒很美味，老闆很友善。大家請去兩次吧。 -> Cocktails are delicious, and the boss is very friendly.Please go twice.
+2024-11-25 09:30:14,837 - INFO - 翻譯成功：店裡的氣氛很好，我感覺很好。
+貓貓好可愛\U0001f60d -> The atmosphere in the store is very good, I feel good.
+Cat is so cute 好
+2024-11-25 09:30:16,257 - INFO - 翻譯成功：舒適的場地和氛圍。美味的雞尾酒 - 廚師剛剛根據我們最喜歡的原料為我們調製了一款新雞尾酒。 -> Comfortable venue and atmosphere.The delicious cocktail -the chef just prepared a new cocktail for us based on our favorite raw materials.
+2024-11-25 09:30:17,163 - INFO - 翻譯成功：非常友好的酒吧。  很好的新鮮水果雞尾酒。  物有所值。 -> Very friendly bar.Good fresh fruit cocktail.It is worthwhile.
+2024-11-25 09:30:18,638 - INFO - 翻譯成功：那是在假期之前，但空無一人。我能夠放鬆下來。 -> It was before the holiday, but nothing was empty.I can relax.
+2024-11-25 09:30:20,734 - INFO - 翻譯成功：穩定店15年
+隨時來都很有趣 -> Stable store for 15 years
+It's fun to come at any time
+2024-11-25 09:30:21,341 - INFO - 翻譯成功：我認為這是一個放鬆身心的好酒吧。 -> I think this is a good bar to relax and mind.
+2024-11-25 09:30:22,539 - INFO - 翻譯成功：享用果味雞尾酒的好地方。超級友善的工作人員 -> Enjoy a good place for fruit cocktails.Super friendly staff
+2024-11-25 09:30:23,652 - INFO - 翻譯成功：很棒的飲料和食物。除了菜單上的雞尾酒之外，我還可以客製化我的飲料，只要他們有原料。
+
+工作人員友好而專業，大多數人會說英語或日語。我會向那些正在尋找涼爽和安靜的地方的人推薦這個酒吧。 -> A great drink and food.In addition to the cocktails on the menu, I can also customize my drink, as long as they have raw materials.
+
+The staff is friendly and professional, and most people speak English or Japanese.I will recommend this bar to those who are looking for cool and quiet places.
+2024-11-25 09:30:25,089 - INFO - 翻譯成功：雞尾酒精心調製，味道鮮美，好喝的飲品也很多。調製雞尾酒時有多種酒精飲料可供選擇。工作人員友好且才華橫溢。我想自己找出答案，但我強烈推薦它。 -> Cocktails are carefully prepared, delicious, and there are many delicious drinks.There are a variety of alcoholic beverages to choose from when preparing cocktails.The staff is friendly and talented.I want to find out the answer myself, but I strongly recommend it.
+2024-11-25 09:30:25,958 - INFO - 翻譯成功：這是一家氣氛非常好的酒吧。
+它被保留了。 -> This is a very good bar.
+It is retained.
+2024-11-25 09:30:28,298 - INFO - 翻譯成功：我在台北最喜歡的酒吧之一。工作人員真的很好而且雞尾酒的品質非常好。 -> I am one of the favorite bars in Taipei.The staff is really good and the quality of cocktails is very good.
+2024-11-25 09:30:28,811 - INFO - 翻譯成功：昂貴的雞尾酒和食物。大多數雞尾酒價格約為 400 美元起，食物也是如此。所有員工都會說日語，但這不是日式酒吧。酒吧以紅色毛絨裝飾。 -> Excessive cocktails and foods.Most cocktails start from about $ 400, as well as food.All employees speak Japanese, but this is not a Japanese bar.The bar is decorated with red plush.
+2024-11-25 09:30:29,895 - INFO - 翻譯成功：有史以來最有創意的雞尾酒，而且也很美味。 -> The most creative cocktails ever ever, and it is also delicious.
+2024-11-25 09:30:30,875 - INFO - 翻譯成功：可以作為第三個或第四個家的好店。 -> It can be used as a good shop in the third or fourth home.
+2024-11-25 09:30:32,212 - INFO - 翻譯成功：很棒的酒吧 -> Great bar
+2024-11-25 09:30:33,158 - INFO - 翻譯成功：城裡最好的酒吧，強烈推薦！ -> The best bar in the city, highly recommended!
+2024-11-25 09:30:34,551 - INFO - 翻譯成功：提供美味日本酒的商店！
+時尚而沉穩的內飾
+anna做的雞尾酒真的很好喝(^_-) -> Provide delicious Japanese wine stores!
+Fashionable and calm shape
+Anna's cocktails are really delicious (^_-)
+2024-11-25 09:30:36,005 - INFO - 翻譯成功：美味的雞尾酒，有趣的人！消磨一兩個小時的好地方 -> Delicious cocktails, interesting people!A good place for one or two hours
+2024-11-25 09:30:36,977 - INFO - 翻譯成功：沒有固定菜單，你可以嘗試點任何你知道的飲料，他們會盡力製作。以你所支付的金額來說，飲料有點貴 -> Without a fixed menu, you can try any drinks you know, and they will try their best to make it.For the amount you pay, the drink is a bit expensive
+2024-11-25 09:30:38,057 - INFO - 翻譯成功：經理是個友善而有趣的人。調酒師吉田先生很酷。 -> The manager is a friendly and interesting person.Mr. Yoshida is cool.
+2024-11-25 09:30:40,421 - INFO - 翻譯成功：可愛的酒吧提供美味的雞尾酒和美妙而舒適的地方！ -> Cute bar offers delicious cocktails and wonderful and comfortable places!
+2024-11-25 09:30:41,464 - INFO - 翻譯成功：非常好的水果雞尾酒，氣氛很好 -> Very good fruit cocktail, the atmosphere is very good
+2024-11-25 09:30:42,036 - INFO - 翻譯成功：美味的榴槤飲料的美好體驗。 -> The beautiful experience of delicious durian drinks.
+2024-11-25 09:30:42,894 - INFO - 翻譯成功：京都很好喝有特色 -> Kyoto is very delicious and distinctive
+2024-11-25 09:30:43,332 - INFO - 翻譯成功：愛！ -> like!
+2024-11-25 09:30:45,023 - INFO - 翻譯成功：人多，一定是有特色的。 -> There are many people and must be distinctive.
+2024-11-25 09:30:45,790 - INFO - 翻譯成功：非常好的雞尾酒和食物。 -> Very good cocktail and food.
+2024-11-25 09:30:47,390 - INFO - 翻譯成功：小酌好地方 -> Good place
+2024-11-25 09:30:48,934 - INFO - 翻譯成功：我的英語老師的日語程度提高了。 -> My English teacher has increased Japanese.
+2024-11-25 09:30:50,143 - INFO - 翻譯成功：高品質雞尾酒和優秀的員工 -> High -quality cocktail and excellent employees
+2024-11-25 09:30:50,973 - INFO - 翻譯成功：蛋糕超好吃的！ -> The cake is so delicious!
+2024-11-25 09:30:52,020 - INFO - 翻譯成功：喝雞尾酒的好地方 -> Good place to drink cocktail
+2024-11-25 09:30:52,444 - INFO - 翻譯成功：最好的 -> Best
+2024-11-25 09:30:53,441 - INFO - 翻譯成功：雞尾酒真的很好喝 -> Cocktail is really delicious
+2024-11-25 09:30:54,037 - INFO - 翻譯成功：很好的店 -> Very good shop
+2024-11-25 09:30:55,938 - INFO - 翻譯成功：我喜歡這個酒吧 -> I like this bar
+2024-11-25 09:30:57,489 - INFO - 翻譯成功：美酒美食 -> Wine
+2024-11-25 09:30:58,015 - INFO - 翻譯成功：精彩的 -> Splendid
+2024-11-25 09:30:58,018 - INFO - 已保存翻譯文件：C:/Users/USER/Desktop/study group 2_box/台北市/中山區 酒吧_translated\7th Japanese Bar_translated.csv
+2024-11-25 09:30:58,018 - INFO - 此間酒吧翻譯成功比率：100.00%
+2024-11-25 09:30:59,606 - INFO - 翻譯成功：林森條通內，老牌「暢飲」店，不限時\u203c\ufe0f
+\U0001f379\u27a1\ufe0f 暢飲700
+\U0001f379+\U0001f37b\u27a1\ufe0f 暢飲800
+\U0001f379+\U0001f37b+\U0001f943\u27a1\ufe0f 暢飲1000
+
+\u2b55\ufe0f調酒多達近25種隨你喝
+\u2b55\ufe0f各種歌曲可以點歌唱KTV
+\u2b55\ufe0f有飛鏢機可以跟朋友玩樂
+
+從晚上8:00隨你喝，喝到半夜、喝到打烊都不怕。
+老闆娘人也很好很熱情\u2764\ufe0f
+真心推薦\U0001f44d\U0001f44d\U0001f44d -> Inside Linsen, the old "Chang drink" store, unlimited time\u203c\ufe0f \ufe0f
+00\ufe0f 7 700
+\u7545+\U0001f37b\u27a1\ufe0f 00 \U0001f37b\u27a1 800
+\U0001f943\u27a1+\U0001f37b+\ufe0f \u7545 \u996e 1000
+
+2\ufe0f Alcoholic for nearly 25 kinds
+\u70b9\ufe0f Various songs can sing KTV
+跟\ufe0f There is a dart machine to play with friends
+
+Drink from you at 8:00 in the evening, not to be afraid to drink in the middle of the night.
+The boss is also very good and enthusiastic \u2764\ufe0f
+Recommended \U0001f44d\U0001f44d\U0001f44d
+2024-11-25 09:31:01,465 - INFO - 翻譯成功：基本上一個人700~800就有喝到飽了 在怎麼酒鬼也很難喝到後面啦XD
+我最多就6杯 超少..
+能唱歌 調酒師也很會聊天 總之很開心 可以帶外食照片的炸物是外面買的 -> Basically, if a person is 700 ~ 800, it ’s hard to drink.
+I have a maximum of 6 cups ..
+I can also chat with the bartender.
+2024-11-25 09:31:02,989 - INFO - 翻譯成功：過了個美好的生日，
+
+感謝老闆娘招待\U0001f923\U0001f923\U0001f923 -> Have a good birthday,
+
+Thank you boss for your hospitality 娘
+2024-11-25 09:31:04,288 - INFO - 翻譯成功：700啤酒暢飲 800調酒+啤酒 1000威士忌+調酒+啤酒 這種暢飲的店 酒保會控制場面 推薦帶朋友來放鬆一下 小喝的可單點 -> 700 beer drink 800 bartending+beer 1000 whiskey+bartending+beer drinking shop wine guarantee will be controlled to relax with friends
+2024-11-25 09:31:05,757 - INFO - 翻譯成功：超棒的一家，以前去過一家，都沒這邊的歡樂，這是我第一次去，認識了好多人，雖然我住板橋，但是以後想喝酒或是小酌就會過去，絕對值得五星好評
+對了，這邊是室內可以抽菸，吸菸者的福音，所以不喜歡煙味的朋友要慎選
+感謝多年不見的朋友\U0001f923\U0001f923\U0001f923\U0001f923 … -> The great family, I have been to one before, I have no joy here. This is the first time I have gone. I have met a lot of people. Although I live in Banqiao, I will pass if I want to drink or drink. Five -star praise
+By the way, here is the gospel of smoking in the room, the gospel of the smokers, so friends who don’t like the smell of smoke should choose carefully
+Thanks for many years, I have n’t seen friends for many years ...
+2024-11-25 09:31:07,323 - INFO - 翻譯成功：暢飲店一直都在我的口袋名單，唯獨這家是無意間看到的，
+昏暗的燈光還能點歌唱歌，雖然硬體設備不是很完善，但幾杯黃湯下肚！Who cares…，
+一台飛鏢機台，唱歌都來不及了誰還玩，也可點外賣進來當下酒菜，
+當天剛好有壽星，一同慶祝也賺到蛋糕吃，店內可吸菸，所以空氣不是很好，
+闆娘很熱情也很海派的來跟我們喝也賺到兩杯高濃度shot但不在我肚裏… -> Changjiao Store has always been on my pocket list, but this one is unintentionally seen,
+The dim light can also sing. Although the hardware equipment is not perfect, a few cups of yellow soup belly!Who cares ...,
+A dart machine, who is too late to sing, can also order takeaway in the current wine, vegetables,
+There was just a Shouxing that day, and I also earned cakes to celebrate together. The store can smoke in the store, so the air is not very good.
+Ban Niang is very enthusiastic and very sea school to drink with us and earn two cups of high concentrations of shot but not in my belly ...
+2024-11-25 09:31:09,436 - INFO - 翻譯成功：全台灣最讚的酒吧\U0001fae1 -> The best bar in Taiwan 的
+2024-11-25 09:31:10,625 - INFO - 翻譯成功：朋友推薦的一家酒吧第一次來覺得體驗不錯
+bartender很親切熱情
+是一個還會再想來的地方\U0001f602 … -> For the first time, a bar recommended by a friend feels that the experience is good
+Bartender is very enthusiastic
+It is a place where you will come again \U0001f602 ...
+2024-11-25 09:31:11,929 - INFO - 翻譯成功：服務員超帥氣，老闆娘服務超級好，想喝酒的快來吧 -> The waiter is so handsome, the boss lady service is super good, come and come soon
+2024-11-25 09:31:13,019 - INFO - 翻譯成功：相當划算、飲酒高歌、相談甚歡 -> It's quite cost -effective, drink and sing well, talk about each other
+2024-11-25 09:31:14,563 - INFO - 翻譯成功：非常適合還沒聊夠續攤追酒，沒有餐點可以點外送自帶外食，座位不是很舒服不過在台北能無限暢飲又能抽菸的地方我只能給滿分 -> It's very suitable for not talking enough to renew the stall chasing wine. You can give me the meals without meals. The seat is not very comfortable.
+2024-11-25 09:31:16,359 - INFO - 翻譯成功：二次造訪居然在平日的夜裡有讓人感到相當驚艷的氛圍\U0001f4af\U0001f44d\U0001f44d -> The second visit actually has a very amazing atmosphere on weekdays.
+2024-11-25 09:31:17,428 - INFO - 翻譯成功：酒喝到飽，超讚，可惜室內有抽菸 -> Drinking is full, so amazing, but unfortunately there are smoking in the room
+2024-11-25 09:31:18,892 - INFO - 翻譯成功：久久沒有來 老闆還是一樣的白爛好玩\U0001f602\U0001f602 兩位服務員依舊很貼心\U0001f499\U0001f499 調酒也是依然的好喝味道沒有變 雖然美中不足受到疫情影響 唱歌沒辦法那麼大聲了 但是600這個價位 還不收服務費 CP質真的很高唷～ 真的是小資族年輕人下班想放鬆的好地方\u2764\ufe0f … -> I haven't come for a long time, the boss is still the same white and fun. The two waiters are still very intimate \U0001f499\U0001f499 bartending is still delicious. CP is really high ~ It is really a good place for young people to relax after work \u2764\ufe0f… ...
+2024-11-25 09:31:19,713 - INFO - 翻譯成功：優：
+難得遇到可以調酒喝到飽的酒吧，CP值高、調酒品質不差。
+還有唱歌的設備可以與其他賓客歡唱。
+也可以請店家代點外送。
+缺：店裡空間不大，而且可以在裡面抽菸，所以不抽菸的客人需要忍受較重的煙味；希望可以改成室外抽菸。 -> excellent:
+It is rare to encounter a bar that can be tuned and drinking. The CP value is high and the quality of alcohol is not bad.
+There are also singing equipment to sing with other guests.
+You can also ask the store to deliver.
+Lack: The space in the store is not large, and it can smoke inside, so guests who do not smoke need to endure a heavy smoke flavor; I hope that they can be changed to smoke outdoors.
+2024-11-25 09:31:20,691 - INFO - 翻譯成功：氛圍很棒，老闆娘和調酒師都很nice，不限時喝到醉～ -> The atmosphere is great, the boss and the bartender are very nice, drinking drunk from time to time ~
+2024-11-25 09:31:21,423 - INFO - 翻譯成功：當天30幾人的派對，老闆娘很會帶動氣氛，暢飲好幾杯，酒的品質很好，服務生很用心，還一起合唱粵語，ktv的音響效果很好，店內乾淨，中山區非常推薦這間！ -> On the day of the parties of more than 30 people, the boss will drive the atmosphere very much, drink several cups, the quality of the wine is very good, the waiter is very attentive, and also sings Cantonese together. The sound effect of KTV is very good. The store is clean.
+2024-11-25 09:31:22,075 - INFO - 翻譯成功：地方不錯，忘了找$？我沒有醉，我一個人來沒被招呼的感覺，之前的評價…不予置評 -> The place is good, forgot to find $?I am not drunk, I feel like I have not been helped myself, I did n’t comment before
+2024-11-25 09:31:23,503 - INFO - 翻譯成功：老闆娘特調
+沒有酒感 還很漂亮\u2764\ufe0f\u2764\ufe0f
+推薦推薦 -> Boss's special tone
+It's beautiful without wine \u2764\ufe0f\u2764\ufe0f
+Recommendation
+2024-11-25 09:31:23,978 - INFO - 翻譯成功：店長人美熱情
+公關人超好相處\U0001f44d
+可以找一個叫小樂的公關，打鏢很強人也很好相處\U0001f601\U0001f601 -> The manager is beautiful and enthusiastic
+Public relations persons are super good 好
+You can find a public relations called Xiaole, and the darts are very strong and get along well.
+2024-11-25 09:31:25,167 - INFO - 翻譯成功：店內氣氛良好，餐點有來自店員推薦的各種小吃，服務更是沒話說 細心的注意每一位客人的狀況，提供白開水的貼心舉動  直接被bartender 圈粉，酒喝不多的客人也可以玩的很開心！真的很感謝兩位bartender提供如此優質的服務！ -> The atmosphere in the store is good. There are various snacks recommended by the meals from the shopkeeper. The service is to pay attention to the condition of each guest. The intimate moves of boiling water are directly circled by Bartender. I am very happy!Thank you very much for the two Bartender for providing such a high -quality service!
+2024-11-25 09:31:26,702 - INFO - 翻譯成功：很棒的酒吧，很有日式酒吧感，老闆娘很超好！ -> A great bar, very Japanese -style bar, the boss is very good!
+2024-11-25 09:31:28,146 - INFO - 翻譯成功：好幾年前就知道這家店的存在，卻直到昨天才踏入，真是相見恨晚！
+服務非常的親切周到，好玩好喝 -> I knew the existence of this shop a few years ago, but I did not step in until yesterday. It was really late to meet each other!
+The service is very kind and thoughtful, fun and delicious
+2024-11-25 09:31:29,077 - INFO - 翻譯成功：老闆娘幽默風趣，善解人意 -> The boss lady is humorous, understanding
+2024-11-25 09:31:30,364 - INFO - 翻譯成功：存在口袋一年多的店了
+很喜歡這裡開心的氣氛
+
+可惜麥克風音量真的好小\U0001f923
+應該是不會再回訪了
+但以暢飲cp值來說還是很值得推薦的～ -> There are shops with pockets for more than a year
+I like the happy atmosphere here very much
+
+It's a pity that the microphone volume is really small \U0001f923
+It should not return to visit again
+But for the cp value of Chang drinking CP, it is still worth recommending ~
+2024-11-25 09:31:31,870 - INFO - 翻譯成功：老闆娘跟店員都很棒！！！！！！
+
+來這邊放鬆、認識新朋友可以超級放心～
+
+調酒超級多樣可以都喝喝看 -> The boss and the clerk are great!IntersectionIntersectionIntersectionIntersectionIntersection
+
+Come here to relax, know new friends, you can be super assured ~
+
+Blooming is super diverse to drink and drink
+2024-11-25 09:31:33,452 - INFO - 翻譯成功：闆娘很親切，整體的氛圍讓人很放鬆，是個喝酒聊天的好去處\U0001f44d\U0001f44d重點還可以唱歌\U0001f601\U0001f601 … -> Ban Niang is very kind. The overall atmosphere makes people very relaxed. It is a good place to drink and chat. You can also sing ...
+2024-11-25 09:31:34,961 - INFO - 翻譯成功：一個認識朋友的好地方，若你喝酒不是為了喝醉虧妹，是在想放鬆充電的時候，有個適合自己氛圍的地方喝酒充電，可以選擇這邊 -> A good place to know friends, if you drink drinking for drunk and losing girls, when you want to relax and charge, there is a place that is suitable for your own atmosphere to drink and charge. You can choose here.
+2024-11-25 09:31:36,565 - INFO - 翻譯成功：前幾天拜訪過此酒吧，服務很好，老闆娘很會做生意，點了一杯酒 要買單時 因其他朋友也都還在喝  硬是要付500元喝到飽 還說什麼多送一杯可以請其他朋友喝 但我今晚就只點了一杯 真是享受到了個美好的夜晚，給予6星高評價 這一顆是多出來的^ ^ -> I visited this bar a few days ago, the service is very good, the boss is very good at doing business. When you order a glass of wine, you still have to pay for 500 yuan when you drink it. What can I give a cup? My friend drinks, but I just ordered a cup tonight. I enjoyed a beautiful night. Give 6 -star high evaluation. This one is extra ^ ^
+2024-11-25 09:31:37,959 - INFO - 翻譯成功：調酒暢飲：600
+調酒+啤酒暢飲：700
+當季洋酒+啤酒+調酒：900
+
+飲料暢飲：500
+低消：500
+
+不定期生日活動以及季節性活動
+
+相較高消費的台北市 這間店價格都非常親民
+位置不多容易客滿，建議提早去慢慢喝
+沒有限時，理性飲酒。
+記得最少帶600
+單點類調酒跟暢飲調酒的作法
+非常不一樣～ 所以單點的朋友記得還是有低消
+想fun一下 不想醉也會建議點暢飲 慢慢喝唷～
+
+營業時間20:00-5:00 最後點單時間4:30
+開車不喝酒 喝酒不開車
+理性飲酒 \U0001faf6\U0001f3fc -> Blooming and drinking: 600
+Bartending+beer drink: 700
+Duyang wine+beer+bartending: 900
+
+Drink drink: 500
+Low consumption: 500
+
+Optical birthday activities and seasonal activities
+
+Compared to the high -consumption Taipei City, the price of this store is very close to the people
+The location is not too easy to be full. It is recommended to drink slowly early
+There is no time to drink rationally.
+Remember to bring at least 600
+Single -point bartending and alcoholic alcohol
+Very different ~ So friends who have a single point remember that there is still a low consumption
+If you don't want to get drunk, you will recommend drinking slowly ~
+
+Business hours 20: 00-5: 00 Last order time 4:30
+Drive without drinking, drink, drink, don't drive
+Rational drinking \u996e
+2024-11-25 09:31:38,874 - INFO - 翻譯成功：燈光美 氣氛佳 Bartender的濃烈適淡 讓妳們愛不釋手 -> The lightness of the light atmosphere Bartender makes you love it
+2024-11-25 09:31:39,956 - INFO - 翻譯成功：台北市唯一愛店\U0001f44d\U0001f3fb
+可以唱歌店裡的人員都很好聊天\U0001f44d\U0001f3fb
+大推大推 … -> The only love shop in Taipei 唯
+The staff in the singing shop are very good to chat \U0001f44d\U0001f3fb
+Push and push ...
+2024-11-25 09:31:41,466 - INFO - 翻譯成功：調酒600無限暢飲
+老闆的特調口味都好喝 一杯接著一杯
+酒吧附近有吃的店也有其他酒吧
+座落於巷弄裡
+離捷運中山站或善導寺站走路都要10分鐘
+現場有飛鏢可以射
+卡拉ok可以唱
+酒可以喝
+很適合35好友小酌 -> Bloom 600 Infinite Drink
+The boss’s special taste tastes a drink one after another
+There are other bars there are shops near the bar
+Located in the alley
+It takes 10 minutes to walk from the MRT Zhongshan Station or Shanqian Temple Station
+There is a dart at the scene to shoot
+Karaoke can sing
+Alcohol can drink
+Very suitable for 35 friends to drink
+2024-11-25 09:31:42,849 - INFO - 翻譯成功：暢飲調酒啤酒\U0001f44d還可以唱歌 -> Drink drinking beer 可以 可以 can also sing
+2024-11-25 09:31:44,347 - INFO - 翻譯成功：給十顆星好評 這個五顆星是多出來的 態度非常的好！ -> Give ten stars, this five stars are very good, the attitude is very good!
+2024-11-25 09:31:44,987 - INFO - 翻譯成功：去年9月時去過一次，600調酒暢飲，氣氛很好 可以唱歌 吧檯調酒師很帶動氣氛 服務很好  是一個值得給五星的地方。 -> I visited once in September last year, 600 bartending drinking and drinking. The atmosphere is very good. You can sing the bar bartender very driving the atmosphere service. It is worthy of five stars.
+2024-11-25 09:31:46,927 - INFO - 翻譯成功：啤酒700暢飲喝到飽，裡面完全可以抽煙，超級好的地方 -> Beer 700 drinks and drinks, it can be smoked at all, super good places
+2024-11-25 09:31:47,777 - INFO - 翻譯成功：喝到爽，服務很貼切，親民，我很喜歡 -> Drinking it is cool, the service is very appropriate, and the people are close to the people. I like it very much
+2024-11-25 09:31:49,550 - INFO - 翻譯成功：非常棒，可以暢飲，可以唱歌，老闆娘很好！！超愛\U0001f60d\U0001f60d … -> It's great, you can drink smoothly, you can sing, the boss is very good!IntersectionSuper love \U0001f60d\U0001f60d ...
+2024-11-25 09:31:50,371 - INFO - 翻譯成功：酒好喝，老闆老闆娘人很好，環境氣氛也很棒，很放鬆，價錢也很優惠，\U0001f4aa\U0001f4aa\U0001f4aa\U0001f4aa\U0001f4aa\U0001f4aa … -> The wine is good, the boss and the boss are very good, the environment atmosphere is great, very relaxed, the price is also very favorable, \U0001f4aa\U0001f4aa\U0001f4aa\U0001f4aa\U0001f4aa\U0001f4aa ...
+2024-11-25 09:31:51,672 - INFO - 翻譯成功：划算cp值很高還可以唱歌調酒都不錯喝 -> CP value is very high, and you can sing and drink well.
+2024-11-25 09:31:51,991 - INFO - 翻譯成功：輕鬆聊天的好地方，調酒也還可以，不過口味變化不夠大，有努力的空間。 -> A good place to chat easily, and bartending is okay, but the taste is not great enough, there is room for hard work.
+2024-11-25 09:31:52,679 - INFO - 翻譯成功：讓人放鬆的好地方
+米媽媽很會照顧人
+老闆喝醉很好笑 -> A good place to relax
+Mother Mi can take care of people
+The boss is drunk and funny
+2024-11-25 09:31:53,828 - INFO - 翻譯成功：推推！很讚的地方！酒保人很好！酒好喝！價格實惠 -> Push!A great place!The wine guarantee is very good!The wine is delicious!Price
+2024-11-25 09:31:54,304 - INFO - 翻譯成功：好喝好玩好唱 還可以跟服務生玩碗公\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f -> It's delicious and fun, you can also play with the waiter \u2764\ufe0f\u2764\ufe0f\u2764\ufe0f \u2764\ufe0f
+2024-11-25 09:31:54,837 - INFO - 翻譯成功：老闆自稱條通第一帥我覺得母湯 -> The boss claims to be the first handsome of the Tongtong, I think the mother soup
+2024-11-25 09:31:55,392 - INFO - 翻譯成功：服務人員相當的專業且友善又幽默，讚 -> The service staff is quite professional, friendly and humorous, praise
+2024-11-25 09:31:56,339 - INFO - 翻譯成功：喝了隔天頭…有人會這樣嗎 -> After drinking the next day ... Does anyone know this?
+2024-11-25 09:31:57,044 - INFO - 翻譯成功：喝酒暢飲600 還可以唱歌～沙發舒適
+
+台北的私房景點～^^ -> Drink and drink 600 can also sing ~ comfortable sand hair
+
+Private attractions in Taipei ~ ^^
+2024-11-25 09:31:58,482 - INFO - 翻譯成功：老闆姐姐超親切 喝的很開心 -> The boss and sister are very happy to drink
+2024-11-25 09:31:59,174 - INFO - 翻譯成功：價錢暢飲很可以
+但單點沒告知低消不是很可以 -> The price is very good
+But it is not very good to notify the low disappearance of a single point
+2024-11-25 09:32:00,442 - INFO - 翻譯成功：無限暢飲很值得推薦\U0001f924調酒很好喝 … -> Unlimited drinking is worth recommending.
+2024-11-25 09:32:02,116 - INFO - 翻譯成功：暢飲價錢不錯 Bartender人很好 還有KTV\U0001f44d … -> The good drink price is good Bartnder people are very good and there are KTV\U0001f44d ...
+2024-11-25 09:32:03,607 - INFO - 翻譯成功：啤酒700暢飲
+服務生都很棒
+很輕鬆自在的地方 -> Beer 700 Chang Drink
+The waiters are great
+Very easy place
+2024-11-25 09:32:04,739 - INFO - 翻譯成功：請問有提供撲克牌或骰子嗎 -> Do you provide a poker or dice?
+2024-11-25 09:32:06,082 - INFO - 翻譯成功：想喝酒來這邊就對了 -> I want to drink here, it's right here
+2024-11-25 09:32:07,412 - INFO - 翻譯成功：老闆娘人很健談
+非常好玩\U0001f44d … -> The boss is very talkative
+Very fun \U0001f44d ...
+2024-11-25 09:32:08,517 - INFO - 翻譯成功：超會炒氣氛的 是朋友趕快揪 -> The friend who knows the atmosphere is a friend hurry up
+2024-11-25 09:32:09,436 - INFO - 翻譯成功：店員好聊幽默 酒好喝！ -> The clerk is good to talk about humorous wine!
+2024-11-25 09:32:10,152 - INFO - 翻譯成功：體貼溫馨，像家的感覺 -> Careant and warm, like home feelings
+2024-11-25 09:32:11,161 - INFO - 翻譯成功：請問小米姐還有在那嗎 -> Does Miss Mi still have there?
+2024-11-25 09:32:12,394 - INFO - 翻譯成功：氣氛不錯的小地方，還可以唱歌 -> A small place with good atmosphere, you can also sing
+2024-11-25 09:32:13,983 - INFO - 翻譯成功：老闆娘好，酒好喝
+氣氛好，推推推推推推 -> Good boss, wine is good
+The atmosphere is good, push push push push push
+2024-11-25 09:32:14,950 - INFO - 翻譯成功：服務態度親切 小空間滿舒服的 -> The service attitude is affectionate and the small space is full of comfortable
+2024-11-25 09:32:15,419 - INFO - 翻譯成功：老闆娘超正！ -> The boss is super positive!
+2024-11-25 09:32:15,835 - INFO - 翻譯成功：開心 -> happy
+2024-11-25 09:32:17,634 - INFO - 翻譯成功：不錯的調酒店裡的氣氛不錯 -> Good atmosphere in the hotel is good
+2024-11-25 09:32:18,444 - INFO - 翻譯成功：人太多位子不太夠 -> Too many people are not enough
+2024-11-25 09:32:19,348 - INFO - 翻譯成功：小喝兩杯的好所在 -> Two cups of small drinks are good
+2024-11-25 09:32:20,189 - INFO - 翻譯成功：小派對\U0001f389好所在\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f … -> Small party \U0001f389 Good is \u2764\ufe0f\u2764\ufe0f\u2764\ufe0f ...
+2024-11-25 09:32:20,872 - INFO - 翻譯成功：阿軒很帥，哈哈哈哈哈哈 -> Axuan is handsome, hahahahahahaha
+2024-11-25 09:32:22,181 - INFO - 翻譯成功：喜德很讚！ -> Xide is great!
+2024-11-25 09:32:24,111 - INFO - 翻譯成功：舒服 的放鬆好所在 -> Comfortable relaxation
+2024-11-25 09:32:25,274 - INFO - 翻譯成功：煙味很太重 -> The smoke taste is too heavy
+2024-11-25 09:32:26,007 - INFO - 翻譯成功：舒服，調酒不錯 -> Comfortable, good bartender
+2024-11-25 09:32:26,356 - INFO - 翻譯成功：老闆超親切 -> The boss is super kind
+2024-11-25 09:32:27,212 - INFO - 翻譯成功：喝到飽，愉快 -> Drink enough, happy
+2024-11-25 09:32:28,259 - INFO - 翻譯成功：價錢公道 -> Fair
+2024-11-25 09:32:29,623 - INFO - 翻譯成功：輕鬆，自在。 -> Easy, comfortable.
+2024-11-25 09:32:31,029 - INFO - 翻譯成功：這個酒吧裡沒有陌生人。從您踏入這家酒吧的那一刻起，您就會感到非常受歡迎並結交朋友。 -> There is no stranger in this bar.From the moment you step into this bar, you will feel very popular and make friends.
+2024-11-25 09:32:31,581 - INFO - 翻譯成功：這裡的人太酷了。  很不錯 ！ ！ -> The people here are so cool.very nice !Intersection
+2024-11-25 09:32:32,954 - INFO - 翻譯成功：好地方，好喝的飲料...... -> Good place, delicious drink ...
+2024-11-25 09:32:33,457 - INFO - 翻譯成功：喝酒的好地方～～ -> A good place to drink ~~
+2024-11-25 09:32:33,815 - INFO - 翻譯成功：划算 -> Cost -effective
+2024-11-25 09:32:34,099 - INFO - 翻譯成功：推！ -> push!
+2024-11-25 09:32:34,409 - INFO - 翻譯成功：一般般 -> General
+2024-11-25 09:32:34,901 - INFO - 翻譯成功：喝酒的好地方 -> Good place to drink
+2024-11-25 09:32:34,903 - INFO - 已保存翻譯文件：C:/Users/USER/Desktop/study group 2_box/台北市/中山區 酒吧_translated\8528 Music Bar 不限時調酒暢飲_translated.csv
+2024-11-25 09:32:34,904 - INFO - 此間酒吧翻譯成功比率：100.00%
+2024-11-25 09:32:35,972 - INFO - 翻譯成功：位於五條通的酒吧，類似大酒吧，有男服務生女服務生，來這裡玩玩應該不錯 -> Located in a bar in Wujo Tong, similar to a large bar, there are male waiters and women. It should be good to come here to play here
+2024-11-25 09:32:37,198 - INFO - 翻譯成功：老闆娘不洗頭，頭好臭零分 -> The boss does not wash his hair, his head is so stinky zero
+2024-11-25 09:32:37,819 - INFO - 翻譯成功：氣氛超嗨 爾康超嗨 -> The atmosphere is super hi, Erkang Super Hi
+2024-11-25 09:32:39,029 - INFO - 翻譯成功：看酒單啤酒暢飲才喝的 結果結帳說我們啤酒是單點的那天花了快10000就喝了啤酒 -> The result of watching wine single beer drink only drinking and drinking, saying that the beer was a single day, it took 10,000 to drink beer
+2024-11-25 09:32:40,387 - INFO - 翻譯成功：啤酒兩三個人 可以到6000真的很會 -> Two or three people in beer can reach 6000 really well
+2024-11-25 09:32:41,847 - INFO - 翻譯成功：老闆娘人很好 氣氛不錯
+可以無限暢飲生啤 唱歌 射飛鏢唷 -> The boss is very good at the atmosphere, the atmosphere is good
+You can drink raw beer unlimitedly to sing and shoot darts
+2024-11-25 09:32:43,054 - INFO - 翻譯成功：希望能加強隔音設備，已對附近居民造成困擾，謝謝 -> I hope to strengthen the sound insulation equipment, which has caused trouble for nearby residents, thank you
+2024-11-25 09:32:43,934 - INFO - 翻譯成功：半夜唱歌聲音及音樂超級大聲，附近住戶無法睡覺 -> Singing sounds and music in the middle of the night are super loud, and nearby residents cannot sleep
+2024-11-25 09:32:45,277 - INFO - 翻譯成功：老闆人非常幽默風趣 -> The boss is very humorous
+2024-11-25 09:32:46,374 - INFO - 翻譯成功：風格類似夜店，酒吧偏向學生喜愛價格較為親民 -> The style is similar to the nightclub.
+2024-11-25 09:32:47,575 - INFO - 翻譯成功：整晚吵死了,
+當隔壁不用睡嗎 -> The whole night was noisy,
+Don't sleep when you are next door?
+2024-11-25 09:32:48,270 - INFO - 翻譯成功：酒吧送來的，胡椒蝦 蒜頭蝦超好吃 -> It was delivered by the bar, the pepper shrimp garlic shrimp is super delicious
+2024-11-25 09:32:49,296 - INFO - 翻譯成功：喝喝小酒輕鬆自在，談心聊天的好地方 -> It's a good place to drink small wine, talk and talk, talk about chatting
+2024-11-25 09:32:50,417 - INFO - 翻譯成功：半夜四點半音樂還開這麼大聲別人是都不用睡覺嗎？？？？？？？？？？？？？？？？？？ -> Do people do n’t have to sleep at 4:30 in the middle of the night?IntersectionIntersectionIntersectionIntersectionIntersectionIntersectionIntersectionIntersectionIntersectionIntersectionIntersectionIntersectionIntersectionIntersectionIntersectionIntersectionIntersection
+2024-11-25 09:32:51,805 - INFO - 翻譯成功：影響住戶安寧，無良 -> Affecting residents peace, unscrupulous
+2024-11-25 09:32:52,927 - INFO - 翻譯成功：每次都喝到早上八點 -> Drink until 8 o'clock in the morning
+2024-11-25 09:32:55,647 - INFO - 翻譯成功：收費合理，服務親切 -> Reasonable charges and kind service
+2024-11-25 09:32:57,172 - INFO - 翻譯成功：公關很棒 值得去 -> Public relations are great worth going
+2024-11-25 09:32:58,162 - INFO - 翻譯成功：老闆娘超親切的 -> The boss is super kind
+2024-11-25 09:32:58,625 - INFO - 翻譯成功：讚！ -> praise!
+2024-11-25 09:32:59,415 - INFO - 翻譯成功：舒適，環境乾淨 -> Comfortable, clean environment
+2024-11-25 09:33:00,658 - INFO - 翻譯成功：服務人員親切 -> Service staff is kind
+2024-11-25 09:33:01,122 - INFO - 翻譯成功：玩得開心 -> have fun
+2024-11-25 09:33:03,039 - INFO - 翻譯成功：服務不錯 -> Good service
+2024-11-25 09:33:03,316 - INFO - 翻譯成功：環境不錯 -> Good environment
+2024-11-25 09:33:04,820 - INFO - 翻譯成功：精神時光屋 -> Spiritual time
+2024-11-25 09:33:05,526 - INFO - 翻譯成功：無趣 -> Boring
+2024-11-25 09:33:07,093 - INFO - 翻譯成功：放鬆休閒 -> Relax and leisure
+2024-11-25 09:33:09,837 - INFO - 翻譯成功：老闆娘，待人又善客氣，好玩，舒解壓力的好去處 -> The boss, be kind and polite, fun, and relieve stress.
+2024-11-25 09:33:11,121 - INFO - 翻譯成功：就是坑 真的不用去 -> It's really a pit really don't need to go
+2024-11-25 09:33:11,986 - INFO - 翻譯成功：不知 -> Unknown
+2024-11-25 09:33:13,472 - INFO - 翻譯成功：很有feel的Bar -> Very Feel's BAR
+2024-11-25 09:33:13,477 - INFO - 已保存翻譯文件：C:/Users/USER/Desktop/study group 2_box/台北市/中山區 酒吧_translated\85基地Bar_translated.csv
+2024-11-25 09:33:13,477 - INFO - 此間酒吧翻譯成功比率：100.00%
+2024-11-25 09:33:15,495 - INFO - 翻譯成功：店員\U0001f34a小姊姊很熱情\u2764\ufe0f\u200d\U0001f525
+很會聊、不冷場、非常有活力
+聽到有壽星
+直接shot招待起來
+可能獸星比較可愛(有兩輪歐歐歐歐
+
+環境很寬敞，客人素質都不錯
+吧台的妹妹也都會關注客人
+喝完都會主動幫忙換
+
+因為週四、週六暢飲日
+啤酒880/威士忌1200
+菜單上的啤酒都包含在內可以選
+
+如果是像我一樣慢慢喝的
+店家主動幫忙安排先算單支的價格
+超過再轉暢飲
+這個服務真的貼心\u2764\ufe0f
+
+目前店家沒有提供食物
+但可以自備或是外送
+巷口還有超商
+店家都會很貼心的幫忙裝盤
+
+廁所男女分開是一大優點
+實在不能接受共用廁所\U0001f972
+不敢想像準頭不好的男人在你前面出來
+災難….
+
+但很抱歉 顧著努力喝
+忘記拍拍 有興趣的大大們
+請自行現場體驗\U0001f92a
+
+唯一缺點就是網路不太好..
+WI-FI也不太給力\U0001f972
+常常會不小心離開人世間 -> The clerk 很 Little sister is very enthusiastic \u2764\ufe0f\U0001f34a
+I can chat, not cold, very energetic
+Hearing Shouxing
+Directly shot entertaining
+Maybe the beast star is cute (there are two rounds of European and European
+
+The environment is very spacious, and the quality of the guests is good
+The sister of the bar will also follow the guests
+After drinking, I will take the initiative to help change
+
+Because of the day and Saturday, drink day and Saturday
+Beer 880/whiskey 1200
+The beer on the menu can be selected
+
+If it's like me, drink slowly
+The store takes the initiative to help arrange the price of the single one first
+Turn more than a smooth drink
+This service is really intimate
+
+At present, the store does not provide food
+But you can bring your own or out -of -delivery
+There are supermarkets in the alley
+The store will help load the plate very intimately
+
+The separation of men and women in toilets is a big advantage
+I really can't accept the shared toilet \U0001f972
+Dare not imagine that men who are not good are in front of you
+disaster….
+
+But I'm sorry to drink hard to drink
+Forgot to shoot big people who are interested
+Please experience on the spot \u573a
+
+The only disadvantage is that the Internet is not very good ..
+Wi-fi is not too awesome
+I often accidentally leave the world
+2024-11-25 09:33:17,332 - INFO - 翻譯成功：老闆很海派和善\U0001f606
+可帶外食好感動
+因為只有賣酒\U0001f60c
+也有暢飲部分（好像價錢是880吧！可以再問一下）
+剛好來看世足～\u263a\ufe0f
+唯一缺點是有煙味\U0001f6ac
+但確實蠻多酒吧也會有～ -> The boss is very sea school and good 派
+Can be moved with outer food
+Because you only sell wine 酒
+There is also a smooth drink (it seems that the price is 880! You can ask again)
+Just come to see the world foot ~ 世\ufe0f
+The only disadvantage is the smell of smoke \U0001f6ac
+But there are really a lot of bars.
+2024-11-25 09:33:18,201 - INFO - 翻譯成功：消費合理、有鏢機、有球賽看，自己來或和朋友來都適合，棒棒！ -> Reasonable consumption, dart machine, and ball game, it is suitable for yourself or with friends, great!
+2024-11-25 09:33:19,376 - INFO - 翻譯成功：店員好帥\U0001faf6\U0001f3fc酒好喝氣氛也好！ -> The clerk is so handsome and the wine is delicious!
+2024-11-25 09:33:20,646 - INFO - 翻譯成功：店家人超好，氣氛也很棒，週末不小心在店裡遺失物品，想碰運氣看看能不能找回，沒想到店家很暖心的百忙之中幫忙保管，趁下班空檔時趕緊去。這間啤酒Bar用心經值得大力推薦，謝謝88，so nice! -> The shopkeeper is super good and the atmosphere is also great. I accidentally lost the items in the store on the weekend. I want to touch it to see if I can find it. I did not expect that the store was very warm and helped to keep it. EssenceThis beer BAR is worth recommending with the heart, thank you 88, so nice!
+2024-11-25 09:33:23,021 - INFO - 翻譯成功：每次來都喝到飛走，就知道好在哪裡了！ -> Every time you come and fly away, you know where you are!
+2024-11-25 09:33:24,551 - INFO - 翻譯成功：在雙城街如此功利之戰區 算是溫和的酒吧 妹妹的大酒是按照酒單上牌價計算 且不太會催酒 相當親民 愛喝啤酒的朋友建議happy hour 時段去 買一送一相當划算 若是喜歡喝威士忌且要長期走跳的客人 建議一次開三瓶 有15趴的折扣 至於小菜都是按照附近提供餐點的店家外叫且不多收費 在年月不豪 物力維艱的歲月下 不失為一個不錯的選擇 -> The utilitarian bar in Shuangcheng Street is a gentle bar sister’s wine, which is calculated based on the license plate price and is not very cooled. Friends who love to drink beer suggest that you have to buy one get one get one free during the period. The whiskey and the guests who want to take a long time suggest that you open three bottles at a time with 15 compromises. As for the small dishes, the shops are called by the shops that provide meals nearby, and not much fees are a good choice.
+2024-11-25 09:33:26,013 - INFO - 翻譯成功：調酒師店員都很正 調酒 酒類也都很好喝
+真的大推\U0001f44d\U0001f3fb\U0001f44d\U0001f3fb
+個性會讓人有直接\u2764\ufe0f上的衝動 （誤
+而且價格上面也很便宜 \U0001f970 … -> The bartender clerk is very good for bartending wine and delicious
+Really pushing \U0001f44d\U0001f3fb\U0001f44d\U0001f3fb
+Personality will make people directly \u2764\ufe0f The impulse (mistake
+And the price is also very cheap ...
+2024-11-25 09:33:27,062 - INFO - 翻譯成功：氣氛不錯\U0001f44d，適合朋友一起去很盡興，價格合理，下次會再去。 … -> The atmosphere is good. It is suitable for friends to be happy together. The price is reasonable. I will go again next time.Mowing
+2024-11-25 09:33:28,183 - INFO - 翻譯成功：乾淨，服務生不會亂算錢，少數這區不是黑店，啤酒180是大瓶的 -> Clean, the waiter will not calculate the money. A few are not black shops. Beer 180 is a big bottle.
+2024-11-25 09:33:29,641 - INFO - 翻譯成功：不錯看世足的地方，
+喝杯酒看帥哥們贏球！excellent! -> Nice place to look at the world,
+Drink a glass of wine to watch the handsome guy to win!Excellent!
+2024-11-25 09:33:30,600 - INFO - 翻譯成功：很朋友一起聚會聊天，玩飛鏢台，小酌。
+很放鬆的地方\u2764\ufe0f -> Very friends gather together to chat together, play darts, drink.
+Very relaxed place \u2764\ufe0f
+2024-11-25 09:33:31,397 - INFO - 翻譯成功：沒事就來找小8喝兩杯吧! -> Come to Xiao 8 for two glasses!
+2024-11-25 09:33:32,730 - INFO - 翻譯成功：櫃檯阿妹很多，消費尚算合理
+推薦 -> There are a lot of Amei in the counter, and the consumption is still reasonable
+recommend
+2024-11-25 09:33:33,752 - INFO - 翻譯成功：老闆親切，服務人員年輕貌美而且熱誠 -> The boss is kind, the service staff is young, beautiful, and enthusiastic
+2024-11-25 09:33:34,909 - INFO - 翻譯成功：服務熱情 價位公道 -> Service enthusiasm price
+2024-11-25 09:33:35,240 - INFO - 翻譯成功：很吵很熱鬧很開心的酒吧 -> Very noisy, lively and happy bar
+2024-11-25 09:33:36,024 - INFO - 翻譯成功：來喝兩杯吧! -> Come and have two cups!
+2024-11-25 09:33:36,962 - INFO - 翻譯成功：打標小酌好地方 -> Play a good place
+2024-11-25 09:33:38,688 - INFO - 翻譯成功：便宜，小濁的好地方 -> A good place for cheap, small turbidity
+2024-11-25 09:33:39,674 - INFO - 翻譯成功：煙味太重 人少 -> The smoke is too heavy
+2024-11-25 09:33:41,079 - INFO - 翻譯成功：同學聚會的地方 -> Place of classmates
+2024-11-25 09:33:41,349 - INFO - 翻譯成功：喝酒的好去處 -> Drink a good place
+2024-11-25 09:33:41,939 - INFO - 翻譯成功：不錯的酒吧..食物來自外面，但食物很好。 3或4個顯示器觀看比賽 -> Good bar .. Food is from outside, but the food is very good.3 or 4 monitors watch the game
+2024-11-25 09:33:42,449 - INFO - 翻譯成功：價格合理的飲料和良好的氛圍。 -> Price drinks and good atmosphere.
+2024-11-25 09:33:43,950 - INFO - 翻譯成功：威士忌 250 -> Whiskey 250
+2024-11-25 09:33:44,418 - INFO - 翻譯成功：好喝 -> Delicious
+2024-11-25 09:33:44,843 - INFO - 翻譯成功：不錯的酒吧，美味的雞尾酒，還有美妙的音樂！ -> Good bar, delicious cocktail, and wonderful music!
+2024-11-25 09:33:45,685 - INFO - 翻譯成功：喝酒的好地方... -> Good place to drink ...
+2024-11-25 09:33:46,721 - INFO - 翻譯成功：和朋友喝酒聊天的好地方 -> A good place to drink and chat with friends
+2024-11-25 09:33:47,217 - INFO - 翻譯成功：熙熙好漂亮 -> Xixi is so beautiful
+2024-11-25 09:33:48,204 - INFO - 翻譯成功：有正妹 -> Having a positive girl
+2024-11-25 09:33:48,647 - INFO - 翻譯成功：聊天的好地方 -> Good place to chat
+2024-11-25 09:33:49,033 - INFO - 翻譯成功：很棒！ -> great!
+2024-11-25 09:33:49,539 - INFO - 翻譯成功：友善 -> friendly
+2024-11-25 09:33:49,919 - INFO - 翻譯成功：姐 -> sister
+2024-11-25 09:33:50,706 - INFO - 翻譯成功：思思懂喝 -> Thinking about drinking
+2024-11-25 09:33:51,402 - INFO - 翻譯成功：老式的 talking bar -> Old -style Talking Bar
+2024-11-25 09:33:51,788 - INFO - 翻譯成功：棒棒！ -> Best!
+2024-11-25 09:33:52,486 - INFO - 翻譯成功：喝酒，爽 -> Drink, cool
+2024-11-25 09:33:52,491 - INFO - 已保存翻譯文件：C:/Users/USER/Desktop/study group 2_box/台北市/中山區 酒吧_translated\88 sports bar_translated.csv
+2024-11-25 09:33:52,492 - INFO - 此間酒吧翻譯成功比率：100.00%
+2024-11-25 09:33:53,493 - INFO - 翻譯成功：蠻推薦豆乳雞義大利麵
+還有一個季節酒-荔枝口味的
+薯條好吃，冷了不會軟掉，蠻厲害的
+會想嘗試其他家字母店 -> Recommended soy milk chicken pasta
+There is also a seasoned wine-lychee flavor
+The fries are delicious, it will not soften when it is cold, it is quite powerful
+I want to try other home letters
+2024-11-25 09:33:54,550 - INFO - 翻譯成功：食物份量大，味道平衡非常推薦，酒可以請店員推薦，服務非常好會關心餐點合不合口味。
+第一次酒吧初體驗感覺超讚 -> The food is large, the taste is very recommended, and the wine can be recommended by the clerk. The service is very good to care about the meal and the taste.
+The first bars' first experience feels great
+2024-11-25 09:33:55,580 - INFO - 翻譯成功：食物和酒覺得都在水準之上
+但是沒有到令人難忘
+以這個價錢，會預期更高水準 -> Food and wine feels on the standard
+But it's not unforgettable
+At this price, it will be expected to be higher
+2024-11-25 09:33:56,210 - INFO - 翻譯成功：有班蘭口味的的調酒味道很有層次， 店員補水補的很勤也很專業的介紹酒！食物真的都很好吃完全無雷！
+
+座位非常舒適音樂大小適中可以聊天，廁所居然還有冷氣！
+
+喜歡調酒跟食物的可以來，大推 -> The flavor of Banglan flavor is very layered. The clerk is very diligent and professional!The food is really delicious and thunderous!
+
+The seat is very comfortable and the size of the music can be talked about, and there are actually air -conditioning in the toilet!
+
+If you like bartending and food, you can come, push a lot

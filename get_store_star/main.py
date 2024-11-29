@@ -93,9 +93,9 @@ def scrape_single_store(store_link, scroll_times_review, file_name):
                     # 抓取評論文本
                     try:
                         review_text = block.find_element(By.XPATH, './/span[contains(@class, "wiI7pd")]').text
-                    except Exception as e:
-                        print(f"第 {index} 條評論無法抓取，設為預設值：{e}")
-                        review_text = "未提供評論"
+                    except Exception:
+                        print(f"第 {index} 條評論無法抓取，設為空值")
+                        review_text = ""  # 若抓不到評論，設為空值
 
                     # 抓取評分並提取數字部分
                     try:
@@ -104,21 +104,20 @@ def scrape_single_store(store_link, scroll_times_review, file_name):
                         )
                         star_rating_text = star_rating_element.get_attribute("aria-label")  # 獲取完整的 aria-label 文本
                         star_rating = int(star_rating_text.split(" ")[0])  # 提取「顆星」前的數字
-                    except Exception as e:
-                        print(f"第 {index} 條評分無法抓取，設為預設值：{e}")
+                    except Exception:
+                        print(f"第 {index} 條評分無法抓取，設為空值")
                         star_rating = None  # 若抓不到評分，設為 None
 
-                    # 抓取發布時間並提取數字部分
+                    # 抓取發布時間保留完整樣式
                     try:
                         time_element = block.find_element(By.XPATH, './/span[contains(@class, "rsqaWe")]')
-                        time_text = time_element.text  # 獲取完整發布時間文本（例如 "1 個月前"）
-                        time_value = int(re.search(r'\d+', time_text).group())  # 提取數字部分
-                    except Exception as e:
-                        print(f"第 {index} 條發布時間無法抓取，設為預設值：{e}")
-                        time_value = None  # 若抓不到發布時間，設為 None
+                        time_text = time_element.text  # 獲取完整發布時間文本（如 "1 個月前", "2 年前" 等）
+                    except Exception:
+                        print(f"第 {index} 條發布時間無法抓取，設為空值")
+                        time_text = ""  # 若抓不到發布時間，設為空值
 
                     # 添加評論、評分和發布時間至數據結構
-                    reviews_data.append({"評論": review_text, "評分": star_rating, "發布時間(個月前)": time_value})
+                    reviews_data.append({"評論": review_text, "評分": star_rating, "發布時間": time_text})
                 except Exception as e:
                     print(f"抓取第 {index} 條評論失敗：{e}")
                     continue

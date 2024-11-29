@@ -14,16 +14,16 @@ from webdriver_manager.chrome import ChromeDriverManager
 ################################
 #
 # 設定搜索區域
-district = "五股區 酒吧"
+district = "嘉義 酒吧"
 #
 # 店家列表下滑次數
 scroll_times = 30
 #
 # 評論趨下滑次數
-scroll_times_review = 150
+scroll_times_review = 5
 #
 # 每抓 time_sleep 家店休息30秒
-time_sleep = 1
+time_sleep = 10
 #
 ################################
 

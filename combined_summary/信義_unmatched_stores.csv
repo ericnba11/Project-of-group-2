@@ -1,0 +1,17 @@
+﻿Bar,Average_Positive,Average_Negative,Average_Neutral,Average_Compound,Processed_Bar,店名,評分,評論數,地址,鏈接,Processed_Store,_merge
+CÉ LA VI 台北,0.2455710306406685,0.0279665738161559,0.7264818941504178,0.6725214484679666,celavi台北,,,,,,,left_only
+Chôn Bar,0.413111111111111,0.0224444444444444,0.5643333333333334,0.8559111111111111,chonbar,,,,,,,left_only
+,,,,,,Chôn Bar,5.0,10,110台北市信義區虎林街202巷68號,https://www.google.com/maps/place/Ch%C3%B4n+Bar/data=!4m7!3m6!1s0x3442ab35bf6ae7a1:0xc3ea6f4c809b125f!8m2!3d25.0372659!4d121.5753811!16s%2Fg%2F11trg_2yx6!19sChIJoedqvzWrQjQRXxKbgExv6sM?authuser=0&hl=zh-TW&rclk=1,chônbar,right_only
+,,,,,,CÉ LA VI 台北,4.5,"2,915",110台北市信義區松智路17號48樓,https://www.google.com/maps/place/C%C3%89+LA+VI+%E5%8F%B0%E5%8C%97/data=!4m7!3m6!1s0x3442ab5b3896b905:0x1e74397cfefb7d35!8m2!3d25.0343502!4d121.5673825!16s%2Fg%2F11h6ns21gc!19sChIJBbmWOFurQjQRNX37_nw5dB4?authuser=0&hl=zh-TW&rclk=1,célavi台北,right_only
+GŪLŪ GURU,0.3099024390243902,0.0185512195121951,0.6715414634146342,0.6389585365853658,guluguru,,,,,,,left_only
+GŪLŪ GURU 信義,0.295551724137931,0.0097241379310344,0.6947241379310346,0.6657896551724136,guluguru信義,,,,,,,left_only
+,,,,,,GŪLŪ GURU,4.7,330,10694台北市大安區光復南路280巷24號,https://www.google.com/maps/place/G%C5%AAL%C5%AA+GURU/data=!4m7!3m6!1s0x3442abf58ece2209:0xff55e5b3f5f995de!8m2!3d25.0399415!4d121.5564297!16s%2Fg%2F11stjx43lv!19sChIJCSLOjvWrQjQR3pX59bPlVf8?authuser=0&hl=zh-TW&rclk=1,gūlūguru,right_only
+,,,,,,GŪLŪ GURU 信義,4.8,31,"B1, 香緹廣場旁No. 9號松壽路信義區台北市110",https://www.google.com/maps/place/G%C5%AAL%C5%AA+GURU+%E4%BF%A1%E7%BE%A9/data=!4m7!3m6!1s0x3442ab4d2a77ca7d:0x55c5b6930976cf12!8m2!3d25.0366485!4d121.5667595!16s%2Fg%2F11ltgpts_5!19sChIJfcp3Kk2rQjQREs92CZO2xVU?authuser=0&hl=zh-TW&rclk=1,gūlūguru信義,right_only
+ONCE Cafe&Bar 無心戒酒互助會-西寧分會,0.3672430167597765,0.0102960893854748,0.6224664804469274,0.7314670391061453,oncecafebar無心戒酒互助會西寧分會,,,,,,,left_only
+Rainma Café Bistro_復古老宅餐酒館,0.3815921052631578,0.0122960526315789,0.6061184210526316,0.7573901315789474,rainmacafebistro復古老宅餐酒館,,,,,,,left_only
+,,,,,,Rainma Café Bistro/復古老宅餐酒館,4.9,208,110台北市信義區光復南路447-24號號,https://www.google.com/maps/place/Rainma+Caf%C3%A9+Bistro%2F%E5%BE%A9%E5%8F%A4%E8%80%81%E5%AE%85%E9%A4%90%E9%85%92%E9%A4%A8/data=!4m7!3m6!1s0x3442ab7a3842654f:0xf6adbd5f0b60dc36!8m2!3d25.0352757!4d121.5582138!16s%2Fg%2F11pkd4bzrq!19sChIJT2VCOHqrQjQRNtxgC1-9rfY?authuser=0&hl=zh-TW&rclk=1,rainmacafébistro復古老宅餐酒館,right_only
+Shuffle 酒吧,0.3707971014492753,0.0102463768115942,0.6189855072463768,0.7451995169082126,shuffle酒吧,,,,,,,left_only
+双喜 Cié Cié Taipei 喜喜吧,0.3855042372881356,0.0146991525423728,0.5997881355932203,0.5963144067796611,双喜ciecietaipei喜喜吧,,,,,,,left_only
+,,,,,,双喜 Cié Cié Taipei 喜喜吧,4.8,456,110台北市信義區松壽路22號3樓,https://www.google.com/maps/place/%E5%8F%8C%E5%96%9C+Ci%C3%A9+Ci%C3%A9+Taipei+%E5%96%9C%E5%96%9C%E5%90%A7/data=!4m7!3m6!1s0x3442ab1e95cd5c65:0x25bfff42da87a7b0!8m2!3d25.0355031!4d121.56786!16s%2Fg%2F11h_bv2123!19sChIJZVzNlR6rQjQRsKeH2kL_vyU?authuser=0&hl=zh-TW&rclk=1,双喜ciéciétaipei喜喜吧,right_only
+小酩Sake Bar,0.31439,0.01492,0.6706699999999999,0.7268430000000002,小酩sakebar,,,,,,,left_only
+晃 Akira,0.342512987012987,0.0159220779220779,0.641551948051948,0.6267993506493506,晃akira,,,,,,,left_only

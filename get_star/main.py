@@ -10,7 +10,7 @@ import pandas as pd
 ################################
 #
 # 設定搜索區域
-district = "信義區 酒吧"
+district = "文山區 酒吧"
 #
 # 店家列表下滑次數
 scroll_times = 50

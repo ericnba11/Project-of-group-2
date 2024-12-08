@@ -136,12 +136,13 @@ def calculate_point_to_point_details(route_legs):
 # 主程序
 if __name__ == "__main__":
     # 從 Excel 文件載入資料庫
-    database_path = "C:/code/git_file/信義區酒吧評分.xlsx"  # 替換為你的 Excel 文件路徑
+    database_path = "C:/code/git_file/台北市酒吧評分.xlsx"  # 替換為你的 Excel 文件路徑
     bar_database = load_bar_database_from_excel(database_path)
 
     # 指定起點經緯度
-    start_lat = 25.033
-    start_lng = 121.564427
+    start_lng = float(input("請輸入起點的經度 (例如 121.564427): "))
+    start_lat = float(input("請輸入起點的緯度 (例如 25.033671): "))
+
     start_location = {"lat": start_lat, "lng": start_lng}
 
     print(f"起點位置: 經度 {start_location['lng']}, 緯度 {start_location['lat']}")
